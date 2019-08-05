@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo-mob.png">
+    <link rel="stylesheet" href="../../css/desktop/style.css">
+    <link rel="stylesheet" href="../../css/desktop/personal-area.css">
+</head>
+
+<body>
+    <!-- login popup -->
+    <div class="overlay-popup overlay-login">
+        <div class="close"></div>
+        <div class="login-popup">
+            <span class="close-popup"></span>
+            <div class="flex-wrap">
+                <div class="popup_header">
+                    <p><span>Login</span> Get access to your Orders, Wishlist and Recommendations
+                    </p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <form>
+                        <div class="form-input">
+                            <input type="text" placeholder=" " required>
+                            <span class="floating-label">Enter Email/Mobile number</span>
+                            <span class="error-msg">Please enter valid Email/Mobile number</span>
+                        </div>
+                        <div class="form-input">
+                            <input type="password" placeholder=" " required>
+                            <span class="floating-label">Enter Password</span>
+                            <a href="javascript:void(0)">Forgot?</a>
+                            <span class="error-msg">Please enter valid Password</span>
+                        </div>
+                        <div class="form-button">
+                            <button>Login</button>
+                        </div>
+                        <p>OR</p>
+                        <div class="form-button white">
+                            <button>Request OTP</button>
+                        </div>
+                        <div class="form-link">
+                            <a href="javascript:void(0)" class="closeBtn open-registration">New to Flipkart? Create an account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end login popup -->
+
+    <!-- check in popup -->
+    <div class="overlay-popup overlay-checkIn">
+        <div class="close"></div>
+        <div class="checkIn-popup">
+            <span class="close-popup"></span>
+            <div class="flex-wrap">
+                <div class="popup_header">
+                    <p><span>Signup</span> We do not share your personal details with anyone.
+                    </p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <div class="step step1 active">
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Full name</span>
+                                <span class="error-msg">Please enter valid Your Full name</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="email" placeholder=" " required>
+                                <span class="floating-label">Enter Your Email</span>
+                                <span class="error-msg">Please enter valid Email</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Mobile Number</span>
+                                <span class="error-msg">Please enter valid Mobile Number</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step2" class="nextStep">CONTINUE</button>
+                            </div>
+                            <div class="form-button white">
+                                <button class="closePopup open-login">Existing user? Log in</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step2">
+                        <h4>You will receive a 4-digit number 
+                            on you phone within 1 minute.</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter your code</span>
+                                <span class="error-msg">Please enter valid your code</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step3" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step3">
+                        <h4>Create your password</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Confirm your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step4" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step4">
+                        <h4><span>Congratulations!</span>
+                        <span>Your account has been created.</span></h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Email/Mobile number</span>
+                                <span class="error-msg">Please enter valid Email/Mobile number</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter Password</span>
+                                <a href="javascript:void(0)">Forgot?</a>
+                                <span class="error-msg">Please enter valid Password</span>
+                            </div>
+                            <div class="form-button">
+                                <button>Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="top-line">
+            <div class="container">
+                <div class="flex-wrap">
+                    <div class="flex-item">
+                        <a href="index.html" class="header_logo">
+                            <img src="../../images/logo-desktop.png" alt="logo">
+                        </a>
+                        <div class="header_search">
+                            <form class="form-search" action="search-page.html" method="get">
+                                <input name="text" class="search-query" type="text" placeholder="Поиск продуктов, брендов и другое">
+                                <button class="button"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="header-topMenu">
+                            <ul>
+                                <li>
+                                    <a id="registration" href="javascript:void(0)">Вход и Регистрация</a>
+                                </li>
+                                <li class="other">
+                                    <a href="javascript:void(0)">Другое</a>
+                                    <div class="header_otherMenu">
+                                        <nav>
+                                            <ul>
+                                                <li class="sell">
+                                                    <a href="javascript:void(0)">Sell on Flipkart</a>
+                                                </li>
+                                                <li class="customer_care">
+                                                    <a href="javascript:void(0)">24x7 Customer Care</a>
+                                                </li>
+                                                <li class="advertise">
+                                                    <a href="javascript:void(0)">Advertise</a>
+                                                </li>
+                                                <li class="download_app">
+                                                    <a href="javascript:void(0)">Download App</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </li>
+                                <li class="headerCart">
+                                    <a href="cart.html">
+                                    Корзина
+                                    <span class="cartAmount">3</span>
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mainMenu">
+            <div class="container">
+                <nav class="main-menu">
+                    <ul>
+                        <li>
+                            <a href="catalog.html">Авто</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mi</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Samsung</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Infinix</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">OPPO</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Vivo</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Honor</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Pixel 3|3XL</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max Pro M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Redmi Note 6 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">POCO F1</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme 2 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">iPhone XR</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobile Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cases</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Headphones & Headsets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Screenguards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Memory Cards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Headphones</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cables</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Chargers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Holders</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Wearable Tech</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Watches</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Glasses (VR)</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Bands</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Health Care Appliances</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bp Monitors</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Weighing Scale</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Laptops</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Gaming Laptops</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Desktop PCs</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Gaming & Accessories</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">External Hard Disks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Pendrives</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Skins & Decals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Bags</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mouse</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Peripherals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Printers & Ink Cartridges</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Monitors</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Tablets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple iPads</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="catalog.html">Televisions</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Home Entertainment</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Audio Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Theatres</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bluetooth Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DTH Set Top Box</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Home Automation</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Camera</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DSLR</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Compact & Bridge Cameras</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sports & Action</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Camera Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lens</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Tripods</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Network Components</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Routers</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Featured</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptops on Buyback Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Flipkart SmartBuy</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Li-Polymer Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sony PS4 Pro & Slim</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Microsoft Store</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lenovo Phab Series</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">JBL Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smartphones On Buyback</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Philips</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Dr. Morepen</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Extended Warranty</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Damage Protection</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Электроника</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobiles22</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mi</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Samsung</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Infinix</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">OPPO</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Vivo</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Honor</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Pixel 3|3XL</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max Pro M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Redmi Note 6 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">POCO F1</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme 2 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">iPhone XR</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobile Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cases</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Headphones & Headsets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Screenguards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Memory Cards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Headphones</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cables</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Chargers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Holders</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Wearable Tech</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Watches</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Glasses (VR)</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Bands</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Health Care Appliances</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bp Monitors</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Weighing Scale</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Laptops</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Gaming Laptops</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Desktop PCs</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Gaming & Accessories</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">External Hard Disks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Pendrives</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Skins & Decals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Bags</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mouse</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Peripherals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Printers & Ink Cartridges</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Monitors</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Tablets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple iPads</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="catalog.html">Televisions</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Home Entertainment</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Audio Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Theatres</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bluetooth Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DTH Set Top Box</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Home Automation</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Camera</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DSLR</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Compact & Bridge Cameras</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sports & Action</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Camera Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lens</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Tripods</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Network Components</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Routers</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Featured</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptops on Buyback Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Flipkart SmartBuy</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Li-Polymer Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sony PS4 Pro & Slim</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Microsoft Store</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lenovo Phab Series</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">JBL Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smartphones On Buyback</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Philips</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Dr. Morepen</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Extended Warranty</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Damage Protection</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Туризм</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobiles33</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mi</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Samsung</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Infinix</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">OPPO</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Vivo</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Honor</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Pixel 3|3XL</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max Pro M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Redmi Note 6 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">POCO F1</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme 2 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">iPhone XR</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobile Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cases</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Headphones & Headsets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Screenguards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Memory Cards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Headphones</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cables</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Chargers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Holders</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Wearable Tech</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Watches</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Glasses (VR)</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Bands</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Health Care Appliances</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bp Monitors</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Weighing Scale</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Laptops</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Gaming Laptops</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Desktop PCs</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Gaming & Accessories</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">External Hard Disks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Pendrives</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Skins & Decals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Bags</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mouse</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Peripherals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Printers & Ink Cartridges</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Monitors</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Tablets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple iPads</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="catalog.html">Televisions</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Home Entertainment</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Audio Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Theatres</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bluetooth Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DTH Set Top Box</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Home Automation</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Camera</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DSLR</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Compact & Bridge Cameras</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sports & Action</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Camera Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lens</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Tripods</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Network Components</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Routers</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Featured</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptops on Buyback Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Flipkart SmartBuy</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Li-Polymer Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sony PS4 Pro & Slim</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Microsoft Store</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lenovo Phab Series</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">JBL Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smartphones On Buyback</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Philips</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Dr. Morepen</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Extended Warranty</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Damage Protection</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Отдых</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobiles444</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mi</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Samsung</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Infinix</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">OPPO</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Vivo</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Honor</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Pixel 3|3XL</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max Pro M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Redmi Note 6 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">POCO F1</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme 2 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">iPhone XR</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobile Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cases</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Headphones & Headsets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Screenguards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Memory Cards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Headphones</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cables</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Chargers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Holders</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Wearable Tech</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Watches</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Glasses (VR)</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Bands</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Health Care Appliances</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bp Monitors</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Weighing Scale</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Laptops</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Gaming Laptops</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Desktop PCs</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Gaming & Accessories</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">External Hard Disks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Pendrives</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Skins & Decals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Bags</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mouse</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Peripherals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Printers & Ink Cartridges</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Monitors</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Tablets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple iPads</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="catalog.html">Televisions</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Home Entertainment</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Audio Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Theatres</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bluetooth Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DTH Set Top Box</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Home Automation</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Camera</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DSLR</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Compact & Bridge Cameras</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sports & Action</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Camera Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lens</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Tripods</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Network Components</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Routers</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Featured</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptops on Buyback Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Flipkart SmartBuy</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Li-Polymer Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sony PS4 Pro & Slim</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Microsoft Store</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lenovo Phab Series</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">JBL Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smartphones On Buyback</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Philips</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Dr. Morepen</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Extended Warranty</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Damage Protection</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="content">
+        <div class="container">
+            <div class="content__wrap">
+                <div class="content__wrap-left">
+                    <div class="item item1">
+                        <div class="heading">
+                            <img src="../../images/wishlist-user.png" alt="">
+                            <span>Hello</span>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="bottom">
+                            <a href="javascript:void(0)" class="topItem">
+                                <span class="icon">
+                                <img src="../../images/bonuses-icon.png" alt="">
+                            </span>
+                                <span>50 more coins to FLIPKART PLUS</span>
+                                <i class="icon-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item item2">
+                        <div class="item-line">
+                            <a href="javascript:void(0)" class="topItem">
+                                <span class="icon">
+                                <i class="icon-orders"></i>
+                            </span> MY ORDERS
+                                <i class="icon-right"></i>
+                            </a>
+                        </div>
+                        <div class="item-line">
+                            <p class="topItem">
+                                <span class="icon">
+                                <i class="icon-account"></i>
+                            </span> account settings
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="personal-area.html">Profile Information</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Manage Addresses</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">PAN Card Information</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="item-line">
+                            <p class="topItem">
+                                <span class="icon">
+                                <img src="../../images/payments-icon.png" alt="">
+                            </span> payments
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <span>PhonePe Wallet</span>
+                                        <span class="status">₽0</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <span>Gift Cards</span>
+                                        <span class="status">₽0</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <span>Saved Cards</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item-line">
+                            <a href="javascript:void(0)" class="topItem">
+                                <span class="icon">
+                                <i class="icon-stuff"></i>
+                            </span> my chats
+                                <i class="icon-right"></i>
+                            </a>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="item-line">
+                            <p class="topItem">
+                                <span class="icon">
+                                <i class="icon-stuff"></i>
+                            </span> my stuff
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                    My Rewards
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                    My Reviews & Ratings
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                    All Notifications
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="wishlist.html">
+                                    My Wishlist
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="item-line">
+                            <a href="javascript:void(0)" class="topItem">
+                                <span class="icon">
+                                <i class="icon-logout"></i>
+                            </span> Logout
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item item3">
+                        <p>Frequently Visited:</p>
+                        <a href="javascript:void(0)">Change Password   </a>
+                        <a href="javascript:void(0)">Track Order   </a>
+                        <a href="javascript:void(0)">Help Center</a>
+                    </div>
+                </div>
+                <div class="content__wrap-right">
+                    <form>
+                        <div class="heading">
+                            <p>Personal Information</p>
+                            <a href="javascript:void(0)">Edit</a>
+                        </div>
+                        <div class="flex-wrap">
+                            <div class="form-input">
+                                <input type="text">
+                            </div>
+                            <div class="form-input">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="form-radioBtn">
+                            <p>Your Gender</p>
+                            <div class="flex-wrap">
+                                <label class="wrap">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    <span class="label">Male</span>
+                                </label>
+                                <label class="wrap">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    <span class="label">Female</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <p>Email Address</p>
+                            <a href="javascript:void(0)">Edit</a>
+                            <a href="javascript:void(0)">Change Password</a>
+                        </div>
+                        <div class="form-input">
+                            <input type="text">
+                        </div>
+                        <div class="heading">
+                            <p>Mobile Number</p>
+                            <a href="javascript:void(0)">Edit</a>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" placeholder="+918551848020">
+                        </div>
+                        <div class="faq">
+                            <h3>FAQs</h3>
+                            <p><strong>What happens when I update my email address (or mobile number)?</strong></p>
+                            <p>Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).</p>
+                            <p><strong>When will my Flipkart account be updated with the new email address (or mobile number)?</strong></p>
+                            <p>It happens as soon as you confirm the verification code sent to your email (or mobile) and save the changes.</p>
+                            <p><strong>What happens to my existing Flipkart account when I update my email address (or mobile number)?</strong></p>
+                            <p>Updating your email address (or mobile number) doesn't invalidate your account. Your account remains fully functional. You'll continue seeing your Order history, saved information and personal details.</p>
+                            <p><strong>Does my Seller account get affected when I update my email address?</strong></p>
+                            <p>Flipkart has a 'single sign-on' policy. Any changes will reflect in your Seller account also.</p>
+                        </div>
+                        <a href="javascript:void(0)" class="deactivate">Deactivate Account</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_top">
+            <div class="container">
+                <div class="flex-wrap">
+                    <div class="item">
+                        <p class="title">ABOUT</p>
+                        <nav class="footer_about-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Flipkart Stories</a>
+                                </li>
+                                <li>
+                                    <a href="#">Press</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="item">
+                        <p class="title">HELP</p>
+                        <nav class="footer_help-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Payments</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shipping</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cancellation & Returns</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Report Infringement</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="item">
+                        <p class="title">POLICY</p>
+                        <nav class="footer_policy-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Return Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms Of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#">Security</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sitemap</a>
+                                </li>
+                                <li>
+                                    <a href="#">EPR Compliance</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="item">
+                        <p class="title">SOCIAL</p>
+                        <nav class="footer_social-menu">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com" target="_blank">YouTube</a>
+                                </li>
+                                <li>
+                                    <a href="https://plus.google.com" target="_blank">Google Plus</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="item">
+                        <p class="title">Mail Us:</p>
+                        <p><span>Flipkart Internet Pvt Ltd Block B (Begonia),</span>
+                            <span>Ground Floor, Embassy Tech Village,</span>
+                            <span>Outer Ring Road, Devarabeesanahalli Village,</span>
+                            <span>Varthur Hobli, Bengaluru East Taluk,</span>
+                            <span>Bengaluru District,</span>
+                            <span>Karnataka, India, 560103</span></p>
+                    </div>
+                    <div class="item">
+                        <p class="title">Registered Office Address:</p>
+                        <p>
+                            <span>Flipkart Internet Private Limited,</span>
+                            <span>Vaishnavi Summit, Ground Floor, 7th Main,</span>
+                            <span>80 Feet Road, 3rd Block,</span>
+                            <span>Koramangala,</span>
+                            <span>Bengaluru - 560034</span>
+                            <span>India</span>
+                            <span>CIN : U51109KA2012PTC066107</span>
+                            <span>Telephone: <a class="phone" href="tel:18002089898">1800 208 9898</a></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="flex-wrap">
+                    <div class="item">
+                        <a class="sell" href="#">Sell On Flipkart</a>
+                    </div>
+                    <div class="item">
+                        <a class="advertise" href="#">Advertise</a>
+                    </div>
+                    <div class="item">
+                        <a class="cards" href="#">Gift Cards</a>
+                    </div>
+                    <div class="item">
+                        <a class="help_center" href="help-center.html">Help Center</a>
+                    </div>
+                    <div class="item">
+                        <p>© 2007-2019 Flipkart.com.</p>
+                    </div>
+                    <div class="item">
+                        <a class="visa" href="#">
+                            <img src="../../images/payment.svg" alt="payment">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <div class="container">
+                <a target="_blank" href="http://plemyastudio.ru"><i>©</i> Все права защищены, 2019. Разработка "Студия Племя".</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="../../js/jquery.min.js"></script>
+
+    <script src="../../js/desktop/personal-area.min.js"></script>
+    <script src="../../js/desktop/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+.errorPage{
+    &__heading{
+        background-color: #2874f0;
+        text-align: center;
+        padding: 10px 0;
+        a{
+            display: inline-block;
+            width: 105px;
+            img{
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+    &__content{
+        text-align: center;
+        margin-top: 12px;
+        img{
+            max-width: 453px;
+            width: 100%;
+            max-height: 100%;
+        }
+        h3{
+            color: #212121;
+            font-size: 14px;
+            line-height: 22px;
+            margin: 4px 0 22px;
+        }
+        a{
+            display: inline-block;
+            box-shadow: 0 2px 3px rgba(72, 72, 72, 0.3);
+            border-radius: 3px;
+            background-color: #2874f0;
+            color: #ffffff;
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 8px 26px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .errorPage{
+        &__content{
+            margin-top: 41px;
+            h3{
+                font-size: 18px;
+                line-height: 27px;
+            }
+            a{
+                font-size: 16px;
+            }
+        }
+    }
+}

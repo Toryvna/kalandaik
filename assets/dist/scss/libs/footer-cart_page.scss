@@ -1,0 +1,42 @@
+.footer{
+    border-top: 1px solid #dddddd;
+    padding: 31px 0 60px;
+    &__wrapper{
+        @include flexbox;
+        @include justify-content(space-between);
+        @include align-items(flex-end);
+        p,a{
+            color: #565656;
+            font-size: 14px;
+        }
+        &_policy{
+            @include flexbox;
+            @include justify-content(space-between);
+            @include align-items(flex-end);
+            ul{
+                @include flexbox;
+                @include justify-content(space-between);
+                @include align-items(flex-end);
+                margin: 0 20px 0 5px;
+                li{
+                    margin-right: 10px;
+                    position: relative;
+                    &:after{
+                        content: '|';
+                        color: #878787;
+                        font-family: "Roboto - Thin";
+                        font-size: 19px;
+                        position: absolute;
+                        right: -7px;
+                        top: 1px;                    
+                    }
+                }
+            }
+        }
+        &_help{
+            a{
+                color: #2874f0;
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@import "../scss/libs/flexbox.scss";
+@import "../scss/libs/mobile_header_inner-page.scss";
+
+header .header_top-line .flex-wrap{
+    @include justify-content(flex-start);
+}
+body{
+    background-color: #fff;
+}
+.info{
+    .heading{
+        padding: 15px 20px;
+        border-bottom: 1px solid #f0f0f0;
+        h2{
+            color: #212121;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+    }
+    .amount{
+        padding: 24px 20px;
+        border-bottom: 1px solid #f0f0f0;
+        p{
+            text-transform: uppercase;
+            font-size: 14px;
+            span{
+                padding-left: 10px;
+                font-size: 16px;
+            }
+        }
+    }
+    .flex-wrap{
+        padding: 29px 20px;
+        @include flexbox;
+        @include align-items(flex-start);
+        .icon{
+            margin-right: 4px;
+        }
+        .item{
+            &-1{
+                max-width: 311px;
+                margin-right: 106px;
+            }
+            &-2{
+                width: 360px;
+            }
+            p{
+                color: #545454;
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 8px;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+                &.small{
+                    font-size: 12px;
+                    line-height: 17px;
+                }
+            }
+            strong{
+                color: #212121;
+                font-family: "Roboto Medium";
+            }
+        }
+    }
+}

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Каландайк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo-mob.png">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/mobile/style.css">
+    <link rel="stylesheet" href="../../css/mobile/home.css">
+</head>
+
+<body>
+
+    <!-- mobile popups -->
+    <div class="overlay-popup overlay-login">
+        <div class="close"></div>
+        <div class="login-popup">
+            <div class="wrapper">
+                <span class="close-popup"></span>
+                <div class="popup_header">
+                    <h3>Login</h3>
+                    <p>Get access to your Orders, Wishlist and Recommendations</p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <form>
+                        <div class="form-input">
+                            <input type="text" placeholder=" " required>
+                            <span class="floating-label">Enter Email/Mobile number</span>
+                            <span class="error-msg">Please enter valid Email/Mobile number</span>
+                        </div>
+                        <div class="form-input">
+                            <input type="password" placeholder=" " required>
+                            <span class="floating-label">Enter Password</span>
+                            <a href="javascript:void(0)">Forgot?</a>
+                            <span class="error-msg">Please enter valid Password</span>
+                        </div>
+                        <div class="form-button">
+                            <button>Login</button>
+                        </div>
+                        <p>OR</p>
+                        <div class="form-button white">
+                            <button>Request OTP</button>
+                        </div>
+                        <div class="form-link">
+                            <a href="javascript:void(0)" class="closeBtn open-registration">New to Flipkart? Create an account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-popup overlay-registration">
+        <div class="close"></div>
+        <div class="registration-popup">
+            <div class="wrapper">
+                <span class="close-popup"></span>
+                <div class="popup_header">
+                    <h3>Sign up</h3>
+                    <p>We do not share your personal details with anyone</p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <div class="step step1 active">
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Full name</span>
+                                <span class="error-msg">Please enter valid Your Full name</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="email" placeholder=" " required>
+                                <span class="floating-label">Enter Your Email</span>
+                                <span class="error-msg">Please enter valid Email</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Mobile Number</span>
+                                <span class="error-msg">Please enter valid Mobile Number</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step2" class="nextStep">CONTINUE</button>
+                            </div>
+                            <div class="form-button white">
+                                <button class="closeButton open-login">Existing user? Log in</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step2">
+                        <h4>You will receive a 4-digit number 
+                            on you phone within 1 minute.</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter your code</span>
+                                <span class="error-msg">Please enter valid your code</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step3" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step3">
+                        <h4>Create your password</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Confirm your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step4" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step4">
+                        <h4><span>Congratulations!</span>
+                        <span>Your account has been created.</span></h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Email/Mobile number</span>
+                                <span class="error-msg">Please enter valid Email/Mobile number</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter Password</span>
+                                <a href="javascript:void(0)">Forgot?</a>
+                                <span class="error-msg">Please enter valid Password</span>
+                            </div>
+                            <div class="form-button">
+                                <button>Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="header_top-line">
+                <div class="flex-wrap">
+                    <div class="flex-item">
+                        <button class="toggle-menu">
+                            <span class="hamburger">
+                            <span class="sw-topper"></span>
+                            <span class="sw-bottom"></span>
+                            <span class="sw-footer"></span>
+                            </span>
+                        </button>
+                        <div id="sidebar_menu" class="sidebar_menu">
+                            <div class="sidebar_header">
+                                <div class="registration sidebar_login">Логин & Регистрация</div>
+                                <a href="javascript:void(0)" class="logo_lite">
+                                    <img src="../../images/logo_lite.png" alt="logo_lite">
+                                </a>
+                            </div>
+                            <nav class="main_menu">
+                                <ul>
+                                    <li class="auto">
+                                        <a href="catalog.html">Авто</a>
+                                    </li>
+                                    <li class="moto">
+                                        <a href="catalog.html">Мото</a>
+                                    </li>
+                                    <li class="phone">
+                                        <a href="catalog.html">Электроника</a>
+                                    </li>
+                                    <li class="tourism">
+                                        <a href="catalog.html">Туризм</a>
+                                    </li>
+                                    <li class="rest">
+                                        <a href="catalog.html">Отдых</a>
+                                    </li>
+                                    <li class="entertainment">
+                                        <a href="catalog.html">Развлечения</a>
+                                    </li>
+                                    <li class="beauty">
+                                        <a href="catalog.html">Beauty and Personal care</a>
+                                    </li>
+                                    <li class="sports">
+                                        <a href="catalog.html">Sports, Books & More</a>
+                                    </li>
+                                    <li class="grocery">
+                                        <a href="catalog.html">Grocery</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <nav class="zone_menu">
+                                <ul>
+                                    <li class="offer_zone">
+                                        <a href="javascript:void(0)">Offer Zone</a>
+                                    </li>
+                                    <li class="game_zone">
+                                        <a href="javascript:void(0)">Game Zone</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <nav class="order_menu">
+                                <ul>
+                                    <li class="orders">
+                                        <a href="purchase-history.html">My Orders</a>
+                                    </li>
+                                    <li class="rewards">
+                                        <a href="javascript:void(0)">My Rewards</a>
+                                    </li>
+                                    <li class="cart">
+                                        <a href="cart.html">My Cart</a>
+                                    </li>
+                                    <li class="wishlist">
+                                        <a href="wishlist.html">My Wishlist</a>
+                                    </li>
+                                    <li class="account">
+                                        <a href="personal-area.html">My Account</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <nav class="more_info">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Gift Card</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Sell on Flipkart</a>
+                                    </li>
+                                    <li>
+                                        <a href="help-center.html">Help Centre</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Legal</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <a href="index.html" class="header_logo__link">
+                            <img src="../../images/logo-desktop.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- поиск только для планшетов -->
+                    <div class="flex-item tablet-search">
+                        <form action="search-page.html" method="get">
+                            <input type="text" id="mobileSearch" name="product" placeholder="Поиск продуктов, брендов и другое">
+                            <button class="button" type="submit"></button>
+                        </form>
+                    </div>
+                    <!--  -->
+                    <div class="flex-item links">
+                        <a href="cart.html" class="header_cart__link">
+                            <span class="cartAmount">3</span>
+                        </a>
+                        <div class="open-login header_login__link">Логин</div>
+                    </div>
+                </div>
+            </div>
+            <!-- шапка при скролле -->
+            <div class="header_search">
+                <button class="toggle-menu">
+                    <span class="hamburger">
+                    <span class="sw-topper"></span>
+                    <span class="sw-bottom"></span>
+                    <span class="sw-footer"></span>
+                    </span>
+                </button>
+                <form action="search-page.html" method="get">
+                    <input type="text" id="mobileSearch" name="product" placeholder="Поиск продуктов, брендов и другое">
+                    <button class="button" type="submit"></button>
+                </form>
+                <a href="cart.html" class="header_cart__link">
+                    <span class="cartAmount">3</span>
+                </a>
+            </div>
+            <!--  -->
+            <div class="header_menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="catalog.html">
+                                <div class="imgContainer">
+                                    <img src="../../images/stock.png" alt="stock">
+                                </div>
+                                <span>Акции</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">
+                                <div class="imgContainer">
+                                    <img src="../../images/auto.png" alt="auto">
+                                </div>
+                                <span>Авто</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">
+                                <div class="imgContainer">
+                                    <img src="../../images/motorcycle.png" alt="motorcycle">
+                                </div>
+                                <span>Мото</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">
+                                <div class="imgContainer">
+                                    <img src="../../images/phone.png" alt="phone">
+                                </div>
+                                <span>Електроника</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">
+                                <div class="imgContainer">
+                                    <img src="../../images/more.png" alt="more">
+                                </div>
+                                <span>Больше</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="banner-fullPage">
+        <div class="swiper-fullPage swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="catalog.html">
+                        <img src="../../images/banner1_1.jpg" alt="banner">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="catalog.html">
+                        <img src="../../images/home_page/banner1.jpg" alt="banner">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="catalog.html">
+                        <img src="../../images/banner1_2.jpg" alt="banner">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="catalog.html">
+                        <img src="../../images/home_page/banner1.jpg" alt="banner">
+                    </a>
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <div class="banner-list">
+        <div class="item">
+            <a href="product.html">
+                <img src="../../images/home_page/banner2.jpg" alt="banner">
+            </a>
+        </div>
+        <div class="item">
+            <a href="product.html">
+                <img src="../../images/home_page/banner3.jpg" alt="banner">
+            </a>
+        </div>
+        <div class="item">
+            <a href="product.html">
+                <img src="../../images/home_page/banner4.jpg" alt="banner">
+            </a>
+        </div>
+    </div>
+    <div class="day_offer">
+        <div class="top_line">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="blk">
+                        <p>Предложение Дня</p>
+                        <div class="timer" id="countdown">
+                            <span>19ч 14м осталось</span>
+                        </div>
+                    </div>
+                    <div class="blk">
+                        <a href="catalog.html" class="btn">Смотреть все</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="flex-wrap">
+                    <a class="product" href="product.html">
+                        <div class="productImg">
+                            <img src="../../images/home_page/item1.jpg" alt="product">
+                        </div>
+                        <div class="productText">
+                            <h3>Карты памяти, Pendrive</h3>
+                            <p>От № 329</p>
+                        </div>
+                    </a>
+                    <a class="product" href="product.html">
+                        <div class="productImg">
+                            <img src="../../images/home_page/item2.jpg" alt="product">
+                        </div>
+                        <div class="productText">
+                            <h3>Наушники и колонки</h3>
+                            <p>От № 249</p>
+                        </div>
+                    </a>
+                    <a class="product" href="product.html">
+                        <div class="productImg">
+                            <img src="../../images/home_page/item3.jpg" alt="product">
+                        </div>
+                        <div class="productText">
+                            <h3>Красная леньа, аэраэрааэра</h3>
+                            <p>До 60% + дополнительно текст</p>
+                        </div>
+                    </a>
+                    <a class="product" href="product.html">
+                        <div class="productImg">
+                            <img src="../../images/home_page/item4.jpg" alt="product">
+                        </div>
+                        <div class="productText">
+                            <h3>Титан, Casio, Timex Timex Timex</h3>
+                            <p>Upto80% скидка текст текст</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="recommendation">
+        <div class="container">
+            <h2>Популярные Бренды</h2>
+            <p>Рекламные</p>
+            <a href="product.html" class="product">
+                <img src="../../images/home_page/popular_brend.jpg" alt="brend">
+            </a>
+        </div>
+    </div>
+    <div class="flipcart">
+        <div class="container">
+            <div class="flex-wrap">
+                <div class="item">
+                    <img src="../../images/home_page/flip.png" alt="flipcart">
+                </div>
+                <div class="item">
+                    <p>Доступ к учетной записи Флипкарт и отслеживание ваших заказов</p>
+                    <a href="javascrip:void(0)" class="btn">Логин</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner_list2">
+        <div class="container">
+            <div class="flex-wrap">
+                <a href="catalog.html" class="product">
+                    <img src="../../images/home_page/banner5.jpg" alt="banner">
+                </a>
+                <a href="catalog.html" class="product">
+                    <img src="../../images/home_page/banner6.jpg" alt="banner">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="day_offer category">
+        <div class="top_line">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="blk">
+                        <p>Предложение Дня</p>
+                        <p class="light">На Обувь</p>
+                    </div>
+                    <div class="blk">
+                        <a href="catalog.html" class="btn">Смотреть все</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="flex-wrap">
+                    <a class="product" href="product.html">
+                        <div class="productImg">
+                            <img src="../../images/home_page/item5.jpg" alt="product">
+                        </div>
+                        <div class="productText">
+                            <h3>Oricum COMBO(O)-66666</h3>
+                            <p>Under ₽499</p>
+                        </div>
+                    </a>
+                    <a class="product" href="product.html">
+                        <div class="productImg">
+                            <img src="../../images/home_page/item6.jpg" alt="product">
+                        </div>
+                        <div class="productText">
+                            <h3>For Men</h3>
+                            <p>Under ₽199</p>
+                        </div>
+                    </a>
+                    <a class="product" href="product.html">
+                        <div class="productImg">
+                            <img src="../../images/home_page/item7.jpg" alt="product">
+                        </div>
+                        <div class="productText">
+                            <h3>Provogue, Red Tape Tape Tape</h3>
+                            <p>Min.50% Off</p>
+                        </div>
+                    </a>
+                    <a class="product" href="product.html">
+                        <div class="productImg">
+                            <img src="../../images/home_page/item8.jpg" alt="product">
+                        </div>
+                        <div class="productText">
+                            <h3>Woodland, Red Chie Chie Chie</h3>
+                            <p>40-60% Off</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="recommendation">
+        <div class="container">
+            <h2>Рекомендуемая Марка</h2>
+            <p>Рекламные</p>
+            <a href="product.html" class="product">
+                <img src="../../images/home_page/recommendation_mark.jpg" alt="mark">
+            </a>
+        </div>
+    </div>
+
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/mobile/home.min.js"></script>
+    <script src="../../js/mobile/script.min.js"></script>
+</body>
+
+</html>

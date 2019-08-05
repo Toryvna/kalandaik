@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo-mob.png">
+    <link rel="stylesheet" href="../../css/mobile/style.css">
+    <link rel="stylesheet" href="../../css/mobile/search-page.css">
+</head>
+
+<body>
+
+    <!-- mobile popups -->
+    <div class="overlay-popup overlay-login">
+        <div class="close"></div>
+        <div class="login-popup">
+            <div class="wrapper">
+                <span class="close-popup"></span>
+                <div class="popup_header">
+                    <h3>Login</h3>
+                    <p>Get access to your Orders, Wishlist and Recommendations</p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <form>
+                        <div class="form-input">
+                            <input type="text" placeholder=" " required>
+                            <span class="floating-label">Enter Email/Mobile number</span>
+                            <span class="error-msg">Please enter valid Email/Mobile number</span>
+                        </div>
+                        <div class="form-input">
+                            <input type="password" placeholder=" " required>
+                            <span class="floating-label">Enter Password</span>
+                            <a href="javascript:void(0)">Forgot?</a>
+                            <span class="error-msg">Please enter valid Password</span>
+                        </div>
+                        <div class="form-button">
+                            <button>Login</button>
+                        </div>
+                        <p>OR</p>
+                        <div class="form-button white">
+                            <button>Request OTP</button>
+                        </div>
+                        <div class="form-link">
+                            <a href="javascript:void(0)" class="closeBtn open-registration">New to Flipkart? Create an account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-popup overlay-registration">
+        <div class="close"></div>
+        <div class="registration-popup">
+            <div class="wrapper">
+                <span class="close-popup"></span>
+                <div class="popup_header">
+                    <h3>Sign up</h3>
+                    <p>We do not share your personal details with anyone</p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <div class="step step1 active">
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Full name</span>
+                                <span class="error-msg">Please enter valid Your Full name</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="email" placeholder=" " required>
+                                <span class="floating-label">Enter Your Email</span>
+                                <span class="error-msg">Please enter valid Email</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Mobile Number</span>
+                                <span class="error-msg">Please enter valid Mobile Number</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step2" class="nextStep">CONTINUE</button>
+                            </div>
+                            <div class="form-button white">
+                                <button class="closeButton open-login">Existing user? Log in</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step2">
+                        <h4>You will receive a 4-digit number 
+                            on you phone within 1 minute.</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter your code</span>
+                                <span class="error-msg">Please enter valid your code</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step3" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step3">
+                        <h4>Create your password</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Confirm your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step4" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step4">
+                        <h4><span>Congratulations!</span>
+                        <span>Your account has been created.</span></h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Email/Mobile number</span>
+                                <span class="error-msg">Please enter valid Email/Mobile number</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter Password</span>
+                                <a href="javascript:void(0)">Forgot?</a>
+                                <span class="error-msg">Please enter valid Password</span>
+                            </div>
+                            <div class="form-button">
+                                <button>Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="header_top-line">
+
+                <div class="flex-wrap">
+                    <div class="flex-item">
+                        <a onclick="javascript:history.back(); return false;" href="" class="back_link"></a>
+                    </div>
+
+                    <div class="flex-item">
+                        <a href="index.html" class="header_logo">
+                            <img src="../../images/logo-mob.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="flex-item pageTitle search_page">
+                        <p class="title">Mobiles</p>
+                    </div>
+
+                    <div class="flex-item pageTitle catalog_page">
+                        <p class="title">TVs</p>
+                    </div>
+
+                    <div class="flex-item header_search">
+                        <a href="#" class="mobileSearch"></a>
+                    </div>
+
+                    <div class="flex-item links">
+                        <a href="cart.html" class="header_cart__link">
+                            <span class="cartAmount">3</span>
+                        </a>
+                        <div class="registration header_login__link">Логин</div>
+                    </div>
+                </div>
+
+                <!-- Начало строки поиска -->
+                <div class="searchLine">
+                    <form class="form-search">
+                        <input name="text" class="search-query" type="search" placeholder="Поиск продуктов, брендов и другое">
+                        <button class="button"></button>
+                    </form>
+                    <div class="searchLine-close"></div>
+                </div>
+                <!-- Конец строки поиска -->
+
+            </div>
+        </div>
+    </header>
+
+
+    <div class="search__topBtns">
+        <a href="javascript:void(0)" id="sorting" class="search__topBtns-sort">
+            <img src="../../images/sort.svg" alt="image">
+            <span>Сортировать</span>
+        </a>
+        <a href="javascript:void(0)" id="filtering" class="search__topBtns-filter">
+            <img src="../../images/filter.svg" alt="image">
+            <span>Фильтр</span>
+        </a>
+    </div>
+
+    <div class="search__bannerBlk">
+        <a href="catalog.html" class="link"></a>
+        <div class="container">
+            <div class="search__bannerBlk_wrap">
+                <div class="search__bannerBlk_wrap-img">
+                    <img src="../../images/bannerImg-search.jpg" alt="image">
+                </div>
+                <div class="search__bannerBlk_wrap-text">
+                    <p class="title">Unbelievable Offers on Mobiles</p>
+                    <p class="info">
+                        Lowest Prices on BestSelling Mobiles | Extra 10% off* on Axis Bank Cards
+                    </p>
+                </div>
+                <div class="search__bannerBlk_wrap-arrow">
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search__wrapItems">
+        <div class="search__wrapItems-item">
+            <div class="search__wrapItems-item_img">
+                <a href="product.html" class="itemLink"></a>
+                <span class="mark">ON OFFER</span>
+                <img src="../../images/searchImg1.jpg" alt="image">
+            </div>
+
+            <div class="search__wrapItems-item_text">
+                <a href="javascript:void(0)" class="likeBtn"></a>
+                <a href="product.html" class="name">Redmi Y2 (Black, 32 GB)</a>
+                <div class="rating_info">
+                    <div class="rating" style="background-color: #37be5f;">
+                        <span>4.4</span>
+                        <img src="../../images/star.svg" alt="star">
+                    </div>
+                    <p>(4 664)</p>
+                    <div class="logo">
+                        <img src="../../images/assured.png" alt="assured">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="price-new">₽10,999</p>
+                    <p class="price-old">15499</p>
+                    <p class="price-discount">29% off</p>
+                </div>
+
+                <p class="subText">Exchange Offer, No Cost EMI</p>
+            </div>
+
+            <div class="specifications__wrap">
+                <div class="specification">
+                    3 GB RAM | 32 GB St...11111
+                </div>
+                <div class="specification">
+                    15.21 cm (5.99 inch)...11111
+                </div>
+                <div class="specification">
+                    3080 mAh
+                </div>
+            </div>
+        </div>
+
+        <div class="search__wrapItems-item">
+            <div class="search__wrapItems-item_img">
+                <a href="product.html" class="itemLink"></a>
+                <span class="mark">ON OFFER</span>
+                <img src="../../images/searchImg2.jpg" alt="image">
+            </div>
+
+            <div class="search__wrapItems-item_text">
+                <a href="javascript:void(0)" class="likeBtn"></a>
+                <a href="product.html" class="name">Redmi Note 6 Pro (Black, 64
+                    GB)</a>
+                <div class="rating_info">
+                    <div class="rating" style="background-color: #37be5f;">
+                        <span>4.3</span>
+                        <img src="../../images/star.svg" alt="star">
+                    </div>
+                    <p>(3 534)</p>
+                    <div class="logo">
+                        <img src="../../images/assured.png" alt="assured">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="price-new">₽8 999</p>
+                    <p class="price-old">16499</p>
+                    <p class="price-discount">45% off</p>
+                </div>
+
+                <p class="subText">Exchange Offer, No Cost EMI</p>
+            </div>
+
+            <div class="specifications__wrap">
+                <div class="specification">
+                    3 GB RAM | 32 GB St...11111
+                </div>
+                <div class="specification">
+                    15.21 cm (5.99 inch)...11111
+                </div>
+                <div class="specification">
+                    3080 mAh
+                </div>
+            </div>
+        </div>
+
+        <div class="search__wrapItems-item">
+            <div class="search__wrapItems-item_img">
+                <a href="product.html" class="itemLink"></a>
+                <span class="mark">ON OFFER</span>
+                <img src="../../images/searchImg3.jpg" alt="image">
+            </div>
+
+            <div class="search__wrapItems-item_text">
+                <a href="javascript:void(0)" class="likeBtn"></a>
+                <a href="product.html" class="name">Motorola One Power (Black, 
+                    64 GB)</a>
+                <div class="rating_info">
+                    <div class="rating" style="background-color: #37be5f;">
+                        <span>4.4</span>
+                        <img src="../../images/star.svg" alt="star">
+                    </div>
+                    <p>(1 503)</p>
+                    <div class="logo">
+                        <img src="../../images/assured.png" alt="assured">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="price-new">₽19 499</p>
+                    <p class="price-old">35499</p>
+                    <p class="price-discount">45% off</p>
+                </div>
+
+                <p class="subText">Exchange Offer, No Cost EMI</p>
+            </div>
+
+            <div class="specifications__wrap">
+                <div class="specification">
+                    3 GB RAM | 32 GB St...11111
+                </div>
+                <div class="specification">
+                    15.21 cm (5.99 inch)...11111
+                </div>
+                <div class="specification">
+                    3080 mAh
+                </div>
+            </div>
+        </div>
+
+        <div class="search__wrapItems-item">
+            <div class="search__wrapItems-item_img">
+                <a href="product.html" class="itemLink"></a>
+                <span class="mark">ON OFFER</span>
+                <img src="../../images/searchImg4.jpg" alt="image">
+            </div>
+
+            <div class="search__wrapItems-item_text">
+                <a href="javascript:void(0)" class="likeBtn"></a>
+                <a href="product.html" class="name">Redmi Y2 (Blue, 32 GB)</a>
+                <div class="rating_info">
+                    <div class="rating" style="background-color: #37be5f;">
+                        <span>4.1</span>
+                        <img src="../../images/star.svg" alt="star">
+                    </div>
+                    <p>(3 947)</p>
+                    <div class="logo">
+                        <img src="../../images/assured.png" alt="assured">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="price-new">₽7 499</p>
+                    <p class="price-old">11499</p>
+                    <p class="price-discount">34% off</p>
+                </div>
+
+                <p class="subText">Exchange Offer, No Cost EMI</p>
+            </div>
+
+            <div class="specifications__wrap">
+                <div class="specification">
+                    3 GB RAM | 32 GB St...11111
+                </div>
+                <div class="specification">
+                    15.21 cm (5.99 inch)...11111
+                </div>
+                <div class="specification">
+                    3080 mAh
+                </div>
+            </div>
+        </div>
+
+        <div class="search__wrapItems-item">
+            <div class="search__wrapItems-item_img">
+                <a href="product.html" class="itemLink"></a>
+                <span class="mark">ON OFFER</span>
+                <img src="../../images/searchImg5.jpg" alt="image">
+            </div>
+
+            <div class="search__wrapItems-item_text">
+                <a href="javascript:void(0)" class="likeBtn"></a>
+                <a href="product.html" class="name">Redmi Note 5 Pro (Gold, 64
+                    GB)</a>
+                <div class="rating_info">
+                    <div class="rating" style="background-color: #37be5f;">
+                        <span>4.4</span>
+                        <img src="../../images/star.svg" alt="star">
+                    </div>
+                    <p>(1 503)</p>
+                    <div class="logo">
+                        <img src="../../images/assured.png" alt="assured">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="price-new">₽19 499</p>
+                    <p class="price-old">35499</p>
+                    <p class="price-discount">45% off</p>
+                </div>
+
+                <p class="subText">Exchange Offer, No Cost EMI</p>
+            </div>
+
+            <div class="specifications__wrap">
+                <div class="specification">
+                    3 GB RAM | 32 GB St...11111
+                </div>
+                <div class="specification">
+                    15.21 cm (5.99 inch)...11111
+                </div>
+                <div class="specification">
+                    3080 mAh
+                </div>
+            </div>
+        </div>
+
+        <div class="search__wrapItems-item">
+            <div class="search__wrapItems-item_img">
+                <a href="product.html" class="itemLink"></a>
+                <span class="mark">ON OFFER</span>
+                <img src="../../images/searchImg6.jpg" alt="image">
+            </div>
+
+            <div class="search__wrapItems-item_text">
+                <a href="javascript:void(0)" class="likeBtn"></a>
+                <a href="product.html" class="name">Redmi Note 6 Pro (Blue, 64
+                    GB)</a>
+                <div class="rating_info">
+                    <div class="rating" style="background-color: #37be5f;">
+                        <span>4.1</span>
+                        <img src="../../images/star.svg" alt="star">
+                    </div>
+                    <p>(3 947)</p>
+                    <div class="logo">
+                        <img src="../../images/assured.png" alt="assured">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="price-new">₽7 499</p>
+                    <p class="price-old">11499</p>
+                    <p class="price-discount">34% off</p>
+                </div>
+
+                <p class="subText">Exchange Offer, No Cost EMI</p>
+            </div>
+
+            <div class="specifications__wrap">
+                <div class="specification">
+                    3 GB RAM | 32 GB St...11111
+                </div>
+                <div class="specification">
+                    15.21 cm (5.99 inch)...11111
+                </div>
+                <div class="specification">
+                    3080 mAh
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Начало Всплывающее Сортировки -->
+    <div class="sorting-popup overlay">
+        <div class="closePopup close"></div>
+        <div class="wrapper-popup">
+            <p class="title">Параметры сортировки</p>
+            <fieldset>
+                <p>
+                    <input type="radio" name="radio-1" id="radio-1" class="radioBtn" checked>
+                    <label for="radio-1">Актуальность</label>
+                </p>
+                <p>
+                    <input type="radio" name="radio-1" id="radio-2" class="radioBtn">
+                    <label for="radio-2">популярность</label>
+                </p>
+                <p>
+                    <input type="radio" name="radio-1" id="radio-3" class="radioBtn">
+                    <label for="radio-3">Цена - по убыванию</label>
+                </p>
+                <p>
+                    <input type="radio" name="radio-1" id="radio-4" class="radioBtn">
+                    <label for="radio-4">Цена - от низкой к высокой</label>
+                </p>
+                <p>
+                    <input type="radio" name="radio-1" id="radio-5" class="radioBtn">
+                    <label for="radio-5">Новички вперед</label>
+                </p>
+            </fieldset>
+            <div class="popup_btns">
+                <a href="javascript:void(0)" class="closePopup cancel">Отменить</a>
+                <a href="javascript:void(0)" class="closePopup toApply">Применить</a>
+            </div>
+        </div>
+    </div>
+    <!-- Конец Всплывающее Сортировки -->
+
+
+    <!--Начало Всплывающее Фильтры -->
+    <div class="filtering-popup overlay">
+        <div class="closePopup close"></div>
+        <div class="wrapper-popup">
+            <div class="popupHeader">
+                <div class="wrap">
+                    <span class="closePopup"></span>
+                    <p class="title">Фильтр</p>
+                </div>
+                <a href="javascript:void(0)" class="clearBtn">Очистить</a>
+            </div>
+
+            <div class="popupBody">
+                <div class="popupPrice">
+                    <div class="price">
+                        <div class="price-number">
+                            <div class="blk">
+                                <div class="label">Min Price</div>
+                                <div class="number">Min</div>
+                            </div>
+                            <div class="blk">
+                                <div class="label">Max Price</div>
+                                <div class="number">₽50000+</div>
+                            </div>
+                        </div>
+                        <div id="slider-range"></div>
+                    </div>
+                </div>
+                <div class="popupCheck">
+                    <label class="popupCheck-title" for="c1">
+                        Flipkart Assured
+                    </label>
+                    <div class="popupCheck-item">
+                        <input id="c1" type="checkbox">
+                    </div>
+                </div>
+                <div class="popupFilters">
+
+                    <div class="popupFilters-row">
+                        <h4>
+                        Category
+                        <span class="blue">Mobiles</span>
+                    </h4>
+                        <div class="search__filters-dropdown ">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">Mobiles</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Mobiles</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Mobiles</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="popupFilters-row">
+                        <h4>
+                        RAM
+                        <span class="grey">Higher the RAM, Better the Performance</span>
+                    </h4>
+                        <div class="search__filters-dropdown ">
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="v1" type="checkbox" checked>
+                                    <label for="v1">value1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="v2" type="checkbox">
+                                    <label for="v2">value2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popupFilters-row">
+                        <h4>
+                        Brand
+                    </h4>
+                        <div class="search__filters-dropdown ">
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="v3" type="checkbox" checked>
+                                    <label for="v3">value1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="v4" type="checkbox">
+                                    <label for="v4">value2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popupFilters-row">
+                        <h4>
+                        Customer Ratings
+                    </h4>
+                        <div class="search__filters-dropdown ">
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="v5" type="checkbox" checked>
+                                    <label for="v5">value1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="v6" type="checkbox">
+                                    <label for="v6">value2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popupFilters-row">
+                        <h4>
+                        Internal Storage
+                    </h4>
+                        <div class="search__filters-dropdown ">
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="v7" type="checkbox" checked>
+                                    <label for="v7">value1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="v8" type="checkbox">
+                                    <label for="v8">value2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popupFilters-row">
+                        <h4>
+                        Brand
+                    </h4>
+                        <div class="search__filters-dropdown ">
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="v31" type="checkbox" checked>
+                                    <label for="v31">value1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="v41" type="checkbox">
+                                    <label for="v41">value2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popupFilters-row">
+                        <h4>
+                        Customer Ratings
+                    </h4>
+                        <div class="search__filters-dropdown ">
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="v51" type="checkbox" checked>
+                                    <label for="v51">value1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="v61" type="checkbox">
+                                    <label for="v61">value2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popupFilters-row">
+                        <h4>
+                        Internal Storage
+                    </h4>
+                        <div class="search__filters-dropdown ">
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="v71" type="checkbox" checked>
+                                    <label for="v71">value1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="v81" type="checkbox">
+                                    <label for="v81">value2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popupFilters-showMore">
+                        <a id="moreFilters" href="javascript:void(0)">+ MORE FILTERS</a>
+                    </div>
+
+                </div>
+                <div class="popupResult">
+                    <p>10 325 results</p>
+                    <a href="javascript:void(0)" class="closePopup apply">Apply</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Конец Всплывающее Фильтры -->
+
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jcf.min.js"></script>
+    <script src="../../js/jcf.checkbox.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../js/mobile/script.min.js"></script>
+    <script src="../../js/mobile/search-page.min.js"></script>
+</body>
+
+</html>

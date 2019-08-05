@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>История заказов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo-mob.png">
+    <link rel="stylesheet" href="../../css/desktop/style.css">
+    <link rel="stylesheet" href="../../css/desktop/purchase-history.css">
+</head>
+
+<body>
+
+    <!-- request for refund popup -->
+    <div class="overlay-popup overlay-refund">
+        <div class="close"></div>
+        <div class="refund-popup">
+            <span class="close-popup"></span>
+            <div class="content">
+                <h3>Please leave your information below for us to contact you</h3>
+                <form>
+                    <div class="form-wrap">
+                        <div class="form-input">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="form-input">
+                            <input type="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-textarea">
+                        <textarea placeholder="Your comment "></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="closing open-thanks">continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- hanks popup -->
+    <div class="overlay-popup overlay-thanks">
+        <div class="close"></div>
+        <div class="thanks-popup">
+            <span class="close-popup"></span>
+            <div class="content">
+                <p>Thank you for your request. We will contact you as soon as possible</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- login popup -->
+    <div class="overlay-popup overlay-login">
+        <div class="close"></div>
+        <div class="login-popup">
+            <span class="close-popup"></span>
+            <div class="flex-wrap">
+                <div class="popup_header">
+                    <p><span>Login</span> Get access to your Orders, Wishlist and Recommendations
+                    </p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <form>
+                        <div class="form-input">
+                            <input type="text" placeholder=" " required>
+                            <span class="floating-label">Enter Email/Mobile number</span>
+                            <span class="error-msg">Please enter valid Email/Mobile number</span>
+                        </div>
+                        <div class="form-input">
+                            <input type="password" placeholder=" " required>
+                            <span class="floating-label">Enter Password</span>
+                            <a href="javascript:void(0)">Forgot?</a>
+                            <span class="error-msg">Please enter valid Password</span>
+                        </div>
+                        <div class="form-button">
+                            <button>Login</button>
+                        </div>
+                        <p>OR</p>
+                        <div class="form-button white">
+                            <button>Request OTP</button>
+                        </div>
+                        <div class="form-link">
+                            <a href="javascript:void(0)" class="closeBtn open-registration">New to Flipkart? Create an account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end login popup -->
+
+    <!-- check in popup -->
+    <div class="overlay-popup overlay-checkIn">
+        <div class="close"></div>
+        <div class="checkIn-popup">
+            <span class="close-popup"></span>
+            <div class="flex-wrap">
+                <div class="popup_header">
+                    <p><span>Signup</span> We do not share your personal details with anyone.
+                    </p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <div class="step step1 active">
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Full name</span>
+                                <span class="error-msg">Please enter valid Your Full name</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="email" placeholder=" " required>
+                                <span class="floating-label">Enter Your Email</span>
+                                <span class="error-msg">Please enter valid Email</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Mobile Number</span>
+                                <span class="error-msg">Please enter valid Mobile Number</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step2" class="nextStep">CONTINUE</button>
+                            </div>
+                            <div class="form-button white">
+                                <button class="closePopup open-login">Existing user? Log in</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step2">
+                        <h4>You will receive a 4-digit number 
+                            on you phone within 1 minute.</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter your code</span>
+                                <span class="error-msg">Please enter valid your code</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step3" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step3">
+                        <h4>Create your password</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Confirm your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step4" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step4">
+                        <h4><span>Congratulations!</span>
+                        <span>Your account has been created.</span></h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Email/Mobile number</span>
+                                <span class="error-msg">Please enter valid Email/Mobile number</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter Password</span>
+                                <a href="javascript:void(0)">Forgot?</a>
+                                <span class="error-msg">Please enter valid Password</span>
+                            </div>
+                            <div class="form-button">
+                                <button>Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="top-line">
+            <div class="container">
+                <div class="flex-wrap">
+                    <div class="flex-item">
+                        <a href="index.html" class="header_logo">
+                            <img src="../../images/logo-desktop.png" alt="logo">
+                        </a>
+                        <div class="header_search">
+                            <form class="form-search">
+                                <input name="text" class="search-query" type="text" placeholder="Поиск продуктов, брендов и другое">
+                                <button class="button"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="header-topMenu">
+                            <ul>
+                                <li>
+                                    <a id="registration" href="#">Вход и Регистрация</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <form class="shopingCartForm" action="#" id="shopingCartForm">
+        <section class="shopingCart">
+            <div class="container">
+                <div class="shopingCart__wrap">
+                    <div class="shopingCart__wrap-left">
+                        <div class="heading">
+                            <h2 class="title">MY HISTORY (3)</h2>
+                            <div class="checkPincode">
+                                <input type="text" class="checkPincode-input" id="checkPincode-input" placeholder="Enter Delivery Pincode">
+                                <button class="button" id="checkPincode-btn">Check</button>
+                                <div class="show-msg">
+                                    <p>Enter pincode</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cartItem">
+                            <div class="cartItem__left">
+                                <div class="cartItem__left-img">
+                                    <a href="product.html">
+                                        <img src="../../images/single-product/Recently-img1.jpg" alt="img">
+                                    </a>
+                                </div>
+                                <div class="cartItem__left-inc_dec">
+                                    <div class="dec inc_dec_btn"></div>
+                                    <input type="number" id="quantityOfGoods" value="1">
+                                    <div class="inc inc_dec_btn"></div>
+                                </div>
+                            </div>
+                            <div class="cartItem__right">
+                                <div class="cartItem__right-content">
+                                    <a href="product.html" class="title">iVooMi i1s (Platinum Gold, 32 GB)</a>
+                                    <p class="sub-info">3 GB RAM</p>
+                                    <div class="flex-wrap">
+                                        <p>Seller: ssretell</p>
+                                        <!-- <img src="../../images/assured.png" alt="img" class="logo"> -->
+                                    </div>
+                                    <div class="price">
+                                        <p class="price-new">₽6,999</p>
+                                        <div class="price-sub">
+                                            1 Offer Available
+                                            <div class="tooltip">
+                                                <p class="icon">i</p>
+                                                <div class="tooltip-text">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action">
+                                        <a href="javascript:void(0)">SAVE FOR LATER</a>
+                                        <a href="javascript:void(0)">REMOVE</a>
+                                    </div>
+                                </div>
+                                <div class="cartItem__right-delivery">
+                                    <p class="info">Delivery by, Sun Feb 23 |
+                                        <span class="free"> Free</span>
+                                    </p>
+                                    <p class="sub">10 Days Replacement Policy</p>
+                                    <div class="status delivering">
+                                        <img src="../../images/delivery-truck_icon.png" alt="delivery"><span>Delivering</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="open-refund">request for refund</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cartItem">
+                            <div class="cartItem__left">
+                                <div class="cartItem__left-img">
+                                    <a href="product.html">
+                                        <img src="../../images/single-product/Recently-img2.jpg" alt="img">
+                                    </a>
+                                </div>
+                                <div class="cartItem__left-inc_dec">
+                                    <div class="dec inc_dec_btn"></div>
+                                    <input type="number" id="quantityOfGoods2" value="1">
+                                    <div class="inc inc_dec_btn"></div>
+                                </div>
+                            </div>
+                            <div class="cartItem__right">
+                                <div class="cartItem__right-content">
+                                    <a href="product.html" class="title">American Tourister Fizz Sch Bag 32.5 L Backpack</a>
+                                    <p class="sub-info">Grey</p>
+                                    <div class="flex-wrap">
+                                        <p>Seller: RetailNet</p>
+                                        <img src="../../images/assured.png" alt="img" class="logo">
+                                    </div>
+                                    <div class="price">
+                                        <p class="price-new">₽1,139</p>
+                                        <p class="price-old">₽ 2,300</p>
+                                        <div class="price-sub">50% Off 1 Offer Available
+                                            <div class="tooltip">
+                                                <p class="icon">i</p>
+                                                <div class="tooltip-text">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action">
+                                        <a href="javascript:void(0)">SAVE FOR LATER</a>
+                                        <a href="javascript:void(0)">REMOVE</a>
+                                    </div>
+                                </div>
+                                <div class="cartItem__right-delivery">
+                                    <p class="info">Delivery by, Thu Feb 21 |
+                                        <span class="free"> Free</span>
+                                        <span class="price">₽40</span>
+                                    </p>
+                                    <div class="status processing">
+                                        <img src="../../images/processing.png" alt="delivery"><span>Processing</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="open-refund">request for refund</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cartItem">
+                            <div class="cartItem__left">
+                                <div class="cartItem__left-img">
+                                    <a href="product.html">
+                                        <img src="../../images/single-product/Recently-img3.jpg" alt="img">
+                                    </a>
+                                </div>
+                                <div class="cartItem__left-inc_dec">
+                                    <div class="dec inc_dec_btn"></div>
+                                    <input type="number" id="quantityOfGoods3" value="1">
+                                    <div class="inc inc_dec_btn"></div>
+                                </div>
+                            </div>
+                            <div class="cartItem__right">
+                                <div class="cartItem__right-content">
+                                    <a href="product.html" class="title">Mi Pocket 5 W Bluetooth Speaker</a>
+                                    <p class="sub-info">Black, Mono Channel</p>
+                                    <div class="flex-wrap">
+                                        <p>Seller: RetailNet</p>
+                                        <img src="../../images/assured.png" alt="img" class="logo">
+                                    </div>
+                                    <div class="price">
+                                        <p class="price-new">₽1,499</p>
+                                        <div class="price-sub"> 1 Offer Available
+                                            <div class="tooltip">
+                                                <p class="icon">i</p>
+                                                <div class="tooltip-text">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action">
+                                        <a href="javascript:void(0)">SAVE FOR LATER</a>
+                                        <a href="javascript:void(0)">REMOVE</a>
+                                    </div>
+                                </div>
+                                <div class="cartItem__right-delivery">
+                                    <p class="info">Delivery by, Mon Feb 25 |
+                                        <span class="free"> Free</span>
+                                        <span class="price">₽40</span>
+                                    </p>
+                                    <p class="sub">10 Days Replacement Policy</p>
+                                    <div class="status received">
+                                        <i class="icon-checked"></i> <span>Received</span>
+                                    </div>
+                                    <a href="javascript:void(0)" class="open-refund">request for refund</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom">
+                            <a class="continue_shopping" href="index.html">CONTINUE SHOPPING</a>
+                        </div>
+                    </div>
+                    <div class="shopingCart__wrap-right">
+
+                        <div class="cart-banner">
+                            <a href="javascript:void(0)">
+                                <img src="../../images/single-product/white-banner.png" alt="banner">
+                            </a>
+                        </div>
+
+                        <div class="secure-info">
+                            <p>
+                                Safe and Secure Payments. Easy returns. 100% Authentic products.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__wrapper_policy">
+                    <p>Policies:</p>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">Returns Policy </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Terms of use </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Security </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Privacy </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Infringement </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p> © 2007-2019 Flipkart.com.</p>
+                </div>
+                <div class="footer__wrapper_help">
+                    <p>Need help? Visit the<a href="javascript:void(0)"> Help Center</a> or <a href="javascript:void(0)">Contact Us</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- popup -->
+    <div class="overlay-popup">
+        <div class="close"></div>
+        <div class="wrapper-popup">
+            <span class="close-popup"></span>
+            <div class="flex-wrap">
+                <div class="popup_header">
+                    <p><span>Login</span> Получите доступ к своим заказам, пожеланиям, и рекомандациям</p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <form>
+                        <input type="text" placeholder="Введите  E-mail/Телефон">
+                        <button>Продолжить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/desktop/purchase-history.min.js"></script>
+
+    <script src="../../js/desktop/script.min.js"></script>
+</body>
+
+</html>

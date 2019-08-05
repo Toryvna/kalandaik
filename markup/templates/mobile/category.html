@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Category</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo-mob.png">
+    <link rel="stylesheet" href="../../css/mobile/style.css">
+    <link rel="stylesheet" href="../../css/mobile/category.css">
+</head>
+
+<body>
+
+    <!-- mobile popups -->
+    <div class="overlay-popup overlay-login">
+        <div class="close"></div>
+        <div class="login-popup">
+            <div class="wrapper">
+                <span class="close-popup"></span>
+                <div class="popup_header">
+                    <h3>Login</h3>
+                    <p>Get access to your Orders, Wishlist and Recommendations</p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <form>
+                        <div class="form-input">
+                            <input type="text" placeholder=" " required>
+                            <span class="floating-label">Enter Email/Mobile number</span>
+                            <span class="error-msg">Please enter valid Email/Mobile number</span>
+                        </div>
+                        <div class="form-input">
+                            <input type="password" placeholder=" " required>
+                            <span class="floating-label">Enter Password</span>
+                            <a href="javascript:void(0)">Forgot?</a>
+                            <span class="error-msg">Please enter valid Password</span>
+                        </div>
+                        <div class="form-button">
+                            <button>Login</button>
+                        </div>
+                        <p>OR</p>
+                        <div class="form-button white">
+                            <button>Request OTP</button>
+                        </div>
+                        <div class="form-link">
+                            <a href="javascript:void(0)" class="closeBtn open-registration">New to Flipkart? Create an account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-popup overlay-registration">
+        <div class="close"></div>
+        <div class="registration-popup">
+            <div class="wrapper">
+                <span class="close-popup"></span>
+                <div class="popup_header">
+                    <h3>Sign up</h3>
+                    <p>We do not share your personal details with anyone</p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <div class="step step1 active">
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Full name</span>
+                                <span class="error-msg">Please enter valid Your Full name</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="email" placeholder=" " required>
+                                <span class="floating-label">Enter Your Email</span>
+                                <span class="error-msg">Please enter valid Email</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Mobile Number</span>
+                                <span class="error-msg">Please enter valid Mobile Number</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step2" class="nextStep">CONTINUE</button>
+                            </div>
+                            <div class="form-button white">
+                                <button class="closeButton open-login">Existing user? Log in</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step2">
+                        <h4>You will receive a 4-digit number 
+                            on you phone within 1 minute.</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter your code</span>
+                                <span class="error-msg">Please enter valid your code</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step3" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step3">
+                        <h4>Create your password</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Confirm your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step4" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step4">
+                        <h4><span>Congratulations!</span>
+                        <span>Your account has been created.</span></h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Email/Mobile number</span>
+                                <span class="error-msg">Please enter valid Email/Mobile number</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter Password</span>
+                                <a href="javascript:void(0)">Forgot?</a>
+                                <span class="error-msg">Please enter valid Password</span>
+                            </div>
+                            <div class="form-button">
+                                <button>Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="header_top-line">
+
+                <div class="flex-wrap">
+                    <div class="flex-item">
+                        <a onclick="javascript:history.back(); return false;" href="" class="back_link"></a>
+                    </div>
+
+                    <div class="flex-item">
+                        <a href="index.html" class="header_logo">
+                            <img src="../../images/logo-mob.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="flex-item pageTitle">
+                        <p class="title">Washing Machines</p>
+                    </div>
+
+                    <div class="flex-item header_search">
+                        <a href="#" class="mobileSearch"></a>
+                    </div>
+
+                    <div class="flex-item links">
+                        <a href="cart.html" class="header_cart__link">
+                            <span class="cartAmount">3</span>
+                        </a>
+                        <div class="registration header_login__link">Логин</div>
+                    </div>
+                </div>
+
+                <!-- Начало строки поиска -->
+                <div class="searchLine">
+                    <form class="form-search">
+                        <input name="text" class="search-query" type="search" placeholder="Поиск продуктов, брендов и другое">
+                        <button class="button"></button>
+                    </form>
+                    <div class="searchLine-close"></div>
+                </div>
+                <!-- Конец строки поиска -->
+
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <a href="product.html">
+            <img src="../../images/category/banner1.jpg" alt="">
+        </a>
+    </section>
+
+    <section class="brands">
+        <div class="container">
+            <h2>Shop by Brands</h2>
+            <div class="flex-wrap">
+                <div class="item">
+                    <a href="product.html">
+                        <img src="../../images/category/brand1.jpg" alt="product">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="product.html">
+                        <img src="../../images/category/brand2.jpg" alt="product">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="product.html">
+                        <img src="../../images/category/brand3.jpg" alt="product">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="product.html">
+                        <img src="../../images/category/brand4.jpg" alt="product">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="product.html">
+                        <img src="../../images/category/brand5.jpg" alt="product">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="product.html">
+                        <img src="../../images/category/brand6.jpg" alt="product">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="types">
+        <div class="container">
+            <h2>Shop by Type</h2>
+            <div class="flex-wrap">
+                <div class="item">
+                    <a href="javascript:void(0)">
+                        <img src="../../images/category-img.jpg" alt="">
+                        <p>Top Load</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="javascript:void(0)">
+                        <img src="../../images/category-img.jpg" alt="">
+                        <p>Front Load</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="javascript:void(0)">
+                        <img src="../../images/category-img.jpg" alt="">
+                        <p>Semi Automatic</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="javascript:void(0)">
+                        <img src="../../images/category-img.jpg" alt="">
+                        <p>Washer and Dryer</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <a href="product.html">
+            <img src="../../images/category/banner2.jpg" alt="">
+        </a>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <div class="heading">
+                <p>Deals on Washing Machines
+                </p>
+                <a href="catalog.html" class="btn">view all</a>
+            </div>
+            <div class="flex-wrap">
+                <a class="product" href="product.html">
+                    <div class="productImg">
+                        <img src="../../images/category/item.jpg" alt="product">
+                    </div>
+                    <div class="productText">
+                        <h3>Haier 6 kg Fully AuAuAuAuAuAu</h3>
+                        <span>#1 Best Seller</span>
+                        <div class="price">
+                            <p class="price-new">₽12,490</p>
+                            <p class="price-old">₽15,450</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="product" href="product.html">
+                    <div class="productImg">
+                        <img src="../../images/category/item.jpg" alt="product">
+                    </div>
+                    <div class="productText">
+                        <h3>Haier 6 kg Fully AuAuAuAuAuAu</h3>
+                        <span>#1 Best Seller</span>
+                        <div class="price">
+                            <p class="price-new">₽12,490</p>
+                            <p class="price-old">₽15,450</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="product" href="product.html">
+                    <div class="productImg">
+                        <img src="../../images/category/item.jpg" alt="product">
+                    </div>
+                    <div class="productText">
+                        <h3>Haier 6 kg Fully AuAuAuAuAuAu</h3>
+                        <span>#1 Best Seller</span>
+                        <div class="price">
+                            <p class="price-new">₽12,490</p>
+                            <p class="price-old">₽15,450</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="product" href="product.html">
+                    <div class="productImg">
+                        <img src="../../images/category/item.jpg" alt="product">
+                    </div>
+                    <div class="productText">
+                        <h3>Haier 6 kg Fully AuAuAuAuAuAu</h3>
+                        <span>#1 Best Seller</span>
+                        <div class="price">
+                            <p class="price-new">₽12,490</p>
+                            <p class="price-old">₽15,450</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <a href="product.html">
+            <img src="../../images/category/banner3.jpg" alt="">
+        </a>
+    </section>
+
+    <script src="../../js/jquery.min.js"></script>
+
+    <script src="../../js/mobile/script.min.js"></script>
+    <script src="../../js/mobile/category.min.js"></script>
+</body>
+
+</html>

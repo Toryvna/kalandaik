@@ -1,0 +1,2630 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Category</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo-mob.png">
+    <link rel="stylesheet" href="../../css/desktop/style.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/desktop/category.css">
+</head>
+
+<body>
+    <!-- login popup -->
+    <div class="overlay-popup overlay-login">
+        <div class="close"></div>
+        <div class="login-popup">
+            <span class="close-popup"></span>
+            <div class="flex-wrap">
+                <div class="popup_header">
+                    <p><span>Login</span> Get access to your Orders, Wishlist and Recommendations
+                    </p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <form>
+                        <div class="form-input">
+                            <input type="text" placeholder=" " required>
+                            <span class="floating-label">Enter Email/Mobile number</span>
+                            <span class="error-msg">Please enter valid Email/Mobile number</span>
+                        </div>
+                        <div class="form-input">
+                            <input type="password" placeholder=" " required>
+                            <span class="floating-label">Enter Password</span>
+                            <a href="javascript:void(0)">Forgot?</a>
+                            <span class="error-msg">Please enter valid Password</span>
+                        </div>
+                        <div class="form-button">
+                            <button>Login</button>
+                        </div>
+                        <p>OR</p>
+                        <div class="form-button white">
+                            <button>Request OTP</button>
+                        </div>
+                        <div class="form-link">
+                            <a href="javascript:void(0)" class="closeBtn open-registration">New to Flipkart? Create an account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end login popup -->
+
+    <!-- check in popup -->
+    <div class="overlay-popup overlay-checkIn">
+        <div class="close"></div>
+        <div class="checkIn-popup">
+            <span class="close-popup"></span>
+            <div class="flex-wrap">
+                <div class="popup_header">
+                    <p><span>Signup</span> We do not share your personal details with anyone.
+                    </p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <div class="step step1 active">
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Full name</span>
+                                <span class="error-msg">Please enter valid Your Full name</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="email" placeholder=" " required>
+                                <span class="floating-label">Enter Your Email</span>
+                                <span class="error-msg">Please enter valid Email</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Mobile Number</span>
+                                <span class="error-msg">Please enter valid Mobile Number</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step2" class="nextStep">CONTINUE</button>
+                            </div>
+                            <div class="form-button white">
+                                <button class="closePopup open-login">Existing user? Log in</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step2">
+                        <h4>You will receive a 4-digit number 
+                            on you phone within 1 minute.</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter your code</span>
+                                <span class="error-msg">Please enter valid your code</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step3" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step3">
+                        <h4>Create your password</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Confirm your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step4" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step4">
+                        <h4><span>Congratulations!</span>
+                        <span>Your account has been created.</span></h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Email/Mobile number</span>
+                                <span class="error-msg">Please enter valid Email/Mobile number</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter Password</span>
+                                <a href="javascript:void(0)">Forgot?</a>
+                                <span class="error-msg">Please enter valid Password</span>
+                            </div>
+                            <div class="form-button">
+                                <button>Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="top-line">
+            <div class="container">
+                <div class="flex-wrap">
+                    <div class="flex-item">
+                        <a href="index.html" class="header_logo">
+                            <img src="../../images/logo-desktop.png" alt="logo">
+                        </a>
+                        <div class="header_search">
+                            <form class="form-search" action="search-page.html" method="get">
+                                <input name="text" class="search-query" type="text" placeholder="Поиск продуктов, брендов и другое">
+                                <button class="button"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="header-topMenu">
+                            <ul>
+                                <li>
+                                    <a id="registration" href="javascript:void(0)">Вход и Регистрация</a>
+                                </li>
+                                <li class="other">
+                                    <a href="javascript:void(0)">Другое</a>
+                                    <div class="header_otherMenu">
+                                        <nav>
+                                            <ul>
+                                                <li class="sell">
+                                                    <a href="javascript:void(0)">Sell on Flipkart</a>
+                                                </li>
+                                                <li class="customer_care">
+                                                    <a href="javascript:void(0)">24x7 Customer Care</a>
+                                                </li>
+                                                <li class="advertise">
+                                                    <a href="javascript:void(0)">Advertise</a>
+                                                </li>
+                                                <li class="download_app">
+                                                    <a href="javascript:void(0)">Download App</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </li>
+                                <li class="headerCart">
+                                    <a href="cart.html">
+                                    Корзина
+                                    <span class="cartAmount">3</span>
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mainMenu">
+            <div class="container">
+                <nav class="main-menu">
+                    <ul>
+                        <li>
+                            <a href="catalog.html">Авто</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobiles</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mi</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Samsung</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Infinix</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">OPPO</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Vivo</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Honor</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Pixel 3|3XL</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max Pro M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Redmi Note 6 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">POCO F1</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme 2 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">iPhone XR</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobile Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cases</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Headphones & Headsets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Screenguards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Memory Cards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Headphones</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cables</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Chargers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Holders</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Wearable Tech</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Watches</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Glasses (VR)</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Bands</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Health Care Appliances</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bp Monitors</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Weighing Scale</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Laptops</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Gaming Laptops</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Desktop PCs</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Gaming & Accessories</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">External Hard Disks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Pendrives</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Skins & Decals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Bags</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mouse</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Peripherals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Printers & Ink Cartridges</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Monitors</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Tablets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple iPads</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="catalog.html">Televisions</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Home Entertainment</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Audio Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Theatres</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bluetooth Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DTH Set Top Box</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Home Automation</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Camera</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DSLR</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Compact & Bridge Cameras</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sports & Action</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Camera Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lens</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Tripods</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Network Components</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Routers</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Featured</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptops on Buyback Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Flipkart SmartBuy</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Li-Polymer Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sony PS4 Pro & Slim</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Microsoft Store</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lenovo Phab Series</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">JBL Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smartphones On Buyback</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Philips</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Dr. Morepen</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Extended Warranty</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Damage Protection</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Электроника</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobiles22</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mi</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Samsung</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Infinix</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">OPPO</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Vivo</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Honor</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Pixel 3|3XL</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max Pro M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Redmi Note 6 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">POCO F1</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme 2 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">iPhone XR</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobile Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cases</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Headphones & Headsets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Screenguards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Memory Cards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Headphones</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cables</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Chargers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Holders</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Wearable Tech</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Watches</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Glasses (VR)</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Bands</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Health Care Appliances</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bp Monitors</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Weighing Scale</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Laptops</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Gaming Laptops</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Desktop PCs</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Gaming & Accessories</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">External Hard Disks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Pendrives</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Skins & Decals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Bags</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mouse</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Peripherals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Printers & Ink Cartridges</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Monitors</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Tablets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple iPads</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="catalog.html">Televisions</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Home Entertainment</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Audio Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Theatres</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bluetooth Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DTH Set Top Box</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Home Automation</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Camera</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DSLR</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Compact & Bridge Cameras</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sports & Action</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Camera Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lens</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Tripods</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Network Components</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Routers</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Featured</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptops on Buyback Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Flipkart SmartBuy</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Li-Polymer Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sony PS4 Pro & Slim</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Microsoft Store</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lenovo Phab Series</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">JBL Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smartphones On Buyback</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Philips</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Dr. Morepen</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Extended Warranty</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Damage Protection</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Туризм</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobiles33</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mi</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Samsung</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Infinix</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">OPPO</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Vivo</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Honor</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Pixel 3|3XL</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max Pro M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Redmi Note 6 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">POCO F1</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme 2 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">iPhone XR</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobile Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cases</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Headphones & Headsets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Screenguards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Memory Cards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Headphones</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cables</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Chargers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Holders</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Wearable Tech</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Watches</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Glasses (VR)</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Bands</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Health Care Appliances</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bp Monitors</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Weighing Scale</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Laptops</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Gaming Laptops</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Desktop PCs</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Gaming & Accessories</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">External Hard Disks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Pendrives</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Skins & Decals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Bags</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mouse</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Peripherals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Printers & Ink Cartridges</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Monitors</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Tablets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple iPads</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="catalog.html">Televisions</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Home Entertainment</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Audio Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Theatres</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bluetooth Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DTH Set Top Box</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Home Automation</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Camera</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DSLR</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Compact & Bridge Cameras</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sports & Action</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Camera Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lens</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Tripods</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Network Components</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Routers</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Featured</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptops on Buyback Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Flipkart SmartBuy</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Li-Polymer Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sony PS4 Pro & Slim</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Microsoft Store</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lenovo Phab Series</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">JBL Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smartphones On Buyback</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Philips</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Dr. Morepen</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Extended Warranty</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Damage Protection</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Отдых</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobiles444</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mi</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Samsung</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Infinix</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">OPPO</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Vivo</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Honor</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Pixel 3|3XL</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max Pro M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Redmi Note 6 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">POCO F1</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Realme 2 Pro</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Asus Zenfone Max M2</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">iPhone XR</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Mobile Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cases</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Headphones & Headsets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Screenguards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Memory Cards</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Headphones</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Cables</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Chargers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobile Holders</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Wearable Tech</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Watches</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Glasses (VR)</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smart Bands</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Health Care Appliances</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bp Monitors</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Weighing Scale</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Laptops</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Gaming Laptops</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Desktop PCs</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Gaming & Accessories</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">External Hard Disks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Pendrives</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Skins & Decals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptop Bags</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mouse</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Computer Peripherals</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Printers & Ink Cartridges</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Monitors</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Tablets</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple iPads</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="catalog.html">Televisions</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Home Entertainment</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Audio Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Home Theatres</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Bluetooth Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DTH Set Top Box</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Smart Home Automation</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Google Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Camera</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">DSLR</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Compact & Bridge Cameras</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sports & Action</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Camera Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lens</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Tripods</a>
+                                        </li>
+                                        <li class="title">
+                                            <a href="catalog.html">Network Components</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Routers</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="title">
+                                            <a href="catalog.html">Featured</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Laptops on Buyback Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Flipkart SmartBuy</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Li-Polymer Power Banks</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Sony PS4 Pro & Slim</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Apple Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Microsoft Store</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Lenovo Phab Series</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">JBL Speakers</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Smartphones On Buyback</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Philips</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Dr. Morepen</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Extended Warranty</a>
+                                        </li>
+                                        <li>
+                                            <a href="catalog.html">Mobiles with Damage Protection</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog-flex">
+                <div class="catalog__left">
+                    <div class="catalog__filters">
+                        <div class="catalog__filters-row">
+                            <div class="heading">
+                                <p class="title">Filters</p>
+                                <a href="javascript:void(0)" class="clearBth">CLEAR ALL</a>
+                            </div>
+                            <div class="tags">
+                                <div class="tag">
+                                    <div class="close-tag"></div>
+                                    <p>Thomson</p>
+                                </div>
+                                <div class="tag">
+                                    <div class="close-tag"></div>
+                                    <p>Exclude Out of Stock</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__filters-row">
+                            <h4>CATEGORIES</h4>
+                            <a class="homePage" href="index.html">Home Entertainment</a>
+                        </div>
+                        <div class="catalog__filters-row style2">
+                            <a href="javascript:void(0)" class="subLink">Televisions</a>
+                        </div>
+                        <div class="catalog__filters-row">
+                            <h4>PRICE</h4>
+                            <div class="price-range">
+                                <div id="slider-range"></div>
+                                <div class="select-rang">
+                                    <select class="startValue">
+                                        <option value="0">Min</option>
+                                        <option value="100">₽100</option>
+                                        <option value="200">₽200</option>
+                                        <option value="300">₽300</option>
+                                        <option value="400">₽400</option>
+                                    </select>
+                                    <span>to</span>
+                                    <select class="endValue">
+                                        <option value="50000">₽50000+</option>
+                                        <option value="1000">₽1000</option>
+                                        <option value="2000">₽2000</option>
+                                        <option value="3000">₽3000</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check-line">
+                            <div class="checkLogo">
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="a0" type="checkbox" checked>
+                                        <label for="a0">
+                                            <img src="../../images/assured.png" alt="img">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <span class="question-ico">?</span>
+                                <div class="question-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__filters-title active">
+                            <h4>BRAND</h4>
+                            <div class="catalog__filters-dropdown">
+                                <a href="javascript:void(0)" class="clearAll">
+                                    <span>x</span> Clear all
+                                </a>
+                                <div class="inputWrap">
+                                    <input type="text" class="searchInput" placeholder="Search Brand">
+                                </div>
+
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="a1" type="checkbox" checked>
+                                        <label for="a1">Thomson</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="a2" type="checkbox">
+                                        <label for="a2">MarQ by Flipkart</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="a3" type="checkbox">
+                                        <label for="a3">Mi</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="a4" type="checkbox">
+                                        <label for="a4">Vu</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="a5" type="checkbox">
+                                        <label for="a5">iFFALCON by TCL</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="a6" type="checkbox">
+                                        <label for="a6">iSamsung</label>
+                                    </div>
+                                    <div class="hiddenItems">
+                                        <div class="checkbox-item">
+                                            <input id="a7" type="checkbox">
+                                            <label for="a7">Mi</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input id="a8" type="checkbox">
+                                            <label for="a8">Vu</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input id="a9" type="checkbox">
+                                            <label for="a9">iFFALCON by TCL</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input id="a10" type="checkbox">
+                                            <label for="a10">iSamsung</label>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:void(0)" class="showAll">41 MORE</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters-title">
+                            <h4>SCREEN SIZE</h4>
+                            <div class="catalog__filters-dropdown">
+
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="ab1" type="checkbox" checked>
+                                        <label for="ab1">SIZE1</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="bb2" type="checkbox">
+                                        <label for="bb2">SIZE2</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters-title">
+                            <h4>SMART TV</h4>
+                            <div class="catalog__filters-dropdown">
+
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="b1" type="checkbox" checked>
+                                        <label for="b1">Yes</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="b2" type="checkbox">
+                                        <label for="b2">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters-title">
+                            <h4>CUSTOMER RATINGS</h4>
+                            <div class="catalog__filters-dropdown">
+
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="c1" type="checkbox" checked>
+                                        <label for="c1">4 * above</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="c2" type="checkbox">
+                                        <label for="c2">3 * above</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="c3" type="checkbox" checked>
+                                        <label for="c3">2 * above</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="c4" type="checkbox">
+                                        <label for="c4">1 * above</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters-title">
+                            <h4>RESOLUTION</h4>
+                            <div class="catalog__filters-dropdown">
+
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="RESOLUTION1" type="checkbox" checked>
+                                        <label for="RESOLUTION1">RESOLUTION1</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="RESOLUTION2" type="checkbox">
+                                        <label for="RESOLUTION2">RESOLUTION2</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters-title">
+                            <h4>OPERATING SYSTEM</h4>
+                            <div class="catalog__filters-dropdown">
+
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="os1" type="checkbox" checked>
+                                        <label for="os1">OPERATING SYSTEM1</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="os2" type="checkbox">
+                                        <label for="os2">OPERATING SYSTEM1</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters-title">
+                            <h4>CONNECTIVITY FEATURES</h4>
+                            <div class="catalog__filters-dropdown">
+
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="cf1" type="checkbox" checked>
+                                        <label for="cf1">CONNECTIVITY FEATURES</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="cf2" type="checkbox">
+                                        <label for="cf2">CONNECTIVITY FEATURES</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters-title">
+                            <h4>IDEAL FOR VIEWING DISTANCE</h4>
+                            <div class="catalog__filters-dropdown">
+
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="DISTANCE1" type="checkbox" checked>
+                                        <label for="DISTANCE1">value1</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="DISTANCE2" type="checkbox">
+                                        <label for="DISTANCE2">value2</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters-title">
+                            <h4>OFFERS</h4>
+                            <div class="catalog__filters-dropdown">
+
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="OFFERS1" type="checkbox" checked>
+                                        <label for="OFFERS1">OFFERS1</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="OFFERS2" type="checkbox">
+                                        <label for="OFFERS2">OFFERS2</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters-title">
+                            <h4>NUMBER OF HDMI PORTS</h4>
+                            <div class="catalog__filters-dropdown">
+
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="HDMI1" type="checkbox" checked>
+                                        <label for="HDMI1">HDMI1</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="HDMI2" type="checkbox">
+                                        <label for="HDMI2">HDMI2</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters-title">
+                            <h4>NUMBER OF USB PORTS</h4>
+                            <div class="catalog__filters-dropdown">
+
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="USB1" type="checkbox" checked>
+                                        <label for="USB1">USB1</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="USB2" type="checkbox">
+                                        <label for="USB2">USB2</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters-title">
+                            <h4>AVAILABILITY</h4>
+                            <div class="catalog__filters-dropdown">
+
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="AVAILABILITY1" type="checkbox" checked>
+                                        <label for="AVAILABILITY1">AVAILABILITY1</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="AVAILABILITY2" type="checkbox">
+                                        <label for="AVAILABILITY2">AVAILABILITY2</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters-title">
+                            <h4>DISCOUNT</h4>
+                            <div class="catalog__filters-dropdown">
+
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="DISCOUNT1" type="checkbox" checked>
+                                        <label for="DISCOUNT1">DISCOUNT1</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="DISCOUNT2" type="checkbox">
+                                        <label for="DISCOUNT2">DISCOUNT2</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters-title">
+                            <h4>SCREEN TYPE</h4>
+                            <div class="catalog__filters-dropdown">
+
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="TYPE1" type="checkbox" checked>
+                                        <label for="TYPE1">TYPE1</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="TYPE2" type="checkbox">
+                                        <label for="TYPE2">TYPE2</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters-title">
+                            <h4>CURVE TV</h4>
+                            <div class="catalog__filters-dropdown">
+
+                                <div class="checkbox">
+                                    <div class="checkbox-item">
+                                        <input id="TV1" type="checkbox" checked>
+                                        <label for="TV1">TV1</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="TV2" type="checkbox">
+                                        <label for="TV2">TV2</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__content">
+                    <div class="catalog__content-banners">
+                        <div class="flex-wrap">
+                            <a href="javascript:void(0)">
+                                <img src="../../images/category/banner1.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="../../images/category/banner2.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="../../images/category/banner3.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="catalog__content-brends">
+                        <h2>Shop by Brands</h2>
+                        <div class="brends_slider-wrap">
+                            <div class="brends_slider swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0)" class="link">
+                                            <div class="brendImg">
+                                                <img src="../../images/category/brand1.jpg" alt="product">
+                                            </div>
+                                            <h3>Samsung</h3>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0)" class="link">
+                                            <div class="brendImg">
+                                                <img src="../../images/category/brand2.jpg" alt="product">
+                                            </div>
+                                            <h3>Marq</h3>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0)" class="link">
+                                            <div class="brendImg">
+                                                <img src="../../images/category/brand3.jpg" alt="product">
+                                            </div>
+                                            <h3>IFB</h3>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0)" class="link">
+                                            <div class="brendImg">
+                                                <img src="../../images/category/brand4.jpg" alt="product">
+                                            </div>
+                                            <h3>LG</h3>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0)" class="link">
+                                            <div class="brendImg">
+                                                <img src="../../images/category/brand5.jpg" alt="product">
+                                            </div>
+                                            <h3>Whirpool</h3>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0)" class="link">
+                                            <div class="brendImg">
+                                                <img src="../../images/category/brand6.jpg" alt="product">
+                                            </div>
+                                            <h3>Bosch</h3>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0)" class="link">
+                                            <div class="brendImg">
+                                                <img src="../../images/category/brand7.jpg" alt="product">
+                                            </div>
+                                            <h3>Haier</h3>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0)" class="link">
+                                            <div class="brendImg">
+                                                <img src="../../images/category/brand5.jpg" alt="product">
+                                            </div>
+                                            <h3>Whirpool</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__content-banners">
+                        <h2>Shop by Type</h2>
+                        <div class="flex-wrap">
+                            <a href="javascript:void(0)">
+                                <img src="../../images/category/banner4.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="../../images/category/banner5.jpg" alt="">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="../../images/category/banner6.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="container">
+                            <div class="flex-wrap">
+                                <div class="blk">
+                                    <p>Deals on Washing Machines</p>
+                                </div>
+                                <div class="blk">
+                                    <a href="catalog.html" class="btn">view all</a>
+                                </div>
+                            </div>
+                            <div class="products_slider swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="product.html" class="product">
+                                            <div class="productImg">
+                                                <img src="../../images/category/item.jpg" alt="product">
+                                            </div>
+                                            <div class="productText">
+                                                <h3>Haier 6 kg Fully Automati Automati</h3>
+                                                <span>#1 Best Seller</span>
+                                                <div class="price">
+                                                    <p class="price-new">
+                                                        ₽12,490
+                                                    </p>
+                                                    <p class="price-old">
+                                                        ₽15,450
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="product.html" class="product">
+                                            <div class="productImg">
+                                                <img src="../../images/category/item.jpg" alt="product">
+                                            </div>
+                                            <div class="productText">
+                                                <h3>Haier 6 kg Fully Automati Automati</h3>
+                                                <span>#1 Best Seller</span>
+                                                <div class="price">
+                                                    <p class="price-new">
+                                                        ₽12,490
+                                                    </p>
+                                                    <p class="price-old">
+                                                        ₽15,450
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="product.html" class="product">
+                                            <div class="productImg">
+                                                <img src="../../images/category/item.jpg" alt="product">
+                                            </div>
+                                            <div class="productText">
+                                                <h3>Haier 6 kg Fully Automati Automati</h3>
+                                                <span>#1 Best Seller</span>
+                                                <div class="price">
+                                                    <p class="price-new">
+                                                        ₽12,490
+                                                    </p>
+                                                    <p class="price-old">
+                                                        ₽15,450
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="product.html" class="product">
+                                            <div class="productImg">
+                                                <img src="../../images/category/item.jpg" alt="product">
+                                            </div>
+                                            <div class="productText">
+                                                <h3>Haier 6 kg Fully Automati Automati</h3>
+                                                <span>#1 Best Seller</span>
+                                                <div class="price">
+                                                    <p class="price-new">
+                                                        ₽12,490
+                                                    </p>
+                                                    <p class="price-old">
+                                                        ₽15,450
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="product.html" class="product">
+                                            <div class="productImg">
+                                                <img src="../../images/category/item.jpg" alt="product">
+                                            </div>
+                                            <div class="productText">
+                                                <h3>Haier 6 kg Fully Automati Automati</h3>
+                                                <span>#1 Best Seller</span>
+                                                <div class="price">
+                                                    <p class="price-new">
+                                                        ₽12,490
+                                                    </p>
+                                                    <p class="price-old">
+                                                        ₽15,450
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="product.html" class="product">
+                                            <div class="productImg">
+                                                <img src="../../images/category/item.jpg" alt="product">
+                                            </div>
+                                            <div class="productText">
+                                                <h3>Haier 6 kg Fully Automati Automati</h3>
+                                                <span>#1 Best Seller</span>
+                                                <div class="price">
+                                                    <p class="price-new">
+                                                        ₽12,490
+                                                    </p>
+                                                    <p class="price-old">
+                                                        ₽15,450
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="product.html" class="product">
+                                            <div class="productImg">
+                                                <img src="../../images/category/item.jpg" alt="product">
+                                            </div>
+                                            <div class="productText">
+                                                <h3>Haier 6 kg Fully Automati Automati</h3>
+                                                <span>#1 Best Seller</span>
+                                                <div class="price">
+                                                    <p class="price-new">
+                                                        ₽12,490
+                                                    </p>
+                                                    <p class="price-old">
+                                                        ₽15,450
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="product.html" class="product">
+                                            <div class="productImg">
+                                                <img src="../../images/category/item.jpg" alt="product">
+                                            </div>
+                                            <div class="productText">
+                                                <h3>Haier 6 kg Fully Automati Automati</h3>
+                                                <span>#1 Best Seller</span>
+                                                <div class="price">
+                                                    <p class="price-new">
+                                                        ₽12,490
+                                                    </p>
+                                                    <p class="price-old">
+                                                        ₽15,450
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsLine">
+                        <a href="javascript:void(0)" class="banner">
+                            <img src="../../images/category/banner7.jpg" alt="">
+                        </a>
+                        <div class="item">
+                            <div class="item__img">
+                                <a href="javascript:void(0)" class="itemLink"></a>
+                                <img src="../../images/category/item2.png" alt="">
+                            </div>
+                            <div class="item__text">
+                                <a href="javascript:void(0)">Whirlpool 6.5 kg Fully Automatic Top 
+                                    Load Washing Machine Grey</a>
+                                <div class="price">
+                                    <p class="price-new">₽12,3990</p>
+                                    <p class="price-old">₽17,700</p>
+                                    <p class="price-off">20% off</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__img">
+                                <a href="javascript:void(0)" class="itemLink"></a>
+                                <img src="../../images/category/item2.png" alt="">
+                            </div>
+                            <div class="item__text">
+                                <a href="javascript:void(0)">Whirlpool 6.5 kg Fully Automatic Top 
+                                    Load Washing Machine Grey</a>
+                                <div class="price">
+                                    <p class="price-new">₽12,3990</p>
+                                    <p class="price-old">₽17,700</p>
+                                    <p class="price-off">20% off</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__img">
+                                <a href="javascript:void(0)" class="itemLink"></a>
+                                <img src="../../images/category/item2.png" alt="">
+                            </div>
+                            <div class="item__text">
+                                <a href="javascript:void(0)">Whirlpool 6.5 kg Fully Automatic Top 
+                                    Load Washing Machine Grey</a>
+                                <div class="price">
+                                    <p class="price-new">₽12,3990</p>
+                                    <p class="price-old">₽17,700</p>
+                                    <p class="price-off">20% off</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__img">
+                                <a href="javascript:void(0)" class="itemLink"></a>
+                                <img src="../../images/category/item2.png" alt="">
+                            </div>
+                            <div class="item__text">
+                                <a href="javascript:void(0)">Whirlpool 6.5 kg Fully Automatic Top 
+                                    Load Washing Machine Grey</a>
+                                <div class="price">
+                                    <p class="price-new">₽12,3990</p>
+                                    <p class="price-old">₽17,700</p>
+                                    <p class="price-off">20% off</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsLine">
+                        <a href="javascript:void(0)" class="banner">
+                            <img src="../../images/category/banner7.jpg" alt="">
+                        </a>
+                        <div class="item">
+                            <div class="item__img">
+                                <a href="javascript:void(0)" class="itemLink"></a>
+                                <img src="../../images/category/item2.png" alt="">
+                            </div>
+                            <div class="item__text">
+                                <a href="javascript:void(0)">Whirlpool 6.5 kg Fully Automatic Top 
+                                    Load Washing Machine Grey</a>
+                                <div class="price">
+                                    <p class="price-new">₽12,3990</p>
+                                    <p class="price-old">₽17,700</p>
+                                    <p class="price-off">20% off</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__img">
+                                <a href="javascript:void(0)" class="itemLink"></a>
+                                <img src="../../images/category/item2.png" alt="">
+                            </div>
+                            <div class="item__text">
+                                <a href="javascript:void(0)">Whirlpool 6.5 kg Fully Automatic Top 
+                                    Load Washing Machine Grey</a>
+                                <div class="price">
+                                    <p class="price-new">₽12,3990</p>
+                                    <p class="price-old">₽17,700</p>
+                                    <p class="price-off">20% off</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__img">
+                                <a href="javascript:void(0)" class="itemLink"></a>
+                                <img src="../../images/category/item2.png" alt="">
+                            </div>
+                            <div class="item__text">
+                                <a href="javascript:void(0)">Whirlpool 6.5 kg Fully Automatic Top 
+                                    Load Washing Machine Grey</a>
+                                <div class="price">
+                                    <p class="price-new">₽12,3990</p>
+                                    <p class="price-old">₽17,700</p>
+                                    <p class="price-off">20% off</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__img">
+                                <a href="javascript:void(0)" class="itemLink"></a>
+                                <img src="../../images/category/item2.png" alt="">
+                            </div>
+                            <div class="item__text">
+                                <a href="javascript:void(0)">Whirlpool 6.5 kg Fully Automatic Top 
+                                    Load Washing Machine Grey</a>
+                                <div class="price">
+                                    <p class="price-new">₽12,3990</p>
+                                    <p class="price-old">₽17,700</p>
+                                    <p class="price-off">20% off</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular">
+                        <h3>Reviews for Popular Machines</h3>
+                        <div class="popular__wrap item">
+                            <div class="item_main">
+                                <div class="item_img">
+                                    <a href="product.html" class="link">
+                                        <img src="../../images/category/item3.jpg" alt="image">
+                                    </a>
+                                </div>
+                                <div class="item_info">
+                                    <a class="name" href="product.html">IFB 6 kg Fully Automatic Fr Automatic</a>
+                                    <div class="rating_info">
+                                        <div class="rating">
+                                            3.3
+                                            <i class="icon-star"></i>
+                                        </div>
+                                        <p>3,132 Ratings & 665 Reviews</p>
+                                    </div>
+                                    <div class="price">
+                                        <div class="price-new">₽17,700</div>
+                                        <div class="price-discount">20% off</div>
+                                    </div>
+                                    <ul class="specifications">
+                                        <li>
+                                            <p>Fully Automatic Front Load</p>
+                                        </li>
+                                        <li>
+                                            <p>Power : 2150 W</p>
+                                        </li>
+                                        <li>
+                                            <p>Capacity: 6 kg | Max Spin Speed: 800 rpm</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item_Review">
+                                <p class="headind">Most helpfull review</p>
+                                <p class="title">4 <i class="icon-star"></i> Worth the money</p>
+                                <div class="comment">
+                                    <p>It's worth buying.</p>
+                                    <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    <p>+Vs:- trusted</p>
+                                    <p>trusted brand IFB</p>
+                                    <p>Low cost ...</p>
+                                    <div class="hiddenReview">
+                                        <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="readFull">Read full review</a>
+                                </div>
+                                <div class="bottom">
+                                    <p>
+                                        <span>Praveen Reddy Baddam</span>
+                                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                                        <span>Certified Buyer Feb, 2017</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item_Review">
+                                <p class="headind">Most helpfull review</p>
+                                <p class="title">4 <i class="icon-star"></i> Worth the money</p>
+                                <div class="comment">
+                                    <p>It's worth buying.</p>
+                                    <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    <p>+Vs:- trusted</p>
+                                    <p>trusted brand IFB</p>
+                                    <p>Low cost ...</p>
+                                    <div class="hiddenReview">
+                                        <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="readFull">Read full review</a>
+                                </div>
+                                <div class="bottom">
+                                    <p>
+                                        <span>Praveen Reddy Baddam</span>
+                                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                                        <span>Certified Buyer Feb, 2017</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular__wrap item">
+                            <div class="item_main">
+                                <div class="item_img">
+                                    <a href="product.html" class="link">
+                                        <img src="../../images/category/item3.jpg" alt="image">
+                                    </a>
+                                </div>
+                                <div class="item_info">
+                                    <a class="name" href="product.html">IFB 6 kg Fully Automatic Fr Automatic</a>
+                                    <div class="rating_info">
+                                        <div class="rating">
+                                            3.3
+                                            <i class="icon-star"></i>
+                                        </div>
+                                        <p>3,132 Ratings & 665 Reviews</p>
+                                    </div>
+                                    <div class="price">
+                                        <div class="price-new">₽17,700</div>
+                                        <div class="price-discount">20% off</div>
+                                    </div>
+                                    <ul class="specifications">
+                                        <li>
+                                            <p>Fully Automatic Front Load</p>
+                                        </li>
+                                        <li>
+                                            <p>Power : 2150 W</p>
+                                        </li>
+                                        <li>
+                                            <p>Capacity: 6 kg | Max Spin Speed: 800 rpm</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item_Review">
+                                <p class="headind">Most helpfull review</p>
+                                <p class="title">4 <i class="icon-star"></i> Worth the money</p>
+                                <div class="comment">
+                                    <p>It's worth buying.</p>
+                                    <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    <p>+Vs:- trusted</p>
+                                    <p>trusted brand IFB</p>
+                                    <p>Low cost ...</p>
+                                    <div class="hiddenReview">
+                                        <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="readFull">Read full review</a>
+                                </div>
+                                <div class="bottom">
+                                    <p>
+                                        <span>Praveen Reddy Baddam</span>
+                                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                                        <span>Certified Buyer Feb, 2017</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item_Review">
+                                <p class="headind">Most helpfull review</p>
+                                <p class="title">4 <i class="icon-star"></i> Worth the money</p>
+                                <div class="comment">
+                                    <p>It's worth buying.</p>
+                                    <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    <p>+Vs:- trusted</p>
+                                    <p>trusted brand IFB</p>
+                                    <p>Low cost ...</p>
+                                    <div class="hiddenReview">
+                                        <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="readFull">Read full review</a>
+                                </div>
+                                <div class="bottom">
+                                    <p>
+                                        <span>Praveen Reddy Baddam</span>
+                                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                                        <span>Certified Buyer Feb, 2017</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular__wrap item">
+                            <div class="item_main">
+                                <div class="item_img">
+                                    <a href="product.html" class="link">
+                                        <img src="../../images/category/item3.jpg" alt="image">
+                                    </a>
+                                </div>
+                                <div class="item_info">
+                                    <a class="name" href="product.html">IFB 6 kg Fully Automatic Fr Automatic</a>
+                                    <div class="rating_info">
+                                        <div class="rating">
+                                            3.3
+                                            <i class="icon-star"></i>
+                                        </div>
+                                        <p>3,132 Ratings & 665 Reviews</p>
+                                    </div>
+                                    <div class="price">
+                                        <div class="price-new">₽17,700</div>
+                                        <div class="price-discount">20% off</div>
+                                    </div>
+                                    <ul class="specifications">
+                                        <li>
+                                            <p>Fully Automatic Front Load</p>
+                                        </li>
+                                        <li>
+                                            <p>Power : 2150 W</p>
+                                        </li>
+                                        <li>
+                                            <p>Capacity: 6 kg | Max Spin Speed: 800 rpm</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item_Review">
+                                <p class="headind">Most helpfull review</p>
+                                <p class="title">4 <i class="icon-star"></i> Worth the money</p>
+                                <div class="comment">
+                                    <p>It's worth buying.</p>
+                                    <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    <p>+Vs:- trusted</p>
+                                    <p>trusted brand IFB</p>
+                                    <p>Low cost ...</p>
+                                    <div class="hiddenReview">
+                                        <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="readFull">Read full review</a>
+                                </div>
+                                <div class="bottom">
+                                    <p>
+                                        <span>Praveen Reddy Baddam</span>
+                                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                                        <span>Certified Buyer Feb, 2017</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item_Review">
+                                <p class="headind">Most helpfull review</p>
+                                <p class="title">4 <i class="icon-star"></i> Worth the money</p>
+                                <div class="comment">
+                                    <p>It's worth buying.</p>
+                                    <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    <p>+Vs:- trusted</p>
+                                    <p>trusted brand IFB</p>
+                                    <p>Low cost ...</p>
+                                    <div class="hiddenReview">
+                                        <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="readFull">Read full review</a>
+                                </div>
+                                <div class="bottom">
+                                    <p>
+                                        <span>Praveen Reddy Baddam</span>
+                                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                                        <span>Certified Buyer Feb, 2017</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular__wrap item">
+                            <div class="item_main">
+                                <div class="item_img">
+                                    <a href="product.html" class="link">
+                                        <img src="../../images/category/item3.jpg" alt="image">
+                                    </a>
+                                </div>
+                                <div class="item_info">
+                                    <a class="name" href="product.html">IFB 6 kg Fully Automatic Fr Automatic</a>
+                                    <div class="rating_info">
+                                        <div class="rating">
+                                            3.3
+                                            <i class="icon-star"></i>
+                                        </div>
+                                        <p>3,132 Ratings & 665 Reviews</p>
+                                    </div>
+                                    <div class="price">
+                                        <div class="price-new">₽17,700</div>
+                                        <div class="price-discount">20% off</div>
+                                    </div>
+                                    <ul class="specifications">
+                                        <li>
+                                            <p>Fully Automatic Front Load</p>
+                                        </li>
+                                        <li>
+                                            <p>Power : 2150 W</p>
+                                        </li>
+                                        <li>
+                                            <p>Capacity: 6 kg | Max Spin Speed: 800 rpm</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item_Review">
+                                <p class="headind">Most helpfull review</p>
+                                <p class="title">4 <i class="icon-star"></i> Worth the money</p>
+                                <div class="comment">
+                                    <p>It's worth buying.</p>
+                                    <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    <p>+Vs:- trusted</p>
+                                    <p>trusted brand IFB</p>
+                                    <p>Low cost ...</p>
+                                    <div class="hiddenReview">
+                                        <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="readFull">Read full review</a>
+                                </div>
+                                <div class="bottom">
+                                    <p>
+                                        <span>Praveen Reddy Baddam</span>
+                                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                                        <span>Certified Buyer Feb, 2017</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item_Review">
+                                <p class="headind">Most helpfull review</p>
+                                <p class="title">4 <i class="icon-star"></i> Worth the money</p>
+                                <div class="comment">
+                                    <p>It's worth buying.</p>
+                                    <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    <p>+Vs:- trusted</p>
+                                    <p>trusted brand IFB</p>
+                                    <p>Low cost ...</p>
+                                    <div class="hiddenReview">
+                                        <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="readFull">Read full review</a>
+                                </div>
+                                <div class="bottom">
+                                    <p>
+                                        <span>Praveen Reddy Baddam</span>
+                                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                                        <span>Certified Buyer Feb, 2017</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular__wrap item">
+                            <div class="item_main">
+                                <div class="item_img">
+                                    <a href="product.html" class="link">
+                                        <img src="../../images/category/item3.jpg" alt="image">
+                                    </a>
+                                </div>
+                                <div class="item_info">
+                                    <a class="name" href="product.html">IFB 6 kg Fully Automatic Fr Automatic</a>
+                                    <div class="rating_info">
+                                        <div class="rating">
+                                            3.3
+                                            <i class="icon-star"></i>
+                                        </div>
+                                        <p>3,132 Ratings & 665 Reviews</p>
+                                    </div>
+                                    <div class="price">
+                                        <div class="price-new">₽17,700</div>
+                                        <div class="price-discount">20% off</div>
+                                    </div>
+                                    <ul class="specifications">
+                                        <li>
+                                            <p>Fully Automatic Front Load</p>
+                                        </li>
+                                        <li>
+                                            <p>Power : 2150 W</p>
+                                        </li>
+                                        <li>
+                                            <p>Capacity: 6 kg | Max Spin Speed: 800 rpm</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item_Review">
+                                <p class="headind">Most helpfull review</p>
+                                <p class="title">4 <i class="icon-star"></i> Worth the money</p>
+                                <div class="comment">
+                                    <p>It's worth buying.</p>
+                                    <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    <p>+Vs:- trusted</p>
+                                    <p>trusted brand IFB</p>
+                                    <p>Low cost ...</p>
+                                    <div class="hiddenReview">
+                                        <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="readFull">Read full review</a>
+                                </div>
+                                <div class="bottom">
+                                    <p>
+                                        <span>Praveen Reddy Baddam</span>
+                                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                                        <span>Certified Buyer Feb, 2017</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item_Review">
+                                <p class="headind">Most helpfull review</p>
+                                <p class="title">4 <i class="icon-star"></i> Worth the money</p>
+                                <div class="comment">
+                                    <p>It's worth buying.</p>
+                                    <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    <p>+Vs:- trusted</p>
+                                    <p>trusted brand IFB</p>
+                                    <p>Low cost ...</p>
+                                    <div class="hiddenReview">
+                                        <p>I bought for Rs.20,490/-.. at this level there is no other company product with same specifications.</p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="readFull">Read full review</a>
+                                </div>
+                                <div class="bottom">
+                                    <p>
+                                        <span>Praveen Reddy Baddam</span>
+                                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                                        <span>Certified Buyer Feb, 2017</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer_top">
+            <div class="container">
+                <div class="flex-wrap">
+                    <div class="item">
+                        <p class="title">ABOUT</p>
+                        <nav class="footer_about-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Flipkart Stories</a>
+                                </li>
+                                <li>
+                                    <a href="#">Press</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="item">
+                        <p class="title">HELP</p>
+                        <nav class="footer_help-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Payments</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shipping</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cancellation & Returns</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Report Infringement</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="item">
+                        <p class="title">POLICY</p>
+                        <nav class="footer_policy-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Return Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms Of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#">Security</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sitemap</a>
+                                </li>
+                                <li>
+                                    <a href="#">EPR Compliance</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="item">
+                        <p class="title">SOCIAL</p>
+                        <nav class="footer_social-menu">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com" target="_blank">YouTube</a>
+                                </li>
+                                <li>
+                                    <a href="https://plus.google.com" target="_blank">Google Plus</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="item">
+                        <p class="title">Mail Us:</p>
+                        <p><span>Flipkart Internet Pvt Ltd Block B (Begonia),</span>
+                            <span>Ground Floor, Embassy Tech Village,</span>
+                            <span>Outer Ring Road, Devarabeesanahalli Village,</span>
+                            <span>Varthur Hobli, Bengaluru East Taluk,</span>
+                            <span>Bengaluru District,</span>
+                            <span>Karnataka, India, 560103</span></p>
+                    </div>
+                    <div class="item">
+                        <p class="title">Registered Office Address:</p>
+                        <p>
+                            <span>Flipkart Internet Private Limited,</span>
+                            <span>Vaishnavi Summit, Ground Floor, 7th Main,</span>
+                            <span>80 Feet Road, 3rd Block,</span>
+                            <span>Koramangala,</span>
+                            <span>Bengaluru - 560034</span>
+                            <span>India</span>
+                            <span>CIN : U51109KA2012PTC066107</span>
+                            <span>Telephone: <a class="phone" href="tel:18002089898">1800 208 9898</a></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="flex-wrap">
+                    <div class="item">
+                        <a class="sell" href="#">Sell On Flipkart</a>
+                    </div>
+                    <div class="item">
+                        <a class="advertise" href="#">Advertise</a>
+                    </div>
+                    <div class="item">
+                        <a class="cards" href="#">Gift Cards</a>
+                    </div>
+                    <div class="item">
+                        <a class="help_center" href="help-center.html">Help Center</a>
+                    </div>
+                    <div class="item">
+                        <p>© 2007-2019 Flipkart.com.</p>
+                    </div>
+                    <div class="item">
+                        <a class="visa" href="#">
+                            <img src="../../images/payment.svg" alt="payment">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <div class="container">
+                <a target="_blank" href="http://plemyastudio.ru"><i>©</i> Все права защищены, 2019. Разработка "Студия Племя".</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/jcf.min.js"></script>
+    <script src="../../js/jcf.checkbox.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/desktop/category.min.js"></script>
+    <script src="../../js/desktop/script.min.js"></script>
+</body>
+
+</html>

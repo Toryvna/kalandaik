@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo-mob.png">
+    <link rel="stylesheet" href="../../css/mobile/style.css">
+    <link rel="stylesheet" href="../../css/mobile/checkout.css">
+</head>
+<body>
+
+<!-- build:section layout.loginPopup-->
+<!-- /build -->
+<!-- build:section layout.mobile_header_innerPages--> 
+<!-- /build -->
+
+
+<form class="checkoutForm" action="#" id="checkoutForm">
+    <div class="checkout">
+        <div class="container">
+            <div class="checkout__wrap">
+                <!-- .done - для уже пройденного шага
+                     .active - активный шаг -->
+                <div class="step step1 done">
+                    <div class="step__heading">
+                        <div class="flex-wrap">
+                            <div class="number"><span>1</span></div>
+                            <div class="content">
+                                <h3 class="valid">LOGIN</h3>
+                                <h3 class="invalid" style="display: none;">LOGIN</h3>
+                                <div class="showInfo">
+                                    <p>+918551848020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="change open-registration" href="javascript:void(0)">CHANGE</a>
+                    </div>
+                </div>
+                <div class="step step2 active">
+                    <div class="step__heading">
+                        <div class="flex-wrap">
+                            <div class="number"><span>2</span></div>
+                            <div class="content">
+                                <h3 class="valid">delivery address</h3>
+                                <h3 class="invalid" style="display: none;">delivery address</h3>
+                                <div class="showInfo">
+                                    <p>Sam Gold, Maryland, Rhode City, RM-3IO, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="change" href="javascript:void(0)">CHANGE</a>
+                    </div>
+                    <div class="step__body">
+                        <div class="info">
+                            <div class="radio-btn">
+                                <label class="wrap">
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <h4>add a new address</h4>
+                            </div>
+                            <a class="location" href="javascript:void(0)">
+                                <img src="../../images/location-btn-ico.png" alt="">
+                                Use my current location
+                            </a>
+                            <div class="form-input">
+                                <input type="text" required>
+                                <span class="floating-label">Name</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="tel" required>
+                                <span class="floating-label">10-digit mobile number</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" required>
+                                <span class="floating-label">Pincode</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" required>
+                                <span class="floating-label">Locality</span>
+                            </div>
+                            <div class="form-textarea">
+                                <textarea required></textarea>
+                                <span class="floating-label">Address (Area and Street)</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" required>
+                                <span class="floating-label">City/District/Town</span>
+                            </div>
+                            <div class="form-select">
+                                <select>
+                                    <option>--Select State--</option>
+                                    <option>Maryland</option>
+                                    <option>Florida</option>
+                                    <option>California</option>
+                                </select>
+                                <span class="floating-label">State</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" required>
+                                <span class="floating-label">Landmark (Optional)</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" required>
+                                <span class="floating-label">Alternate Phone (Optional)</span>
+                            </div>
+                            <p>Address Type</p>
+                            <div class="form-wrap">
+                                <div class="form-radiobtns">
+                                    <label class="wrap">
+                                        <input type="radio" name="radio2">
+                                        <span class="checkmark"></span>
+                                        <span class="label">Home (All day delivery)</span>
+                                    </label>
+                                    <label class="wrap">
+                                        <input type="radio" name="radio2">
+                                        <span class="checkmark"></span>
+                                        <span class="label">Work (Delivery between 10 AM - 5 PM)</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <p>Delivery Options</p>
+                            <div class="form-wrap">
+                                <div class="form-radiobtns flex">
+                                    <label class="wrap">
+                                        <input type="radio" name="radio3">
+                                        <span class="checkmark"></span>
+                                        <span class="label">DHL</span>
+                                    </label>
+                                    <label class="wrap">
+                                        <input type="radio" name="radio3">
+                                        <span class="checkmark"></span>
+                                        <span class="label">Почта России</span>
+                                    </label>
+                                    <label class="wrap">
+                                        <input type="radio" name="radio3">
+                                        <span class="checkmark"></span>
+                                        <span class="label">EMS</span>
+                                    </label>
+                                    <label class="wrap">
+                                        <input type="radio" name="radio3">
+                                        <span class="checkmark"></span>
+                                        <span class="label">СДЭК</span>
+                                    </label>
+                                    <label class="wrap">
+                                        <input type="radio" name="radio3">
+                                        <span class="checkmark"></span>
+                                        <span class="label">DPD</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-button">
+                                <button class="nextStep">SAVE AND DELIVER HERE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step step3">
+                    <div class="step__heading">
+                        <div class="flex-wrap">
+                            <div class="number"><span>3</span></div>
+                            <div class="content">
+                                <h3 class="valid">ORDER SUMMARY</h3>
+                                <h3 class="invalid" style="display: none;">ORDER SUMMARY</h3>
+                                <div class="showInfo">
+                                    <p class="title">Honor 9 Lite (Sapphire Blue, 64 GB)</p>
+                                    <p class="price">₹14,999</p>
+                                    <p class="count">1 piece</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="change" href="javascript:void(0)">CHANGE</a>
+                    </div>
+                    <div class="step__body">
+                        <div class="cartItem">
+                            <div class="flex-wrap">
+                                <div class="cartItem__left">
+                                    <div class="cartItem__left-img">
+                                        <a href="product.html">
+                                            <img src="../../images/single-product/Recently-img1.jpg" alt="img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cartItem__right">
+                                    <div class="cartItem__right-content">
+                                        <a href="product.html" class="title">Honor 9 Lite (Sapphire Blue, 64 GB)</a>
+                                        <p class="sub-info">4 GB RAM</p>
+                                        <div class="flex-wrap">
+                                            <p>Seller: IndiFlashMart</p>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price-new">₹14,999</p>
+                                            <p class="price-old">₹16,999</p>
+                                            <div class="price-sub">
+                                                11% Off   1 Offer Available
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="counts">
+                                <div class="inc_dec">
+                                    <div class="dec inc_dec_btn"></div>
+                                    <input type="number" id="quantityOfGoods" value="1">
+                                    <div class="inc inc_dec_btn"></div>
+                                </div>
+                                <div class="action">
+                                    <a href="javascript:void(0)">REMOVE</a>
+                                </div>
+                            </div>
+                            <div class="cartItem__delivery">
+                                <p>Delivery by, Tue Apr 9 |
+                                    <span> Free</span>
+                                    ₹44 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="continue">
+                            <div class="confirmation">
+                                <p>Order confirmation email will be sent to </p>
+                                <input type="text" placeholder="Enter your email ID">
+                            </div>
+
+                            <button class="nextStep">continue</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step step4">
+                    <div class="step__heading">
+                        <div class="flex-wrap">
+                            <div class="number"><span>4</span></div>
+                            <div class="content">
+                                <h3 class="valid">payment options</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step__body">
+                        <div class="form-radiobtns">
+                            <label class="wrap">
+                                <input type="radio" name="radio3" checked>
+                                <span class="checkmark"></span>
+                                <span class="label">Credit / Debit / ATM Card</span>
+                            </label>
+                            <label class="wrap">
+                                <input type="radio" name="radio3">
+                                <span class="checkmark"></span>
+                                <span class="label">EMI</span>
+                            </label>
+                            <label class="wrap">
+                                <input type="radio" name="radio3">
+                                <span class="checkmark"></span>
+                                <span class="label">QIWI</span>
+                            </label>
+                            <label class="wrap">
+                                <input type="radio" name="radio3">
+                                <span class="checkmark"></span>
+                                <span class="label">Яндекс Деньги</span>
+                            </label>
+                        </div>
+
+                        <div class="continue">
+                            <button class="nextStep">continue</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step step5">
+                    <div class="accept">
+                        <i class="icon-checked"></i>
+                        <p> Thank you for your order. We will contact you for the confirmation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="result__details">
+                <div class="result__details-heading">
+                    <p class="title">PRICE DETAILS</p>
+                </div>
+                <div class="result__details-content">
+                    <table class="result__details-table">
+                        <tbody>
+                            <tr>
+                                <td class="td-title">
+                                    <p>Price (1 item)</p>
+                                </td>
+                                <td class="td-price">
+                                    <p>₹14,999</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-title">
+                                    <p>Delivery Charges</p>
+                                </td>
+                                <td class="td-price">
+                                    <p class="freeCls">FREE</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="result__details-summary">
+                        <p class="text">Amount Payable</p>
+                        <p class="price">₹14,999</p>
+                    </div>
+                </div>
+                <div class="result__details-bottom">
+                    <p>Your total Savings on this order ₹2000</p>
+                </div>
+            </div>
+
+            <div class="cart-banner">
+                <a href="javascript:void(0)">
+                    <img src="../../images/single-product/white-banner.png" alt="banner">
+                </a>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/jquery-ui.select.min.js"></script>
+<script src="../../js/mobile/script.min.js"></script> 
+<script src="../../js/mobile/checkout.min.js"></script> 
+</body>
+</html> 

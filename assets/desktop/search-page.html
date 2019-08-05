@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo-mob.png">
+    <link rel="stylesheet" href="../../css/desktop/style.css">
+    <link rel="stylesheet" href="../../css/desktop/search-page.css">
+</head>
+<body>  
+<!-- build:section layout.desktopPopup-->
+<!-- /build -->
+
+<!-- build:section layout.header--> 
+<!-- /build -->
+
+<section class="search">
+    <div class="container">
+        <div class="search-flex">
+            <div class="search__left">
+                <div class="search__filters">
+                    <div class="search__filters-row">
+                        <div class="heading">
+                            <p class="title">Filters</p>
+                            <a href="javascript:void(0)" class="clearBth">CLEAR ALL</a>
+                        </div>
+                    </div>
+                    <div class="search__filters-row">
+                        <h4>CATEGORIES</h4>
+                        <a class="homePage" href="javascript:void(0)">Mobiles & Accessories</a>
+                    </div>
+                    <div class="search__filters-row style2">
+                        <a href="javascript:void(0)" class="subLink">Mobiles</a>
+                    </div>
+                    <div class="search__filters-row">
+                        <h4>PRICE</h4>
+                        <div class="price-range">
+                            <div id="slider-range"></div>
+                            <div class="select-rang">
+                                <select class="startValue">
+                                    <option value="0">Min</option>
+                                    <option value="100">₽100</option>
+                                    <option value="200">₽200</option>
+                                    <option value="300">₽300</option>
+                                    <option value="400">₽400</option>
+                                </select>
+                                <span>to</span>
+                                <select class="endValue">
+                                    <option value="50000">₽50000+</option>
+                                    <option value="1000">₽1000</option>
+                                    <option value="2000">₽2000</option>
+                                    <option value="3000">₽3000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-line">
+                        <div class="checkLogo">
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="a0" type="checkbox" checked>
+                                    <label for="a0">
+                                        <img src="../../images/assured.png" alt="img">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <span class="question-ico">?</span>
+                            <div class="question-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title active">
+                        <h4>RAM</h4>
+                        <div class="search__filters-dropdown ">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="ab1" type="checkbox" checked>
+                                    <label for="ab1">6 GB & Above</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="bb2" type="checkbox">
+                                    <label for="bb2">4 GB</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="bb22" type="checkbox">
+                                    <label for="bb22">3 GB</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="2gb" type="checkbox">
+                                    <label for="2gb">2 GB</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="1gb" type="checkbox">
+                                    <label for="1gb">1 GB</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="1gb1" type="checkbox">
+                                    <label for="1gb1">512 MB - 1 GB</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="1gb2" type="checkbox">
+                                    <label for="1gb2">Less than 512 MB</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search__filters-title active">
+                        <h4>BRAND</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="a1" type="checkbox" checked>
+                                    <label for="a1">Mi</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="a2" type="checkbox">
+                                    <label for="a2">Samsung</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="a3" type="checkbox">
+                                    <label for="a3">Realme</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="a4" type="checkbox">
+                                    <label for="a4">Honor</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="a5" type="checkbox">
+                                    <label for="a5">Apple</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="a55" type="checkbox">
+                                    <label for="a55">OPPO</label>
+                                </div>
+                                <div class="hiddenItems">
+                                    <div class="checkbox-item">
+                                        <input id="a7" type="checkbox">
+                                        <label for="a7">Mi</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="a8" type="checkbox">
+                                        <label for="a8">Vu</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="a9" type="checkbox">
+                                        <label for="a9">iFFALCON by TCL</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input id="a10" type="checkbox">
+                                        <label for="a10">iSamsung</label>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="showAll">308 MORE</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>CUSTOMER RATINGS</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="c1" type="checkbox" checked>
+                                    <label for="c1">4 * above</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="c2" type="checkbox">
+                                    <label for="c2">3 * above</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="c3" type="checkbox" checked>
+                                    <label for="c3">2 * above</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="c4" type="checkbox">
+                                    <label for="c4">1 * above</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>INTERNAL STORAGE</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="RESOLUTION1" type="checkbox" checked>
+                                    <label for="RESOLUTION1">RESOLUTION1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="RESOLUTION2" type="checkbox">
+                                    <label for="RESOLUTION2">RESOLUTION2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>BATTERY CAPACITY</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="os1" type="checkbox" checked>
+                                    <label for="os1">BATTERY CAPACITY1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="os2" type="checkbox">
+                                    <label for="os2">BATTERY CAPACITY1</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>OPERATING SYSTEM</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="cf1" type="checkbox" checked>
+                                    <label for="cf1">COPERATING SYSTEM</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="cf2" type="checkbox">
+                                    <label for="cf2">OPERATING SYSTEM2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>NETWORK TYPE</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="DISTANCE1" type="checkbox" checked>
+                                    <label for="DISTANCE1">value1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="DISTANCE2" type="checkbox">
+                                    <label for="DISTANCE2">value2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>SCREEN SIZE</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="OFFERS11" type="checkbox" checked>
+                                    <label for="OFFERS11">SCREEN SIZE</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="OFFERS2" type="checkbox">
+                                    <label for="OFFERS2">SCREEN SIZE2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>SIM TYPE</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="HDMI1" type="checkbox" checked>
+                                    <label for="HDMI1">SIM TYPE1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="HDMI2" type="checkbox">
+                                    <label for="HDMI2">SIM TYPE2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>PRIMARY CAMERA</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="USB1" type="checkbox" checked>
+                                    <label for="USB1">PRIMARY CAMERA1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="USB2" type="checkbox">
+                                    <label for="USB2">PRIMARY CAMERA2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>SECONDARY CAMERA</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="AVAILABILITY1" type="checkbox" checked>
+                                    <label for="AVAILABILITY1">SECONDARY CAMERA</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="AVAILABILITY2" type="checkbox">
+                                    <label for="AVAILABILITY2">SECONDARY CAMERA2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>OFFERS</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="OFFERS1" type="checkbox" checked>
+                                    <label for="OFFERS1">Bank Offer</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="OFFERS22" type="checkbox">
+                                    <label for="OFFERS22">Exchange Offer</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="OFFERS3" type="checkbox" checked>
+                                    <label for="OFFERS3">No Cost EMI</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="OFFERS4" type="checkbox">
+                                    <label for="OFFERS4">Special Price</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>PROCESSOR BRAND</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="TYPE1" type="checkbox" checked>
+                                    <label for="TYPE1">PROCESSOR BRAND</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="TYPE2" type="checkbox">
+                                    <label for="TYPE2">PROCESSOR BRAND2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>SPECIALITY</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="TV1" type="checkbox" checked>
+                                    <label for="TV1">SPECIALITY1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="TV2" type="checkbox">
+                                    <label for="TV2">SPECIALITY2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>RESOLUTION TYPE</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="val11" type="checkbox" checked>
+                                    <label for="val11">RESOLUTION TYPE</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="val12" type="checkbox">
+                                    <label for="val12">RESOLUTION TYPE2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>TYPE</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="val13" type="checkbox" checked>
+                                    <label for="val13"> TYPE</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="val14" type="checkbox">
+                                    <label for="val14"> TYPE2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>OPERATING SYSTEM VERSION NAME</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="val15" type="checkbox" checked>
+                                    <label for="val15"> val1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="val16" type="checkbox">
+                                    <label for="val16"> val2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>AVAILABILITY</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="AVAILABILITY11" type="checkbox" checked>
+                                    <label for="AVAILABILITY11"> AVAILABILITY</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="AVAILABILITY22" type="checkbox">
+                                    <label for="AVAILABILITY22"> AVAILABILITY2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>CLOCK SPEED</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="SPEED1" type="checkbox" checked>
+                                    <label for="SPEED1"> SPEED1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="SPEED2" type="checkbox">
+                                    <label for="SPEED2"> SPEED2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>FEATURES</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="FEATURES11" type="checkbox" checked>
+                                    <label for="FEATURES11"> FEATURES1</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="FEATURES12" type="checkbox">
+                                    <label for="FEATURES12"> FEATURES2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>NUMBER OF CORES</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="CORES" type="checkbox" checked>
+                                    <label for="CORES"> NUMBER OF CORES</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="CORES2" type="checkbox">
+                                    <label for="CORES2"> NUMBER OF CORES2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="search__filters-title">
+                        <h4>BUDGET</h4>
+                        <div class="search__filters-dropdown">
+    
+                            <div class="checkbox">
+                                <div class="checkbox-item">
+                                    <input id="BUDGET11" type="checkbox" checked>
+                                    <label for="BUDGET11"> BUDGET</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input id="BUDGET22" type="checkbox">
+                                    <label for="BUDGET22"> BUDGET2</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search__helpBlk">
+                    <p>Need help?</p>
+                    <a href="javascript:void(0)" class="helpLink">
+                        <p>Help me decide</p>
+                        <img src="../../images/help-img.png" alt="img">
+                    </a>
+                </div>
+            </div>
+            <div class="search__content">
+                <div class="breabcrumbs">
+                    <a href="index.html">Home</a> <span class="separator"></span>
+                    <a href="javascript:void(0)">Mobile & Accessories</a> <span class="separator"></span>
+                    Mobiles
+                </div>
+                <div class="search__content-heading">
+                    <p>Showing 1 – 24 of 10,270 results for "mobiles"</p>
+                </div>
+    
+                <!-- Начало Сортировка товаров -->
+                <div class="sortBlock">
+                    <p class="sortBlock__name">Sort By </p>
+                    <ul class="sortBlock__list">
+                        <li class="currentSorted">
+                            <a href="javascript:void(0)">Popularity</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Price -- Low to High</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Price -- High to Low</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Newest First</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Конец Сортировка товаров -->
+    
+                <!-- Начало Список товаров -->
+                <div class="productList">
+                    <div class="productItem">
+                        <div class="productItem-img">
+                            <div class="imgWrap">
+                                <div class="offerLabel">ON OFFER</div>
+                                <a href="javascript:void(0)" class="likeBtn"></a>
+                                <a href="product.html" class="link">
+                                    <img src="../../images/searchImg1.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="compareBtn">
+                                <input type="checkbox" class="compare checkStyle" id="compare1" name="compare1">
+                                <label for="compare1">Add to Compare</label>
+                            </div>
+                        </div>
+                        <div class="productItem-text">
+                            <div class="productItem-content">
+                                <a href="product.html" class="title">Realme C1 (Mirror Black, 32 GB)</a>
+                                <div class="rating_info">
+                                    <div class="rating">
+                                        4.5
+                                        <img src="../../images/star.svg" alt="star">
+                                    </div>
+                                    <p>4,173 Ratings & 391 Reviews</p>
+                                </div>
+                                <ul class="specifications">
+                                    <li>
+                                        <p>3 GB RAM | 32 GB ROM | Expandable Upto 256 GB</p>
+                                    </li>
+                                    <li>
+                                        <p>15.75 cm (6.2 inch) HD+ Display</p>
+                                    </li>
+                                    <li>
+                                        <p>13MP + 2MP | 5MP Front Camera</p>
+                                    </li>
+                                    <li>
+                                        <p>4230 mAh Li-ion Battery</p>
+                                    </li>
+                                    <li>
+                                        <p>Qualcomm Snapdragon 450 Octa Core 1.8 GHz Processor</p>
+                                    </li>
+                                    <li>
+                                        <p>2019 Edition</p>
+                                    </li>
+                                    <li>
+                                        <p>Face Unlock</p>
+                                    </li>
+                                    <li>
+                                        <p>Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories    </p>
+                                    </li>                                                         
+                                </ul>
+                            </div>
+                            <div class="productItem-price">
+                                <div class="top">
+                                    <p class="new-price">₽8,499</p>
+                                    <div class="logo">
+                                        <img src="../../images/assured.png" alt="assured">
+                                    </div>
+                                </div>
+                                <div class="sub-price">
+                                    <p class="old-price">₽9,999</p>
+                                    <p class="discount">15% off</p>
+                                </div>
+                                <p class="info">Up to ₹13,750 Off on Exchange
+                                    EMI starting from ₹465/month</p>
+                                <p class="offers">Offers</p>
+                                <ul>
+                                    <li>
+                                        <p>Special Price</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productItem">
+                        <div class="productItem-img">
+                            <div class="imgWrap">
+                                <div class="offerLabel">ON OFFER</div>
+                                <a href="javascript:void(0)" class="likeBtn"></a>
+                                <a href="product.html" class="link">
+                                    <img src="../../images/searchImg2.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="compareBtn">
+                                <input type="checkbox" class="compare checkStyle" id="compare2" name="compare2">
+                                <label for="compare2">Add to Compare</label>
+                            </div>
+                        </div>
+                        <div class="productItem-text">
+                            <div class="productItem-content">
+                                <a href="product.html" class="title">Redmi Note 6 Pro (Black, 64 GB)</a>
+                                <div class="rating_info">
+                                    <div class="rating">
+                                        4.5
+                                        <img src="../../images/star.svg" alt="star">
+                                    </div>
+                                    <p>2,93,579 Ratings & 28,062 Reviews</p>
+                                </div>
+                                <ul class="specifications">
+                                    <li>
+                                        <p>4 GB RAM | 64 GB ROM | Expandable Upto 256 GB</p>
+                                    </li>
+                                    <li>
+                                        <p>15.9 cm (6.26 inch) FHD+ Display</p>
+                                    </li>
+                                    <li>
+                                        <p>12MP + 5MP | 20MP + 2MP Dual Front Camera</p>
+                                    </li>
+                                    <li>
+                                        <p>4000 mAh Li-polymer Battery</p>
+                                    </li>
+                                    <li>
+                                        <p>Qualcomm Snapdragon 636 Processor</p>
+                                    </li>
+                                    <li>
+                                        <p>Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories </p>
+                                    </li>                    
+                                </ul>
+                            </div>
+                            <div class="productItem-price">
+                                <div class="top">
+                                    <p class="new-price">₽8,499</p>
+                                    <div class="logo">
+                                        <img src="../../images/assured.png" alt="assured">
+                                    </div>
+                                </div>
+                                <div class="sub-price">
+                                    <p class="old-price">₽9,999</p>
+                                    <p class="discount">15% off</p>
+                                </div>
+                                <p class="info">Up to ₹13,750 Off on Exchange
+                                    EMI starting from ₹465/month</p>
+                                <p class="offers">Offers</p>
+                                <ul>
+                                    <li>
+                                        <p>Special Price</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productItem">
+                        <div class="productItem-img">  
+                            <div class="imgWrap">                        
+                                <div class="offerLabel">ON OFFER</div>
+    
+                                <a href="javascript:void(0)" class="likeBtn"></a>
+                                <a href="product.html" class="link">
+                                    <img src="../../images/searchImg1.jpg" alt="image">
+                                </a>
+                            </div>  
+                            <div class="compareBtn">
+                                <input type="checkbox" class="compare checkStyle" id="compare3" name="compare3">
+                                <label for="compare3">Add to Compare</label>
+                            </div>
+                        </div>
+                        <div class="productItem-text">
+                            <div class="productItem-content">
+                                <a href="product.html" class="title">Realme C1 (Navy Blue, 32 GB)</a>
+                                <div class="rating_info">
+                                    <div class="rating">
+                                        4.4
+                                        <img src="../../images/star.svg" alt="star">
+                                    </div>
+                                    <p>2,50,187 Ratings & 28,430 Reviews</p>
+                                </div>
+                                <ul class="specifications">
+                                    <li>
+                                        <p>4 GB RAM | 64 GB ROM | Expandable Upto 256 GB</p>
+                                    </li>
+                                    <li>
+                                        <p>15.9 cm (6.26 inch) FHD+ Display</p>
+                                    </li>
+                                    <li>
+                                        <p>12MP + 5MP | 20MP + 2MP Dual Front Camera</p>
+                                    </li>
+                                    <li>
+                                        <p>4000 mAh Li-polymer Battery</p>
+                                    </li>
+                                    <li>
+                                        <p>Qualcomm Snapdragon 636 Processor</p>
+                                    </li>
+                                    <li>
+                                        <p>Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories </p>
+                                    </li>                     
+                                </ul>
+                            </div>
+                            <div class="productItem-price">
+                                <div class="top">
+                                    <p class="new-price">₽8,499</p>
+                                    <div class="logo">
+                                        <img src="../../images/assured.png" alt="assured">
+                                    </div>
+                                </div>
+                                <div class="sub-price">
+                                    <p class="old-price">₽9,999</p>
+                                    <p class="discount">15% off</p>
+                                </div>
+                                <p class="info">Up to ₹13,750 Off on Exchange
+                                    EMI starting from ₹465/month</p>
+                                <p class="offers">Offers</p>
+                                <ul>
+                                    <li>
+                                        <p>Special Price</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productItem">
+                        <div class="productItem-img">
+                            <div class="imgWrap">
+                                <div class="adLabel">Ad</div>
+                                <a href="javascript:void(0)" class="likeBtn"></a>
+                                <a href="product.html" class="link">
+                                    <img src="../../images/searchImg3.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="compareBtn">
+                                <input type="checkbox" class="compare checkStyle" id="compare4" name="compare4">
+                                <label for="compare4">Add to Compare</label>
+                            </div>
+                        </div>
+                        <div class="productItem-text">
+                            <div class="productItem-content">
+                                <a href="product.html" class="title">Realme C1 (Navy Blue, 32 GB)</a>
+                                <div class="rating_info">
+                                    <div class="rating">
+                                        3.6
+                                        <img src="../../images/star.svg" alt="star">
+                                    </div>
+                                    <p>22,50,187 Ratings & 28,430 Reviews</p>
+                                </div>
+                                <ul class="specifications">
+                                    <li>
+                                        <p>4 GB RAM | 64 GB ROM | Expandable Upto 256 GB</p>
+                                    </li>
+                                    <li>
+                                        <p>15.9 cm (6.26 inch) FHD+ Display</p>
+                                    </li>
+                                    <li>
+                                        <p>12MP + 5MP | 20MP + 2MP Dual Front Camera</p>
+                                    </li>
+                                    <li>
+                                        <p>4000 mAh Li-polymer Battery</p>
+                                    </li>
+                                    <li>
+                                        <p>Qualcomm Snapdragon 636 Processor</p>
+                                    </li>
+                                    <li>
+                                        <p>Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories  </p>
+                                    </li>                     
+                                </ul>
+                            </div>
+                            <div class="productItem-price">
+                                <div class="top">
+                                    <p class="new-price">₽8,499</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productItem">
+                        <div class="productItem-img">
+                            <div class="imgWrap">
+                                <div class="offerLabel">ON OFFER</div>
+                                <a href="javascript:void(0)" class="likeBtn"></a>
+                                <a href="product.html" class="link">
+                                    <img src="../../images/searchImg1.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="compareBtn">
+                                <input type="checkbox" class="compare checkStyle" id="compare5" name="compare5">
+                                <label for="compare5">Add to Compare</label>
+                            </div>
+                        </div>
+                        <div class="productItem-text">
+                            <div class="productItem-content">
+                                <a href="product.html" class="title">Realme C1 (Navy Blue, 32 GB)</a>
+                                <div class="rating_info">
+                                    <div class="rating">
+                                        3.6
+                                        <img src="../../images/star.svg" alt="star">
+                                    </div>
+                                    <p>22,50,187 Ratings & 28,430 Reviews</p>
+                                </div>
+                                <ul class="specifications">
+                                    <li>
+                                        <p>4 GB RAM | 64 GB ROM | Expandable Upto 256 GB</p>
+                                    </li>
+                                    <li>
+                                        <p>15.9 cm (6.26 inch) FHD+ Display</p>
+                                    </li>
+                                    <li>
+                                        <p>12MP + 5MP | 20MP + 2MP Dual Front Camera</p>
+                                    </li>
+                                    <li>
+                                        <p>4000 mAh Li-polymer Battery</p>
+                                    </li>
+                                    <li>
+                                        <p>Qualcomm Snapdragon 636 Processor</p>
+                                    </li>
+                                    <li>
+                                        <p>Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories  </p>
+                                    </li>                     
+                                </ul>
+                            </div>
+                            <div class="productItem-price">
+                                <div class="top">
+                                    <p class="new-price">₽8,499</p>
+                                    <div class="logo">
+                                        <img src="../../images/assured.png" alt="assured">
+                                    </div>
+                                </div>
+                                <div class="sub-price">
+                                    <p class="old-price">₽9,999</p>
+                                    <p class="discount">15% off</p>
+                                </div>
+                                <p class="info">Up to ₹13,750 Off on Exchange
+                                    EMI starting from ₹465/month</p>
+                                <p class="offers">Offers</p>
+                                <ul>
+                                    <li>
+                                        <p>Special Price</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productItem">
+                        <div class="productItem-img">
+                            <div class="imgWrap">
+                                <div class="offerLabel">ON OFFER</div>
+                                <a href="javascript:void(0)" class="likeBtn"></a>
+                                <a href="product.html" class="link">
+                                    <img src="../../images/searchImg2.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="compareBtn">
+                                <input type="checkbox" class="compare checkStyle" id="compare6" name="compare6">
+                                <label for="compare6">Add to Compare</label>
+                            </div>
+                        </div>
+                        <div class="productItem-text">
+                            <div class="productItem-content">
+                                <a href="product.html" class="title">Realme C1 (Navy Blue, 32 GB)</a>
+                                <div class="rating_info">
+                                    <div class="rating">
+                                        3.6
+                                        <img src="../../images/star.svg" alt="star">
+                                    </div>
+                                    <p>2,50,187 Ratings & 28,430 Reviews</p>
+                                </div>
+                                <ul class="specifications">
+                                    <li>
+                                        <p>4 GB RAM | 64 GB ROM | Expandable Upto 256 GB</p>
+                                    </li>
+                                    <li>
+                                        <p>15.9 cm (6.26 inch) FHD+ Display</p>
+                                    </li>
+                                    <li>
+                                        <p>12MP + 5MP | 20MP + 2MP Dual Front Camera</p>
+                                    </li>
+                                    <li>
+                                        <p>4000 mAh Li-polymer Battery</p>
+                                    </li>
+                                    <li>
+                                        <p>Qualcomm Snapdragon 636 Processor</p>
+                                    </li>
+                                    <li>
+                                        <p>Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories  </p>
+                                    </li>                     
+                                </ul>
+                            </div>
+                            <div class="productItem-price">
+                                <div class="top">
+                                    <p class="new-price">₽8,499</p>
+                                    <div class="logo">
+                                        <img src="../../images/assured.png" alt="assured">
+                                    </div>
+                                </div>
+                                <div class="sub-price">
+                                    <p class="old-price">₽9,999</p>
+                                    <p class="discount">15% off</p>
+                                </div>
+                                <p class="info">Up to ₹13,750 Off on Exchange
+                                    EMI starting from ₹465/month</p>
+                                <p class="offers">Offers</p>
+                                <ul>
+                                    <li>
+                                        <p>Special Price</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productItem">
+                        <div class="productItem-img">
+                            <div class="imgWrap">
+                                <div class="offerLabel">ON OFFER</div>
+                                <a href="javascript:void(0)" class="likeBtn"></a>
+                                <a href="product.html" class="link">
+                                    <img src="../../images/searchImg2.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="compareBtn">
+                                <input type="checkbox" class="compare checkStyle" id="compare72" name="compare72">
+                                <label for="compare72">Add to Compare</label>
+                            </div>
+                        </div>
+                        <div class="productItem-text">
+                            <div class="productItem-content">
+                                <a href="product.html" class="title">Realme C1 (Navy Blue, 32 GB)</a>
+                                <div class="rating_info">
+                                    <div class="rating">
+                                        3.6
+                                        <img src="../../images/star.svg" alt="star">
+                                    </div>
+                                    <p>2,50,187 Ratings & 28,430 Reviews</p>
+                                </div>
+                                <ul class="specifications">
+                                    <li>
+                                        <p>4 GB RAM | 64 GB ROM | Expandable Upto 256 GB</p>
+                                    </li>
+                                    <li>
+                                        <p>15.9 cm (6.26 inch) FHD+ Display</p>
+                                    </li>
+                                    <li>
+                                        <p>12MP + 5MP | 20MP + 2MP Dual Front Camera</p>
+                                    </li>
+                                    <li>
+                                        <p>4000 mAh Li-polymer Battery</p>
+                                    </li>
+                                    <li>
+                                        <p>Qualcomm Snapdragon 636 Processor</p>
+                                    </li>
+                                    <li>
+                                        <p>Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories  </p>
+                                    </li>                     
+                                </ul>
+                            </div>
+                            <div class="productItem-price">
+                                <div class="top">
+                                    <p class="new-price">₽8,499</p>
+                                    <div class="logo">
+                                        <img src="../../images/assured.png" alt="assured">
+                                    </div>
+                                </div>
+                                <div class="sub-price">
+                                    <p class="old-price">₽9,999</p>
+                                    <p class="discount">15% off</p>
+                                </div>
+                                <p class="info">Up to ₹13,750 Off on Exchange
+                                    EMI starting from ₹465/month</p>
+                                <p class="offers">Offers</p>
+                                <ul>
+                                    <li>
+                                        <p>Special Price</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productItem">
+                        <div class="productItem-img">
+                            <div class="imgWrap">
+                                <div class="offerLabel">ON OFFER</div>
+                                <a href="javascript:void(0)" class="likeBtn"></a>
+                                <a href="product.html" class="link">
+                                    <img src="../../images/searchImg4.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="compareBtn">
+                                <input type="checkbox" class="compare checkStyle" id="compare77" name="compare77">
+                                <label for="compare77">Add to Compare</label>
+                            </div>
+                        </div>
+                        <div class="productItem-text">
+                            <div class="productItem-content">
+                                <a href="product.html" class="title">Realme C1 (Navy Blue, 32 GB)</a>
+                                <div class="rating_info">
+                                    <div class="rating">
+                                        3.6
+                                        <img src="../../images/star.svg" alt="star">
+                                    </div>
+                                    <p>2,50,187 Ratings & 28,430 Reviews</p>
+                                </div>
+                                <ul class="specifications">
+                                    <li>
+                                        <p>4 GB RAM | 64 GB ROM | Expandable Upto 256 GB</p>
+                                    </li>
+                                    <li>
+                                        <p>15.9 cm (6.26 inch) FHD+ Display</p>
+                                    </li>
+                                    <li>
+                                        <p>12MP + 5MP | 20MP + 2MP Dual Front Camera</p>
+                                    </li>
+                                    <li>
+                                        <p>4000 mAh Li-polymer Battery</p>
+                                    </li>
+                                    <li>
+                                        <p>Qualcomm Snapdragon 636 Processor</p>
+                                    </li>
+                                    <li>
+                                        <p>Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories  </p>
+                                    </li>                     
+                                </ul>
+                            </div>
+                            <div class="productItem-price">
+                                <div class="top">
+                                    <p class="new-price">₽8,499</p>
+                                    <div class="logo">
+                                        <img src="../../images/assured.png" alt="assured">
+                                    </div>
+                                </div>
+                                <div class="sub-price">
+                                    <p class="old-price">₽9,999</p>
+                                    <p class="discount">15% off</p>
+                                </div>
+                                <p class="info">Up to ₹13,750 Off on Exchange
+                                    EMI starting from ₹465/month</p>
+                                <p class="offers">Offers</p>
+                                <ul>
+                                    <li>
+                                        <p>Special Price</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productItem">
+                        <div class="productItem-img">
+                            <div class="imgWrap">
+                                <div class="offerLabel">ON OFFER</div>
+                                <a href="javascript:void(0)" class="likeBtn"></a>
+                                <a href="product.html" class="link">
+                                    <img src="../../images/searchImg2.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="compareBtn">
+                                <input type="checkbox" class="compare checkStyle" id="compare777" name="compare777">
+                                <label for="compare777">Add to Compare</label>
+                            </div>
+                        </div>
+                        <div class="productItem-text">
+                            <div class="productItem-content">
+                                <a href="product.html" class="title">Realme C1 (Navy Blue, 32 GB)</a>
+                                <div class="rating_info">
+                                    <div class="rating">
+                                        3.6
+                                        <img src="../../images/star.svg" alt="star">
+                                    </div>
+                                    <p>2,50,187 Ratings & 28,430 Reviews</p>
+                                </div>
+                                <ul class="specifications">
+                                    <li>
+                                        <p>4 GB RAM | 64 GB ROM | Expandable Upto 256 GB</p>
+                                    </li>
+                                    <li>
+                                        <p>15.9 cm (6.26 inch) FHD+ Display</p>
+                                    </li>
+                                    <li>
+                                        <p>12MP + 5MP | 20MP + 2MP Dual Front Camera</p>
+                                    </li>
+                                    <li>
+                                        <p>4000 mAh Li-polymer Battery</p>
+                                    </li>
+                                    <li>
+                                        <p>Qualcomm Snapdragon 636 Processor</p>
+                                    </li>
+                                    <li>
+                                        <p>Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories  </p>
+                                    </li>                     
+                                </ul>
+                            </div>
+                            <div class="productItem-price">
+                                <div class="top">
+                                    <p class="new-price">₽8,499</p>
+                                    <div class="logo">
+                                        <img src="../../images/assured.png" alt="assured">
+                                    </div>
+                                </div>
+                                <div class="sub-price">
+                                    <p class="old-price">₽9,999</p>
+                                    <p class="discount">15% off</p>
+                                </div>
+                                <p class="info">Up to ₹13,750 Off on Exchange
+                                    EMI starting from ₹465/month</p>
+                                <p class="offers">Offers</p>
+                                <ul>
+                                    <li>
+                                        <p>Special Price</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productItem">
+                        <div class="productItem-img">
+                            <div class="imgWrap">
+                                <div class="adLabel">Ad</div>
+                                <a href="javascript:void(0)" class="likeBtn"></a>
+                                <a href="product.html" class="link">
+                                    <img src="../../images/searchImg5.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="compareBtn">
+                                <input type="checkbox" class="compare checkStyle" id="compare71" name="compare71">
+                                <label for="compare71">Add to Compare</label>
+                            </div>
+                        </div>
+                        <div class="productItem-text">
+                            <div class="productItem-content">
+                                <a href="product.html" class="title">Realme C1 (Navy Blue, 32 GB)</a>
+                                <div class="rating_info">
+                                    <div class="rating">
+                                        3.6
+                                        <img src="../../images/star.svg" alt="star">
+                                    </div>
+                                    <p>2,50,187 Ratings & 28,430 Reviews</p>
+                                </div>
+                                <ul class="specifications">
+                                    <li>
+                                        <p>4 GB RAM | 64 GB ROM | Expandable Upto 256 GB</p>
+                                    </li>
+                                    <li>
+                                        <p>15.9 cm (6.26 inch) FHD+ Display</p>
+                                    </li>
+                                    <li>
+                                        <p>12MP + 5MP | 20MP + 2MP Dual Front Camera</p>
+                                    </li>
+                                    <li>
+                                        <p>4000 mAh Li-polymer Battery</p>
+                                    </li>
+                                    <li>
+                                        <p>Qualcomm Snapdragon 636 Processor</p>
+                                    </li>
+                                    <li>
+                                        <p>Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories  </p>
+                                    </li>                     
+                                </ul>
+                            </div>
+                            <div class="productItem-price">
+                                <div class="top">
+                                    <p class="new-price">₽8,499</p>
+                                </div>
+                                <p class="offers">Offers</p>
+                                <ul>
+                                    <li>
+                                        <p>Special Price</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Конец Список товаров -->
+
+                <!-- пагинация -->
+                <div class="search__pagination">
+                    <p>Page 1 of 428</p>
+                    <ul class="search__pagination-list">
+                        <li class="active"><span>1</span></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                        <li><a href="javascript:void(0)">6</a></li>
+                        <li><a href="javascript:void(0)">7</a></li>
+                        <li><a href="javascript:void(0)">8</a></li>
+                        <li><a href="javascript:void(0)">9</a></li>
+                        <li><a href="javascript:void(0)">10</a></li>
+                        <li><a href="javascript:void(0)"><span>NEXT</span></a></li>
+                    </ul>
+                    <p></p>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="popular">
+    <div class="container">
+        <h2>Reviews for Popular Mobiles</h2>
+        <div class="popular__wrap item">
+            <div class="item_main">
+                <div class="item_img">
+                    <a href="product.html" class="link">
+                        <img src="../../images/searchImg6.jpg" alt="image">
+                    </a>
+                </div>
+                <div class="item_info">
+                    <a class="name" href="product.html">1. Honor 7A (Gold, 32 GB)</a>
+                    <div class="rating_info">
+                        <div class="rating">
+                            4.2
+                            <img src="../../images/star.svg" alt="star">
+                        </div>
+                        <p>2,48,868 Ratings&25,775 Reviews</p>
+                    </div>
+                    <div class="price">
+                        <div class="price-new">₽7,999</div>
+                        <div class="price-discount">27% off</div>
+                    </div>
+                    <ul class="specifications">
+                        <li>
+                            <p>3 GB RAM | 32 GB ROM | Expandable Upto 256 GB</p>
+                        </li>
+                        <li>
+                            <p>14.48 cm (5.7 inch) HD+ Display</p>
+                        </li>
+                        <li>
+                            <p>13MP + 2MP | 8.0MP Front Camera</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item_Review">
+                <p class="headind">Most Helpful Review</p>
+                <p class="title"><span>5</span> Perfect product!</p>
+                <div class="comment">
+                    <p>Very good smartphone for honor. Awassome products are honor, this is the best slimist smartphone honor</p>
+                </div>
+                <div class="bottom">
+                    <p>
+                        <span>KAUSHIK MANDAL </span>
+                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                        <span>Certified Buyer  18 Jun, 2018</span>
+                    </p>
+                </div>
+            </div>
+            <div class="item_Review">
+                <p class="headind">Recent Review</p>
+                <p class="title"><span>4</span> Decent product</p>
+                <div class="comment">
+                    <p>i like this phone.... really i like this phone very much</p>
+                </div>
+                <div class="bottom">
+                    <p>
+                        <span>Mahbub Ahmed </span>
+                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                        <span>Certified Buyer   17 Feb, 2019</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="popular__wrap item">
+            <div class="item_main">
+                <div class="item_img">
+                    <a href="product.html" class="link">
+                        <img src="../../images/searchImg2.jpg" alt="image">
+                    </a>
+                </div>
+                <div class="item_info">
+                    <a class="name" href="product.html">1. Honor 7A (Gold, 32 GB)</a>
+                    <div class="rating_info">
+                        <div class="rating">
+                            4.2
+                            <img src="../../images/star.svg" alt="star">
+                        </div>
+                        <p>2,48,868 Ratings&25,775 Reviews</p>
+                    </div>
+                    <div class="price">
+                        <div class="price-new">₽7,999</div>
+                        <div class="price-discount">27% off</div>
+                    </div>
+                    <ul class="specifications">
+                        <li>
+                            <p>3 GB RAM | 32 GB ROM | Expandable Upto 256 GB</p>
+                        </li>
+                        <li>
+                            <p>14.48 cm (5.7 inch) HD+ Display</p>
+                        </li>
+                        <li>
+                            <p>13MP + 2MP | 8.0MP Front Camera</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item_Review">
+                <p class="headind">Most Helpful Review</p>
+                <p class="title"><span>5</span> Excellent</p>
+                <div class="comment">
+                    <p>great mobile</p>  
+                    <p>using for the last 10 days, no issues found ... battery backup is awesome (7+ hours of screen on time). gaming is also good ( butter smooth game</p>
+                    <div class="hiddenReview">
+                        <p>using for the last 10 days, no issues found ... battery backup is awesome (7+ hours of screen on time). gaming is also good ( butter smooth game</p>
+                    </div>
+                    <a href="javascript:void(0)" class="readFull">Read full review</a>
+                </div>
+                <div class="bottom">
+                    <p>
+                        <span>anil kumar kalavalapalli v l s    </span>
+                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                        <span>Certified Buyer   11 Dec, 2018</span>
+                    </p>
+                </div>
+            </div>
+            <div class="item_Review">
+                <p class="headind">Recent Review</p>
+                <p class="title"><span>4</span> Decent product</p>
+                <div class="comment">
+                    <p>Very good smartphone for honor. Awassome products are honor, this is the best slimist smartphone honor</p>
+                    <div class="hiddenReview">
+                        <p>using for the last 10 days, no issues found ... battery backup is awesome (7+ hours of screen on time). gaming is also good ( butter smooth game</p>
+                    </div>
+                    <a href="javascript:void(0)" class="readFull">Read full review</a>
+                </div>
+                <div class="bottom">
+                    <p>
+                        <span>anil kumar kalavalapalli v l s      </span>
+                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                        <span>Certified Buyer   11 Dec, 2018</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="popular__wrap item">
+            <div class="item_main">
+                <div class="item_img">
+                    <a href="product.html" class="link">
+                        <img src="../../images/searchImg7.jpg" alt="image">
+                    </a>
+                </div>
+                <div class="item_info">
+                    <a class="name" href="product.html">1. Honor 7A (Gold, 32 GB)</a>
+                    <div class="rating_info">
+                        <div class="rating">
+                            4.2
+                            <img src="../../images/star.svg" alt="star">
+                        </div>
+                        <p>2,48,868 Ratings&25,775 Reviews</p>
+                    </div>
+                    <div class="price">
+                        <div class="price-new">₽7,999</div>
+                        <div class="price-discount">27% off</div>
+                    </div>
+                    <ul class="specifications">
+                        <li>
+                            <p>3 GB RAM | 32 GB ROM | Expandable Upto 256 GB</p>
+                        </li>
+                        <li>
+                            <p>14.48 cm (5.7 inch) HD+ Display</p>
+                        </li>
+                        <li>
+                            <p>13MP + 2MP | 8.0MP Front Camera</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item_Review">
+                <p class="headind">Most Helpful Review</p>
+                <p class="title"><span>5</span> Excellent</p>
+                <div class="comment">
+                    <p>Good looking Phone Looking is much Good.In thie budget thie phone is very very good Camrea is so much classy battery backup also Good...!!!</p>
+                </div>
+                <div class="bottom">
+                    <p>
+                        <span>anil kumar kalavalapalli v l s    </span>
+                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                        <span>Certified Buyer   11 Dec, 2018</span>
+                    </p>
+                </div>
+            </div>
+            <div class="item_Review">
+                <p class="headind">Recent Review</p>
+                <p class="title"><span>4</span> Decent product</p>
+                <div class="comment">
+                    <p>Very good smartphone for honor. Awassome products are honor, this is the best slimist smartphone honor</p>
+                    <div class="hiddenReview">
+                        <p>using for the last 10 days, no issues found ... battery backup is awesome (7+ hours of screen on time). gaming is also good ( butter smooth game</p>
+                    </div>
+                    <a href="javascript:void(0)" class="readFull">Read full review</a>
+                </div>
+                <div class="bottom">
+                    <p>
+                        <span>anil kumar kalavalapalli v l s      </span>
+                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                        <span>Certified Buyer   11 Dec, 2018</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="popular__wrap item">
+            <div class="item_main">
+                <div class="item_img">
+                    <a href="product.html" class="link">
+                        <img src="../../images/searchImg7.jpg" alt="image">
+                    </a>
+                </div>
+                <div class="item_info">
+                    <a class="name" href="product.html">1. Honor 7A (Gold, 32 GB)</a>
+                    <div class="rating_info">
+                        <div class="rating">
+                            4.2
+                            <img src="../../images/star.svg" alt="star">
+                        </div>
+                        <p>2,48,868 Ratings&25,775 Reviews</p>
+                    </div>
+                    <div class="price">
+                        <div class="price-new">₽7,999</div>
+                        <div class="price-discount">27% off</div>
+                    </div>
+                    <ul class="specifications">
+                        <li>
+                            <p>3 GB RAM | 32 GB ROM | Expandable Upto 256 GB</p>
+                        </li>
+                        <li>
+                            <p>14.48 cm (5.7 inch) HD+ Display</p>
+                        </li>
+                        <li>
+                            <p>13MP + 2MP | 8.0MP Front Camera</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item_Review">
+                <p class="headind">Most Helpful Review</p>
+                <p class="title"><span>5</span> Excellent</p>
+                <div class="comment">
+                    <ul>
+                        <li><p>Awesome Mobile By Realme...</p></li>
+                        <li><p>First Impression is Very Good</p></li>
+                        <li><p>Big Size Notch Display</p></li>
+                        <li><p>Red and Black Both color is Nice..</p></li>
+                        <li><p>Rear and Front camera is also Good</p></li>
+                        <li><p>Batter...</p></li>
+                    </ul>
+                    <div class="hiddenReview">
+                        <p>using for the last 10 days, no issues found ... battery backup is awesome (7+ hours of screen on time). gaming is also good ( butter smooth game</p>
+                    </div>
+                    <a href="javascript:void(0)" class="readFull">Read full review</a>
+                </div>
+                <div class="bottom">
+                    <p>
+                        <span>anil kumar kalavalapalli v l s    </span>
+                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                        <span>Certified Buyer   11 Dec, 2018</span>
+                    </p>
+                </div>
+            </div>
+            <div class="item_Review">
+                <p class="headind">Recent Review</p>
+                <p class="title"><span>4</span> Decent product</p>
+                <div class="comment">
+                    <p>Very good smartphone for honor. Awassome products are honor, this is the best slimist smartphone honor</p>
+                    <div class="hiddenReview">
+                        <p>using for the last 10 days, no issues found ... battery backup is awesome (7+ hours of screen on time). gaming is also good ( butter smooth game</p>
+                    </div>
+                    <a href="javascript:void(0)" class="readFull">Read full review</a>
+                </div>
+                <div class="bottom">
+                    <p>
+                        <span>anil kumar kalavalapalli v l s      </span>
+                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                        <span>Certified Buyer   11 Dec, 2018</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="popular__wrap item">
+            <div class="item_main">
+                <div class="item_img">
+                    <a href="product.html" class="link">
+                        <img src="../../images/searchImg7.jpg" alt="image">
+                    </a>
+                </div>
+                <div class="item_info">
+                    <a class="name" href="product.html">1. Honor 7A (Gold, 32 GB)</a>
+                    <div class="rating_info">
+                        <div class="rating">
+                            4.2
+                            <img src="../../images/star.svg" alt="star">
+                        </div>
+                        <p>2,48,868 Ratings&25,775 Reviews</p>
+                    </div>
+                    <div class="price">
+                        <div class="price-new">₽7,999</div>
+                        <div class="price-discount">27% off</div>
+                    </div>
+                    <ul class="specifications">
+                        <li>
+                            <p>3 GB RAM | 32 GB ROM | Expandable Upto 256 GB</p>
+                        </li>
+                        <li>
+                            <p>14.48 cm (5.7 inch) HD+ Display</p>
+                        </li>
+                        <li>
+                            <p>13MP + 2MP | 8.0MP Front Camera</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item_Review">
+                <p class="headind">Most Helpful Review</p>
+                <p class="title"><span>5</span> Excellent</p>
+                <div class="comment">
+                    <p>Very good smartphone for honor. Awassome products are honor, this is the best slimist smartphone honor</p>
+                </div>
+                <div class="bottom">
+                    <p>
+                        <span>anil kumar kalavalapalli v l s    </span>
+                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                        <span>Certified Buyer   11 Dec, 2018</span>
+                    </p>
+                </div>
+            </div>
+            <div class="item_Review">
+                <p class="headind">Recent Review</p>
+                <p class="title"><span>4</span> Decent product</p>
+                <div class="comment">
+                    <p>Very good smartphone for honor. Awassome products are honor, this is the best slimist smartphone honor</p>
+                </div>
+                <div class="bottom">
+                    <p>
+                        <span>anil kumar kalavalapalli v l s      </span>
+                        <span><img src="../../images/ico.svg" alt="ico"></span>
+                        <span>Certified Buyer   11 Dec, 2018</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- build:section layout.footer-->
+<!-- /build -->
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/jcf.min.js"></script>
+<script src="../../js/jcf.checkbox.min.js"></script>
+<script src="../../js/jquery-ui.min.js"></script>
+<script src="../../js/desktop/search-page.min.js"></script>
+<script src="../../js/desktop/script.min.js"></script>
+</body>
+</html> 

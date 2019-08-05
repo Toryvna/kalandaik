@@ -1,0 +1,186 @@
+header{
+    background-color: #2874f0;
+    padding: 13px 0;
+    .header_top-line{
+        padding: 0 7px;
+        .flex-wrap{
+            @include flexbox;
+            @include justify-content(space-between);
+            .flex-item{
+                &.links{
+                    @include flexbox;
+                    @include align-items(center);
+                    margin-left: 27px;
+                }
+                &.header_search{
+                    margin-right: 0;
+                    margin-left: auto;
+                }
+
+                &.pageTitle{
+                    margin-left: 11px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    p{
+                        color: #e0e4ea;
+                        font-size: 16px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+            a{
+                &.header_logo{
+                    height: 24px;
+                    display: inline-block;
+                    min-width: 30px;
+                    img{
+                        max-height: 100%;
+                        max-width: 100%;
+                    }
+                }
+                &.header_cart__link{
+                    position: relative;
+                    width: 16px;
+                    height: 16px;
+                    display: block;
+                    margin-right: 22px;
+                    &::before{
+                        content: '\E886';
+                        font-family: 'fontello';
+                        color: #fff;
+                        font-size: 16px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    .cartAmount{
+                        position: absolute;
+                        left: 5px;
+                        top: -9px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 6px;
+                        border: 1px solid #ffffff;
+                        background-color: #ff6161;
+                        font-size: 11px;
+                        z-index: 1;
+                        text-align: center;
+                        color: #fff;
+                    }
+                }
+                &.back_link{
+                    position: relative;
+                    margin-right: 12px;
+                    &::before{
+                        content: '\E884';
+                        font-family: 'fontello';
+                        color: #fff;
+                        font-size: 18px;
+                    }
+                }
+                &.mobileSearch{
+                    position: relative;
+                    &::before{
+                        content: '\E88d';
+                        font-family: 'fontello';
+                        font-size: 15px;
+                        color: #fff;
+                    }
+                }
+            }
+            .header_login__link{
+                color: #ffffff;
+                font-family: 'Roboto';
+                font-size: 16px;
+            }
+        }
+        .searchLine{
+            display: none;
+        }
+        &.show{
+            .flex-wrap{
+                display: none;
+            }
+            .searchLine{
+                @include flexbox;
+                @include align-items(center);
+                .form-search{
+                    position: relative;
+                    width: calc(100% - 40px);
+                    margin-right: 10px;
+                    input{
+                        background-color: #fff;
+                        border: none;
+                        height: 27px;
+                        width: 100%;
+                        padding:0 27px 0 10px;
+                        color: #000;
+                        font-size: 12px;
+                        &::-webkit-input-placeholder {color:#757575;}
+                        &::-moz-placeholder          {color:#757575;}
+                        &:-moz-placeholder           {color:#757575;}
+                        &:-ms-input-placeholder      {color:#757575;}
+                        &::-webkit-search-decoration,
+                        &::-webkit-search-cancel-button,
+                        &::-webkit-search-results-button,
+                        &::-webkit-search-results-decoration {
+                            -webkit-appearance:none;
+                        }
+                        &::-ms-clear {
+                            display: none;
+                        }
+                    }
+                    button{
+                        position: absolute;
+                        top: 0;
+                        right: 5px;
+                        width: 20px;
+                        height: 27px;
+                        border: none;
+                        background-color: transparent;
+                        border-left: none;
+                        z-index: 1;
+                        cursor: pointer;
+                        &::before{
+                            content: '\E88D';
+                            font-family: 'fontello';
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            font-size: 18px;
+                            color: #2874f0;
+                        }
+                    }
+                }
+                .searchLine-close{
+                    width: 27px;
+                    height: 27px;
+                    position: relative;
+                    &::before,
+                    &::after{
+                        position: absolute;
+                        left: 12px;
+                        top: 4px;
+                        content: " ";
+                        height: 21px;
+                        width: 1px;
+                        background-color: #fff;
+                    }
+                    &::before {
+                        transform: rotate(45deg);
+                    }
+                    &::after {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+}

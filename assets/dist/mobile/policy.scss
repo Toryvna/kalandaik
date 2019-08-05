@@ -1,0 +1,59 @@
+@import "../scss/libs/flexbox.scss";
+@import "../scss/libs/mobile_header_inner-page.scss";
+
+.content{
+    background-color: #fff;
+    box-shadow: 0 1px 7px 1px rgba(72, 72, 72, 0.1);
+    padding: 25px 15px;
+    max-width: 978px;
+    margin: 0 auto;
+    h1{
+        text-align: center;
+        color: #212121;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+    p{
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    strong{
+        font-family: 'Roboto Medium';  
+    }
+    table{
+        border: 1px solid #000;
+        border-collapse: collapse;
+        padding: 8px;
+        td{
+            border: 1px solid #000;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+    }
+    a{
+        color: #212121;
+        font-size: 14px;
+        font-family: 'Roboto Medium'; 
+        word-break: break-all; 
+    }
+    ul{
+        li{
+            padding: 0 0 8px 20px;
+            position: relative;
+            line-height: 21px;
+            color: #212121;
+            font-size: 14px;
+            &::before{
+                content: '';
+                width: 4px;
+                height: 4px;
+                background: #000;
+                position: absolute;
+                border-radius: 50%;
+                left: 0;
+                top: 9px;
+            }
+        }
+    }
+}

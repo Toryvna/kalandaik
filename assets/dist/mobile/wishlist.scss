@@ -1,0 +1,140 @@
+@import "../scss/libs/flexbox.scss";
+@import "../scss/libs/personal_area_header.scss";
+
+section{
+    .row{
+        box-shadow: 0 2px 5px rgba(102, 104, 106, 0.18);
+        background-color: #ffffff;
+        margin-bottom: 10px;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+        .heading{
+            @include flexbox;
+            @include align-items(center);
+            padding: 10px;
+            img{
+                width: 35px;
+                height: 35px;
+                margin-right: 13px;
+            }
+            span{
+                color: #212121;
+                font-size: 14px;
+            }
+        }
+        .separator{
+            background-color: #ebebeb;
+            height: 1px;
+            width: 100%;
+        }
+        .bottom{
+            a{
+                @include flexbox;
+                @include align-items(center);
+                color: #212121;
+                font-size: 14px;
+                position: relative;
+                padding: 13px 10px 21px; 
+                &::after{
+                    content: '';
+                    width: 219px;
+                    height: 4px;
+                    background-color: #ebebeb;
+                    position: absolute;
+                    left: 18px;
+                    bottom: 12px;
+                }
+                img{
+                    width: 9px;
+                    margin-right: 4px;
+                }
+                i{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 16px;
+                    color: #737373;
+                    font-size: 11px;
+                }
+            }
+        }
+        .item{
+            padding: 24px 0;
+            position: relative;
+            border-bottom: 1px solid #ebebeb;
+            &:last-of-type{
+                border: none;
+            }
+            .remove{
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                color: #c1c1c1;
+                font-size: 18px;
+                z-index: 1;
+            }
+            .image{
+                text-align: center;
+                position: relative;
+                .label{
+                    position: absolute;
+                    bottom: 5px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: block;
+                    padding: 5px 10px;
+                    box-shadow: 0 2px 6px rgba(159, 160, 180, 0.32);
+                    background-color: #ffffff;
+                    color: #d33131;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    max-width: 117px;
+                }
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+            .info{
+                margin-top: 25px;
+                a{
+                    color: #212121;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .rating_info{
+                    @include flexbox;
+                    @include align-items(center);
+                    margin: 10px 0;
+                    p{
+                        color: #878787;
+                        font-size: 14px;
+                    }
+                    .rating{
+                        background-color: #69ad68;
+                        display: table;
+                        border-radius: 2px;
+                        padding: 2px 5px;
+                        height: 15px;
+                        line-height: 15px;                      
+                        color: #ffffff;
+                        font-size: 14px;
+                        white-space: nowrap;
+                        margin-right: 15px;
+                        i{
+                            font-size: 12px;
+                            color: #fff;
+                        }
+                    }
+                }
+                span{
+                    color: #737373;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

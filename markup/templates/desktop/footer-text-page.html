@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>text page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo-mob.png">
+    <link rel="stylesheet" href="../../css/desktop/style.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/desktop/category.css">
+</head>
+
+<body>
+    <!-- login popup -->
+    <div class="overlay-popup overlay-login">
+        <div class="close"></div>
+        <div class="login-popup">
+            <span class="close-popup"></span>
+            <div class="flex-wrap">
+                <div class="popup_header">
+                    <p><span>Login</span> Get access to your Orders, Wishlist and Recommendations
+                    </p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <form>
+                        <div class="form-input">
+                            <input type="text" placeholder=" " required>
+                            <span class="floating-label">Enter Email/Mobile number</span>
+                            <span class="error-msg">Please enter valid Email/Mobile number</span>
+                        </div>
+                        <div class="form-input">
+                            <input type="password" placeholder=" " required>
+                            <span class="floating-label">Enter Password</span>
+                            <a href="javascript:void(0)">Forgot?</a>
+                            <span class="error-msg">Please enter valid Password</span>
+                        </div>
+                        <div class="form-button">
+                            <button>Login</button>
+                        </div>
+                        <p>OR</p>
+                        <div class="form-button white">
+                            <button>Request OTP</button>
+                        </div>
+                        <div class="form-link">
+                            <a href="javascript:void(0)" class="closeBtn open-registration">New to Flipkart? Create an account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end login popup -->
+
+    <!-- check in popup -->
+    <div class="overlay-popup overlay-checkIn">
+        <div class="close"></div>
+        <div class="checkIn-popup">
+            <span class="close-popup"></span>
+            <div class="flex-wrap">
+                <div class="popup_header">
+                    <p><span>Signup</span> We do not share your personal details with anyone.
+                    </p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <div class="step step1 active">
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Full name</span>
+                                <span class="error-msg">Please enter valid Your Full name</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="email" placeholder=" " required>
+                                <span class="floating-label">Enter Your Email</span>
+                                <span class="error-msg">Please enter valid Email</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Mobile Number</span>
+                                <span class="error-msg">Please enter valid Mobile Number</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step2" class="nextStep">CONTINUE</button>
+                            </div>
+                            <div class="form-button white">
+                                <button class="closePopup open-login">Existing user? Log in</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step2">
+                        <h4>You will receive a 4-digit number 
+                            on you phone within 1 minute.</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter your code</span>
+                                <span class="error-msg">Please enter valid your code</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step3" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step3">
+                        <h4>Create your password</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Confirm your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step4" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step4">
+                        <h4><span>Congratulations!</span>
+                        <span>Your account has been created.</span></h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Email/Mobile number</span>
+                                <span class="error-msg">Please enter valid Email/Mobile number</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter Password</span>
+                                <a href="javascript:void(0)">Forgot?</a>
+                                <span class="error-msg">Please enter valid Password</span>
+                            </div>
+                            <div class="form-button">
+                                <button>Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="top-line">
+            <div class="container">
+                <div class="flex-wrap">
+                    <div class="flex-item">
+                        <a href="index.html" class="header_logo">
+                            <img src="../../images/logo-desktop.png" alt="logo">
+                        </a>
+                        <div class="header_search">
+                            <form class="form-search">
+                                <input name="text" class="search-query" type="text" placeholder="Поиск продуктов, брендов и другое">
+                                <button class="button"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <div class="header-topMenu">
+                            <ul>
+                                <li>
+                                    <a id="registration" href="#">Вход и Регистрация</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="textPage">
+        <div class="container">
+            <h2>Trending Pages</h2>
+            <div>
+                <h3>Gift Store</h3>
+                <p>/christmas-gift-store</p>
+            </div>
+            <h3>Clothing Trends</h3>
+            <div><a href="#">black bras</a> <a href="#">bralette</a> <a href="#">bra</a> <a href="#">clovia bra</a> <a href="#">push up bra</a> <a href="#">red bras</a> <a href="#">strapless bra</a> <a href="#">triumph bra</a> <a href="#">tube bra</a> <a href="#">bikini   women bra</a>                <a href="#">panty set</a> <a href="#">ghagra cholis</a> <a href="#">black lehengas</a> <a href="#">blue lehengas green lehengas</a> <a href="#">pink lehengas</a> <a href="#">red lehengas</a> <a href="#">white lehengas</a> <a href="#">black</a>                <a href="#">color</a> <a href="#">blue jeans</a> <a href="#">mid rise jeans</a> <a href="#">white jeans</a> <a href="#">cotton shirts</a> <a href="#">denim shirts</a> <a href="#">pure cotton shirts</a> <a href="#">blue trousers casual</a>                <a href="#">trousers</a> <a href="#">formal trousers</a> <a href="#">printed t shirts</a> <a href="#">black jackets</a> <a href="#">quilted jackets</a> <a href="#">white jackets</a> <a href="#">bandhani dress</a> <a href="#">material chaniya</a>                <a href="#">cholis</a> <a href="#">denim jackets</a> <a href="#">designer dresses</a> <a href="#">designer tops</a> <a href="#">fancy dresses</a> <a href="#">nude dresses</a> <a href="#">spaghetti top</a> <a href="#">transparent bras</a>                <a href="#">palazzo</a> <a href="#">suits</a> <a href="#">black blouses</a> <a href="#">blue blouses</a> <a href="#">formal blouses</a> <a href="#">gold blouses</a> <a href="#">wedding blouses</a> <a href="#">a line dresses and dresses</a>                <a href="#">asymmetrical dresses</a> <a href="#">balloon dress</a> <a href="#">bandage dress</a> <a href="#">beach dresses</a> <a href="#">blue dress</a> <a href="#">bodycon dress</a> <a href="#">casual dresses</a> <a href="#">cold shoulder dress cocktail dresses</a>                <a href="#">denim dresses</a> <a href="#">floral dresses</a> <a href="#">forever 21 dresses   </a> <a href="#">green dress</a> <a href="#">lace dress</a> <a href="#">layered dress</a> <a href="#">little black dresses</a> <a href="#">long dresses</a>                <a href="#">midi dress</a> <a href="#">midis dresses</a> <a href="#">mini dress</a> <a href="#">off shoulder</a> <a href="#">dress</a> <a href="#">peplum dresses</a> <a href="#">plus size</a> <a href="#">dresses</a> <a href="#">sheath dress</a>                <a href="#">shirt dress</a> <a href="#">skater dress</a> <a href="#">stripes dresses</a> <a href="#">summer dresses</a> <a href="#">sweater dress</a> <a href="#">tshirt dresses</a> <a href="#">vero moda dresses</a> <a href="#">white dress</a>                <a href="#">yellow dress</a> <a href="#">a line kurtis anarkali kurtis</a> <a href="#">bell sleeve </a> <a href="#">kurtis</a> <a href="#">black kurtis</a> <a href="#">blue kurtis</a> <a href="#">cape kurtis</a> <a href="#">casual kurtis</a>                <a href="#">festive wear kurtis formal kurtis</a> <a href="#">green kurtis</a> <a href="#">kurta dress</a> <a href="#">long kurtis</a> <a href="#">mid kurtis</a> <a href="#">mirror work kurtis</a> <a href="#">nude kurtis party</a> <a href="#">wear kurtis</a>                <a href="#">red kurtis short</a> <a href="#">kurtis sleeveless</a> <a href="#">kurtis</a> <a href="#">straight kurtis wedding kurtis</a> <a href="#">white kurtis</a> <a href="#">work kurtas</a> <a href="#">a line skirts</a> <a href="#">black skirts full length</a>                <a href="#">skirts gathered</a> <a href="#">skirts knee length</a> <a href="#">skirts midis </a> <a href="#">skirts</a> <a href="#">party wear</a> <a href="#">skirts pencil</a> <a href="#">skirts pleated skirts</a> <a href="#">short skirts</a>                <a href="#">straight skirts wrap around skirts</a> <a href="#">casual tops</a> <a href="#">full sleeves</a> <a href="#">tops stripes</a> <a href="#">tops trendy</a> <a href="#">top veromoda tops   ankle length</a> <a href="#">leggings treggings black gown green</a>                <a href="#">gown lace gowns</a> <a href="#">gown red gown</a> <a href="#">white gown</a> <a href="#">lux lyra leggings</a> <a href="#">babydoll women</a> <a href="#">boxers corset bodycare</a> <a href="#">panties clovia</a> <a href="#">panties g string</a>                <a href="#">maternity panties periods panties</a> <a href="#">thongs zivame</a> <a href="#">panties lingerie</a> <a href="#">maternity dresses</a> <a href="#">solid denims boxer shorts</a> <a href="#">cargo shorts denim</a> <a href="#">shorts gym shorts</a>                <a href="#">sports shorts</a> <a href="#">kaftan tops</a> <a href="#">tunic tops</a> <a href="#">crop top and skirts</a></div>
+            <h2>Categories</h2>
+            <h3>Books</h3>
+            <div><a href="#">black bras</a> <a href="#">bralette</a> <a href="#">bra</a> <a href="#">clovia bra</a> <a href="#">push up bra</a> <a href="#">red bras</a> <a href="#">strapless bra</a> <a href="#">triumph bra</a> <a href="#">tube bra</a> <a href="#">bikini   women bra</a>                <a href="#">panty set</a> <a href="#">ghagra cholis</a> <a href="#">black lehengas</a> <a href="#">blue lehengas green lehengas</a> <a href="#">pink lehengas</a> <a href="#">red lehengas</a> <a href="#">white lehengas</a> <a href="#">black</a>                <a href="#">color</a> <a href="#">blue jeans</a> <a href="#">mid rise jeans</a> <a href="#">white jeans</a> <a href="#">cotton shirts</a> <a href="#">denim shirts</a> <a href="#">pure cotton shirts</a> <a href="#">blue trousers casual</a>                <a href="#">trousers</a> <a href="#">formal trousers</a> <a href="#">printed t shirts</a> <a href="#">black jackets</a> <a href="#">quilted jackets</a> <a href="#">white jackets</a> <a href="#">bandhani dress</a> <a href="#">material chaniya</a>                <a href="#">cholis</a> <a href="#">denim jackets</a> <a href="#">designer dresses</a> <a href="#">designer tops</a> <a href="#">fancy dresses</a> <a href="#">nude dresses</a> <a href="#">spaghetti top</a> <a href="#">transparent bras</a>                <a href="#">palazzo</a> <a href="#">suits</a> <a href="#">black blouses</a> <a href="#">blue blouses</a> <a href="#">formal blouses</a> <a href="#">gold blouses</a> <a href="#">wedding blouses</a> <a href="#">a line dresses and dresses</a>                <a href="#">asymmetrical dresses</a> <a href="#">balloon dress</a> <a href="#">bandage dress</a> <a href="#">beach dresses</a> <a href="#">blue dress</a> <a href="#">bodycon dress</a> <a href="#">casual dresses</a> <a href="#">cold shoulder dress cocktail dresses</a>                <a href="#">denim dresses</a> <a href="#">floral dresses</a> <a href="#">forever 21 dresses   </a> <a href="#">green dress</a> <a href="#">lace dress</a> <a href="#">layered dress</a> <a href="#">little black dresses</a> <a href="#">long dresses</a>                <a href="#">midi dress</a> <a href="#">midis dresses</a> <a href="#">mini dress</a> <a href="#">off shoulder</a> <a href="#">dress</a> <a href="#">peplum dresses</a> <a href="#">plus size</a> <a href="#">dresses</a> <a href="#">sheath dress</a>                <a href="#">shirt dress</a> <a href="#">skater dress</a> <a href="#">stripes dresses</a> <a href="#">summer dresses</a> <a href="#">sweater dress</a> <a href="#">tshirt dresses</a> <a href="#">vero moda dresses</a> <a href="#">white dress</a>                <a href="#">yellow dress</a> <a href="#">a line kurtis anarkali kurtis</a> <a href="#">bell sleeve </a> <a href="#">kurtis</a> <a href="#">black kurtis</a> <a href="#">blue kurtis</a> <a href="#">cape kurtis</a> <a href="#">casual kurtis</a>                <a href="#">festive wear kurtis formal kurtis</a> <a href="#">green kurtis</a> <a href="#">kurta dress</a> <a href="#">long kurtis</a> <a href="#">mid kurtis</a> <a href="#">mirror work kurtis</a> <a href="#">nude kurtis party</a> <a href="#">wear kurtis</a>                <a href="#">red kurtis short</a> <a href="#">kurtis sleeveless</a> <a href="#">kurtis</a> <a href="#">straight kurtis wedding kurtis</a> <a href="#">white kurtis</a> <a href="#">work kurtas</a> <a href="#">a line skirts</a> <a href="#">black skirts full length</a>                <a href="#">skirts gathered</a> <a href="#">skirts knee length</a> <a href="#">skirts midis </a> <a href="#">skirts</a> <a href="#">party wear</a> <a href="#">skirts pencil</a> <a href="#">skirts pleated skirts</a> <a href="#">short skirts</a>                <a href="#">straight skirts wrap around skirts</a> <a href="#">casual tops</a> <a href="#">full sleeves</a> <a href="#">tops stripes</a> <a href="#">tops trendy</a> <a href="#">top veromoda tops   ankle length</a> <a href="#">leggings treggings black gown green</a>                <a href="#">gown lace gowns</a> <a href="#">gown red gown</a> <a href="#">white gown</a> <a href="#">lux lyra leggings</a> <a href="#">babydoll women</a> <a href="#">boxers corset bodycare</a> <a href="#">panties clovia</a> <a href="#">panties g string</a>                <a href="#">maternity panties periods panties</a> <a href="#">thongs zivame</a> <a href="#">panties lingerie</a> <a href="#">maternity dresses</a> <a href="#">solid denims boxer shorts</a> <a href="#">cargo shorts denim</a> <a href="#">shorts gym shorts</a>                <a href="#">sports shorts</a> <a href="#">kaftan tops</a> <a href="#">tunic tops</a> <a href="#">crop top and skirts</a></div>
+        </div>
+    </section>
+
+
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/desktop/footer-text-page.min.js"></script>
+    <script src="../../js/desktop/script.min.js"></script>
+</body>
+
+</html>

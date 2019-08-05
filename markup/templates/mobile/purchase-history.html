@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo-mob.png">
+    <link rel="stylesheet" href="../../css/mobile/style.css">
+    <link rel="stylesheet" href="../../css/mobile/purchase-history.css">
+</head>
+
+<body>
+    <!-- request for refund popup -->
+    <div class="overlay-popup overlay-refund">
+        <div class="close"></div>
+        <div class="refund-popup">
+            <span class="close-popup"></span>
+            <div class="content">
+                <h3>Please leave your information below for us to contact you</h3>
+                <form>
+                    <div class="form-input">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="form-input">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="form-textarea">
+                        <textarea placeholder="Your comment "></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="closing open-thanks">continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- request for refund popup -->
+    <div class="overlay-popup overlay-thanks">
+        <div class="close"></div>
+        <div class="thanks-popup">
+            <span class="close-popup"></span>
+            <div class="content">
+                <p>Thank you for your request. We will contact you as soon as possible</p>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="header_top-line">
+
+                <div class="flex-wrap">
+                    <div class="flex-item">
+                        <a onclick="javascript:history.back(); return false;" href="" class="back_link"></a>
+                    </div>
+
+                    <div class="flex-item">
+                        <a href="index.html" class="header_logo">
+                            <img src="../../images/logo-mob.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="flex-item pageTitle">
+                        <p>My Cart(3)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <form class="shopingCartForm" action="#" id="shopingCartForm">
+        <div class="cart__pincode">
+            <div class="topForm">
+                <input type="text" class="addPincode" id="addPincode-input" placeholder="Enter Pincode">
+                <button>Add</button>
+            </div>
+        </div>
+
+        <div class="cart__product">
+            <div class="cart__product-wrap">
+                <div class="cart__product-text">
+                    <a class="title" href="product.html">Redmi Note 6 Pro (Black, Black Black</a>
+                    <p class="sub-info">4 GB RAM</p>
+                    <div class="flex-wrap">
+                        <p>Seller: SuperComNet</p>
+                        <img src="../../images/assured.png" alt="img" class="logo">
+                    </div>
+                    <div class="price">
+                        <p class="price-new">₽11,999</p>
+                        <p class="price-old">₽15,999</p>
+                        <p class="price-discount">25% off</p>
+                    </div>
+                    <p class="sub-info">
+                        2 Offers Available
+                    </p>
+                    <p class="delivery">
+                        Delivery by, Sun Mar 3 I Free
+                        <span>₽40</span>
+                    </p>
+                    <div class="status delivering">
+                        <img src="../../images/delivery-truck_icon.png" alt="delivery"><span>Delivering</span>
+                        <a href="javascript:void(0)" class="open-refund">request for refund</a>
+                    </div>
+                </div>
+                <div class="cart__product-img">
+                    <div class="img-wrap">
+                        <a href="product.html">
+                            <img src="../../images/single-product/Recently-img1.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="select">
+                        <select class="quantity">
+                            <option value="1">Qty: 1</option>
+                            <option value="2">Qty: 2</option>
+                            <option value="3">Qty: 3</option>
+                            <option value="4">Qty: 4</option>
+                            <option value="5">Qty: 5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart__product">
+            <div class="cart__product-wrap">
+                <div class="cart__product-text">
+                    <a class="title" href="product.html">Redmi Y2 (Gold, 64 GB)</a>
+                    <p class="sub-info">3 GB RAM</p>
+                    <div class="flex-wrap">
+                        <p>Seller: SuperComNet</p>
+                        <img src="../../images/assured.png" alt="img" class="logo">
+                    </div>
+                    <div class="price">
+                        <p class="price-new">₽9,999</p>
+                        <p class="price-old">₽13,499</p>
+                        <p class="price-discount">25% off</p>
+                    </div>
+                    <p class="sub-info">
+                        1 Offer Available
+                    </p>
+                    <p class="delivery">
+                        Delivery by, Sun Mar 3 I Free
+                        <span>₽40</span>
+                    </p>
+                    <div class="status processing">
+                        <img src="../../images/processing.png" alt="delivery"><span>Processing</span>
+                        <a href="javascript:void(0)" class="open-refund">request for refund</a>
+                    </div>
+                </div>
+                <div class="cart__product-img">
+                    <div class="img-wrap">
+                        <a href="product.html">
+                            <img src="../../images/single-product/buytogether-img.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="select">
+                        <select class="quantity">
+                            <option value="1">Qty: 1</option>
+                            <option value="2">Qty: 2</option>
+                            <option value="3">Qty: 3</option>
+                            <option value="4">Qty: 4</option>
+                            <option value="5">Qty: 5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart__product">
+            <div class="cart__product-wrap">
+                <div class="cart__product-text">
+                    <a class="title" href="product.html">Redmi Y2 (Glue, 32 GB)</a>
+                    <p class="sub-info">3 GB RAM</p>
+                    <div class="flex-wrap">
+                        <p>Seller: AVACO</p>
+                    </div>
+                    <div class="price">
+                        <p class="price-new">₽8,699</p>
+                    </div>
+                    <p class="sub-info">
+                        1 Offer Available
+                    </p>
+                    <p class="delivery">
+                        Delivery by, Sun Mar 3 I Free
+                    </p>
+                    <div class="status received">
+                        <i class="icon-checked"></i> <span>Received</span>
+                        <a href="javascript:void(0)" class="open-refund">request for refund</a>
+                    </div>
+                </div>
+                <div class="cart__product-img">
+                    <div class="img-wrap">
+                        <a href="product.html">
+                            <img src="../../images/single-product/similar-prod3.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="select">
+                        <select class="quantity">
+                            <option value="1">Qty: 1</option>
+                            <option value="2">Qty: 2</option>
+                            <option value="3">Qty: 3</option>
+                            <option value="4">Qty: 4</option>
+                            <option value="5">Qty: 5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="result__details" id="price_details">
+            <div class="result__details-heading">
+                <p class="title">PRICE DETAILS</p>
+            </div>
+            <div class="result__details-content">
+                <table class="result__details-table">
+                    <tbody>
+                        <tr>
+                            <td class="td-title">
+                                <p>Price (3 items)</p>
+                            </td>
+                            <td class="td-price">
+                                <p>₽9,637</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-title">
+                                <p>Delivery</p>
+                            </td>
+                            <td class="td-price">
+                                <p class="freeCls">FREE</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="result__details-summary">
+                    <p class="text">Amount Payable</p>
+                    <p class="price">₽30,697</p>
+                </div>
+            </div>
+            <div class="result__details-bottom">
+                <p>You will save ₽7500 on this order </p>
+            </div>
+        </div>
+
+        <div class="cart-banner">
+            <a href="javascript:void(0)">
+                <img src="../../images/single-product/white-banner.png" alt="banner">
+            </a>
+        </div>
+
+        <div class="secure-info">
+            <p>
+                Safe and Secure Payments. Easy returns. 100% Authentic products.</p>
+        </div>
+
+        <div class="fixed-btn">
+            <div class="blk">
+                <p class="price">₽30,697</p>
+                <a href="#price_details" class="view-details">View price details</a>
+            </div>
+            <a href="javascript:void(0)" class="continue-btn">CONTINUE</a>
+        </div>
+    </form>
+
+
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/mobile/script.min.js"></script>
+    <script src="../../js/mobile/purchase-history.min.js"></script>
+</body>
+
+</html>

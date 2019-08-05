@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Policy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/logo-mob.png">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/mobile/style.css">
+    <link rel="stylesheet" href="../../css/mobile/policy.css">
+</head>
+
+<body>
+
+    <!-- mobile popups -->
+    <div class="overlay-popup overlay-login">
+        <div class="close"></div>
+        <div class="login-popup">
+            <div class="wrapper">
+                <span class="close-popup"></span>
+                <div class="popup_header">
+                    <h3>Login</h3>
+                    <p>Get access to your Orders, Wishlist and Recommendations</p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <form>
+                        <div class="form-input">
+                            <input type="text" placeholder=" " required>
+                            <span class="floating-label">Enter Email/Mobile number</span>
+                            <span class="error-msg">Please enter valid Email/Mobile number</span>
+                        </div>
+                        <div class="form-input">
+                            <input type="password" placeholder=" " required>
+                            <span class="floating-label">Enter Password</span>
+                            <a href="javascript:void(0)">Forgot?</a>
+                            <span class="error-msg">Please enter valid Password</span>
+                        </div>
+                        <div class="form-button">
+                            <button>Login</button>
+                        </div>
+                        <p>OR</p>
+                        <div class="form-button white">
+                            <button>Request OTP</button>
+                        </div>
+                        <div class="form-link">
+                            <a href="javascript:void(0)" class="closeBtn open-registration">New to Flipkart? Create an account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-popup overlay-registration">
+        <div class="close"></div>
+        <div class="registration-popup">
+            <div class="wrapper">
+                <span class="close-popup"></span>
+                <div class="popup_header">
+                    <h3>Sign up</h3>
+                    <p>We do not share your personal details with anyone</p>
+                    <img src="../../images/login_img.png" alt="img">
+                </div>
+                <div class="popup_content">
+                    <div class="step step1 active">
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Full name</span>
+                                <span class="error-msg">Please enter valid Your Full name</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="email" placeholder=" " required>
+                                <span class="floating-label">Enter Your Email</span>
+                                <span class="error-msg">Please enter valid Email</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Your Mobile Number</span>
+                                <span class="error-msg">Please enter valid Mobile Number</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step2" class="nextStep">CONTINUE</button>
+                            </div>
+                            <div class="form-button white">
+                                <button class="closeButton open-login">Existing user? Log in</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step2">
+                        <h4>You will receive a 4-digit number 
+                            on you phone within 1 minute.</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter your code</span>
+                                <span class="error-msg">Please enter valid your code</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step3" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step3">
+                        <h4>Create your password</h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Confirm your password</span>
+                                <span class="error-msg">Please Enter your password</span>
+                            </div>
+                            <div class="form-button">
+                                <button data-step="step4" class="nextStep">CONTINUE</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="step step4">
+                        <h4><span>Congratulations!</span>
+                        <span>Your account has been created.</span></h4>
+                        <form>
+                            <div class="form-input">
+                                <input type="text" placeholder=" " required>
+                                <span class="floating-label">Enter Email/Mobile number</span>
+                                <span class="error-msg">Please enter valid Email/Mobile number</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="password" placeholder=" " required>
+                                <span class="floating-label">Enter Password</span>
+                                <a href="javascript:void(0)">Forgot?</a>
+                                <span class="error-msg">Please enter valid Password</span>
+                            </div>
+                            <div class="form-button">
+                                <button>Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="header_top-line">
+
+                <div class="flex-wrap">
+                    <div class="flex-item">
+                        <a onclick="javascript:history.back(); return false;" href="" class="back_link"></a>
+                    </div>
+
+                    <div class="flex-item">
+                        <a href="index.html" class="header_logo">
+                            <img src="../../images/logo-mob.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="flex-item header_search">
+                        <a href="#" class="mobileSearch"></a>
+                    </div>
+
+                    <div class="flex-item links">
+                        <a href="cart.html" class="header_cart__link">
+                            <!-- <span class="cartAmount">3</span> -->
+                        </a>
+                        <div class="registration header_login__link">Логин</div>
+                    </div>
+                </div>
+
+                <!-- Начало строки поиска -->
+                <div class="searchLine">
+                    <form class="form-search">
+                        <input name="text" class="search-query" type="search" placeholder="Поиск продуктов, брендов и другое">
+                        <button class="button"></button>
+                    </form>
+                    <div class="searchLine-close"></div>
+                </div>
+                <!-- Конец строки поиска -->
+
+            </div>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="container">
+            <h1>Returns Policy</h1>
+            <p> Returns is a scheme provided by respective sellers directly under this policy in terms of which the option of exchange, replacement and/ or refund is offered by the respective sellers to you. All products listed under a particular category
+                may not have the same returns policy. For all products, the policy on the product page shall prevail over the general returns policy. Do refer the respective item's applicable return policy on the product page for any exceptions to the
+                table below.</p>
+            <p>The return policy is divided into three parts; Do read all sections carefully to understand the conditions and cases under which returns will be accepted.</p>
+            <p><strong>Part 1 – Category, Return Window and Actions possible</strong></p>
+            <table>
+                <tr>
+                    <td>
+                        <p>Category</p>
+                    </td>
+                    <td>
+                        <p>Returns Window, Actions Possible and Conditions (if any)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Lifestyle: Clothing, Footwear, Watches, Sunglasses, Fashion Accessories</p>
+                    </td>
+                    <td>
+                        <p>30 days</p>
+                        <p>Refund, replacement or exchange</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Lifestyle: Sport Fitness Equipment,, Baby Care, Jewellery, Footwear Accessories, Travel Accessories, Lingerie (top-wear) </p>
+                        <p>Home: Home décor, Furnishing, Home Improvement Tools, Household Items, and Pet Supplies; </p>
+                        <p>Books More: Books, Music Instruments, Office Supply, School Supply and Toys</p>
+                        <p>Automotive: All automotive spare parts, accessories </p>
+                    </td>
+                    <td>
+                        <p>10 days</p>
+                        <p>Refund or replacement </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>All Electronics, Furniture and Large appliances other than Apple / Beats and Google Products </p>
+                    </td>
+                    <td>
+                        <p>10 days</p>
+                        <p>Replacement only</p>
+                        <p>For products requiring installation, returns shall be eligible only when such products are installed by the brand's authorized personnel.</p>
+                        <p>In order to help you resolve issues with your product, we may troubleshoot your product either through online tools, over the phone, and/or through an in-person technical visit.</p>
+                        <p>If a defect is determined within the Returns Window, a replacement of the same model will be provided at no additional cost. If no defect is confirmed or the issue is not diagnosed within 10 days of delivery or Installation wherever
+                            applicable, you will be directed to a brand service centre to resolve any subsequent issues.</p>
+                        <p>In any case, only one replacement shall be provided.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Apple / Beats Google Products (Mobiles, Tablets,Laptops, Smart Watches)</p>
+                    </td>
+                    <td>
+                        <p>10 days </p>
+                        <p>Replacement only</p>
+                        <p>For all functionality related issues, do contact the brand authorized service centre directly. </p>
+                        <ul>
+                            <li>Authorized Service Partner Locator :
+                                <ul>
+                                    <li>Apple / Beats - <a href="https://locate.apple.com/in/en" rel="nofollow">https://locate.apple.com/in/en</a></li>
+                                    <li>Google- <a href="https://support.google.com/pixelphone/answer/7173456?hl=en-GB" rel="nofollow">https://support.google.com/pixelphone/answer/7173456?hl=en-GB</a></li>
+                                </ul>
+                            </li>
+                            <li>Brand Support Site :
+                                <ul>
+                                    <li>Apple / Beats - <a href="https://support.apple.com/en-in" rel="nofollow">https://support.apple.com/en-in</a></li>
+                                    <li>Google - <a href="https://madeby.google.com/intl/en_in/phone/support/" rel="nofollow">https://madeby.google.com/intl/en_in/phone/support/</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>For any other issues with the product you may contact Flipkart - <a href="https://www.flipkart.com/helpcentre" rel="nofollow">Flipkart’s 24×7 Customer Care</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Grocery</p>
+                    </td>
+                    <td>
+                        <p>10 days</p>
+                        <p>Refund only</p>
+                        <p>Fruits and Vegetables ordered would be delivered only in the first attempt. In order to ensure that you get fresh fruits and vegetables, we will not be making reattempts to deliver your fruits and veggies in case you miss your
+                            slot. Rest of grocery items from Supermart would be delivered through reattempt in case you miss your slot.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Try Buy</p>
+                    </td>
+                    <td>
+                        <p>10 days</p>
+                        <p>Refund only</p>
+                        <p>This policy shall be applicable selectively (geographical coverage, product, customer and time periods). </p>
+                        <p>Try Buy benefits shall be applicable only if the product was bought when the item was on Try Buy. Else normal category policy shall apply on the order. In any case, only one replacement shall be provided.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>No Returns categories</p>
+                    </td>
+                    <td>
+                        <p>Some products in the above categories are not returnable due to their nature or other reasons. For all products, the policy on the product page shall prevail. </p>
+                        <p>You can view the complete list of non-returnable products <a href="javascript:void(0)" rel="nofollow">here.</a></p>
+                    </td>
+                </tr>
+            </table>
+
+            <p><strong>Part 2 - Returns Pick-Up and Processing</strong></p>
+            <p>In case of returns where you would like item(s) to be picked up from a different address, the address can only be changed if pick-up service is available at the new address</p>
+            <p>During pick-up, your product will be checked for the following conditions:</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p><strong>Category</strong></p>
+                        </td>
+                        <td>
+                            <p><strong>Conditions</strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Correct Product</p>
+                        </td>
+                        <td>
+                            <p>IMEI/ name/ image/ brand/ serial number/ article number/ bar code should match and MRP tag should be undetached and clearly visible.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Complete Product</p>
+                        </td>
+                        <td>
+                            <p>All in-the-box accessories (like remote control, starter kits, instruction manuals, chargers, headphones, etc.), freebies and combos (if any) should be present.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Unused Product</p>
+                        </td>
+                        <td>
+                            <p>The product should be unused, unwashed, unsoiled, without any stains and with non-tampered quality check seals/ warranty seals (wherever applicable). Before returning a Mobile/ Laptop/ Tablet, the device should be formatted
+                                and Screen Lock (Pin, Pattern or Fingerprint) must be disabled. iCloud lock must be disabled for Apple devices.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Undamaged Product</p>
+                        </td>
+                        <td>
+                            <p>The product (including SIM trays/ charging port/ headphone port, back-panel etc.) should be undamaged and without any scratches, dents, tears or holes.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Undamaged Packaging</p>
+                        </td>
+                        <td>
+                            <p>Product's original packaging/ box should be undamaged.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>The field executive will refuse to accept the return if any of the above conditions are not met.</p>
+            <p>For any products for which a refund is to be given, the refund will be processed once the returned product has been received by the seller.</p>
+            <p>Part 3 - General Rules for a successful Return</p>
+            <ul>
+                <li>In certain cases where the seller is unable to process a replacement for any reason whatsoever, a refund will be given.</li>
+                <li>During open box deliveries, while accepting your order, if you received a different or a damaged product, you will be given a refund (on the spot refunds for cash-on-delivery orders). Once you have accepted an open box delivery, no return
+                    request will be processed, except for manufacturing defects. In such cases, this category-specific replacement/return general conditions will be applicable. <a href="javascript:void(0)">Click here</a> to know more about Open Box Delivery</li>
+                <li>For products where installation is provided by Flipkart's service partners, do not open the product packaging by yourself. Flipkart authorised personnel shall help in unboxing and installation of the product.</li>
+                <li>For Furniture, any product related issues will be checked by an authorised service personnel (free of cost) and attempted to be resolved by replacing the faulty/ defective part of the product. Full replacement will be provided only in
+                    cases where the service personnel opines that replacing the faulty/defective part will not resolve the issue.</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/mobile/policy.min.js"></script>
+    <script src="../../js/mobile/script.min.js"></script>
+</body>
+
+</html>
