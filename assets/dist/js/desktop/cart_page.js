@@ -1,20 +1,9 @@
 $(document).ready(function(){
-    //switch url
-    function CheckWindow(){
-        if (screen.width <= 1024) {
-            document.location = "../mobile/cart.html";
-        }
-    }
-    CheckWindow();
-    $( window ).resize(function() {
-        CheckWindow();
-    });
-    //end switch url
     
     //increment and decrement buttons
     if($(".inc_dec_btn.dec").val() < 2 ){
         $(".inc_dec_btn.dec").addClass('hide');
-    }
+    } 
     $(".inc_dec_btn").on("click", function () {
         var $button = $(this);
         var oldValue = $button.parent().find("input").val();

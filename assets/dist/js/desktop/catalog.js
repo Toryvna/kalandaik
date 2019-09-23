@@ -1,22 +1,11 @@
 $(document).ready(function(){
-        //switch url
-        function CheckWindow(){
-            if (screen.width <= 1024) {
-                document.location = "../mobile/catalog.html";
-            }
-        }
-        CheckWindow();
-        $( window ).resize(function() {
-            CheckWindow();
-        });
-        //end switch url
 
         //show all items
         $(".showAll").on('click', function(){
             $(this).parent().addClass('active');
             $(this).css('display', 'none');
         });
-
+ 
       jcf.replaceAll();
 
       //При клике, кнопка like становится активной
