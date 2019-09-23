@@ -50,4 +50,4 @@ $(document).ready(function(){
         $('.step1, .step2, .step3, .step4').hide();
         $('.step5').addClass('active');
      });
-});
+});  

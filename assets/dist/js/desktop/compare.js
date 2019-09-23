@@ -5,4 +5,4 @@ $(document).ready(function(){
         $(this).parent().addClass('show');
         $(this).css('display', 'none');
     });
-});
+});  
